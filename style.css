@@ -302,7 +302,7 @@ main {
     bottom: 5px;
     left: 60px;
    /* background-color: blue;*/
-    background-image: url(imagens/20201030_135749.jpg);
+    background-image: url(imagens/home/20201030_1357499.jpg);
     background-size: cover;    
 }
 
@@ -310,7 +310,7 @@ main {
     position: absolute;
     /*background-color: yellow;*/
     right: 130px;
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.31.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.31.jpeg);
     background-size: cover;
 }
 
@@ -406,7 +406,7 @@ main {
 
 .acomodacoes-tipo1 {
    /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.471.jpeg);*/
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.471.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.471.jpeg);
     background-size: cover;
     background-position: center center;    
 }
@@ -418,28 +418,28 @@ main {
 
 .acomodacoes-tipo2 {
    /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.561.jpeg);*/
- background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.561.jpeg);
+ background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.561.jpeg);
     background-size: cover;
     background-position: center center;   
 }
 
 .acomodacoes-tipo3 {
   /*  background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.311.jpeg);*/
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.311.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.311.jpeg);
     background-size: cover;
     background-position: center center;     
 }
 
 .acomodacoes-tipo4 {
  /*   background-image: url(imagens/20201028_151257.jpg);*/
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/20201028_151257.jpg); 
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/20201028_151257.jpg); 
     background-size: cover;
     background-position: bottom center;   
 }
 
 .acomodacoes-tipo5 {
    /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.18.jpeg);*/
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.18.jpeg); 
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.18.jpeg); 
     background-size: cover;
     background-position: top center;
 }
@@ -717,7 +717,7 @@ main {
 .faca-sua-reserva {
     width: 100%;
     height: 18rem;
-    background-image: url(imagens/20210504_123806.jpg);
+    background-image: url(imagens/home/20210504_1238066.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -862,7 +862,7 @@ main {
 }
 
 .foto1 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.44.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.444.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s;
@@ -874,7 +874,7 @@ main {
     filter: grayscale(1)
 }
 .foto2 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.41.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-09\ at\ 22.24.033.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -882,14 +882,14 @@ main {
 }
 
 .foto3 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.32.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.322.jpeg);
     background-size: cover;
     background-repeat: no-repeat;   
     transition: all 0.2s;
 }
 
 .foto4 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.481.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.481.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -897,22 +897,22 @@ main {
 }
 
 .foto5 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.41.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.411.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     transition: all 0.2s;
 }
 
-.foto6 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-09\ at\ 22.24.03.jpeg);
+/*.foto6 {
+    background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s;
-}
+}*/
 
 .foto7 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.09.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.099.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -920,28 +920,28 @@ main {
 }
 
 .foto9 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.48.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.488\ \(1\).jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s;
 }
 
 .foto10 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.361.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.3611.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s;
 }
 
 .foto11 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.46.36.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.46.366.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s;
 }
 
 .foto12 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.511.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.5111.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -949,14 +949,14 @@ main {
 }
 
 .foto13 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.22.jpeg);
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.222.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s;
 }
 
 .foto14 {
-    background-image: url(imagens/20201018_133314.jpg);
+    background-image: url(imagens/home/20201018_1333144.jpg);
     background-size: cover;
     background-repeat: no-repeat;    
     transition: all 0.2s;   
