@@ -1,0 +1,658 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+:target {
+    scroll-margin-top: 1em;
+}
+
+body {
+    width: 100%;
+    height: 100vh;    
+}
+
+header {
+    width: 100%;
+    min-height: 41rem;  
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 84px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;   
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.cabecalho {
+    width: 100%;
+    height: 6.5rem;
+    background-color:-webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 99;    
+}
+
+.cabecalho a {
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 84px;
+}
+
+.cabecalho-superior {
+    width: 100%;
+    height: 2.5rem;
+   /* background-color: rgb(15, 138, 160);*/
+    display: flex;   
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 6rem;
+}
+
+.cabecalho-inferior {
+    width: 100%;
+    height: 4rem;
+    background-color: #ffffff;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+    padding: 0 8rem;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143);   
+    
+}
+
+.cabecalho-superior a {
+    color: #ffffff;
+}
+
+.fa-phone {
+    font-size: 12px;
+}
+
+.logo {
+    width: 250px;
+    height: 20vh;
+    margin-top: 0.4rem;  
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+    position: absolute;  
+    top: 3px;
+    left: 34rem;
+}
+
+.nav1, .nav2 {
+   width: 25rem;
+   height: 3.9rem;
+ /*  background-color: palevioletred;*/
+   display: flex;
+   gap: 2rem;
+   position: absolute;
+   top: -23px;
+   left: 0;
+   list-style: none;
+   text-transform: uppercase;  
+}
+
+.nav2 {
+    justify-content: flex-end;
+    left: 43.2rem;
+}
+
+.nav-item1, .nav-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -30px;
+    color: #474747;
+    height: 3.9rem;
+}
+
+.nav-item2 {
+    left: -1px;
+}
+
+.nav-item1 a:hover,
+.nav-item2 a:hover {   
+    color: #916632; 
+    text-decoration:underline;      
+}
+
+.cabecalho-texto {
+    width: 50rem;
+    height: 15rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    top: 250px;
+}
+
+.cabecalho-texto h1 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 53.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    min-height: 194rem;
+    background-color: #ffffff;
+    padding: 0 8rem;
+    margin-top: 6.5rem;
+}
+
+.acomodacoes {
+    width: 100%;
+    min-height: 193.2rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    color: #8d8d8d;
+    line-height: 26.3px;
+}
+
+.acomodacoes-texto {
+    width: 100%;
+    height: 21rem;
+   /* background-color: #f75252;*/
+    text-align: justify;
+    margin-bottom: -1rem;
+    
+}
+
+.acomodacoes-texto h3 {
+    font-size: 60px;
+    color: #2a2c36;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;    
+}
+
+.acomodacoes-tipo {
+    width: 100%;
+    height: 190rem;
+   /* background-color: blueviolet;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+   position: relative; 
+   margin-top: 7rem;   
+}
+
+.standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo {
+    width: 100%;
+    height: 32rem;
+   /* background-color: green;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+    position: relative;    
+}
+
+.semi-luxo, .semi-luxo-sacada {
+    flex-direction: row-reverse;
+}
+
+#quarto1-slide1,#quarto1-slide2, #quarto1-slide3,#quarto1-slide4, #quarto1-slide5 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.4611.jpeg);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    width: 48rem;
+    height: 32rem;
+    float: left;
+}
+
+#quarto1-slide2 {
+    background-image: url(imagens/acomodacoes/st11.jpg);    
+}
+
+#quarto1-slide3 {
+    background-image: url(imagens/acomodacoes/st22.jpg);    
+}
+
+#quarto1-slide4 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.09.481.jpeg);    
+}
+
+#quarto1-slide5 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.35.031.jpeg);    
+}
+
+.semi-luxo {
+    position: absolute;
+    top: 39.5rem;
+}
+
+#quarto2-slide1,#quarto2-slide2, #quarto2-slide3,#quarto2-slide4,#quarto2-slide5 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-23\ at\ 16.26.40.jpeg);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    width: 48rem;
+    height: 32rem;
+    float: left;
+}
+
+#quarto2-slide2 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.551.jpeg);    
+}
+
+#quarto2-slide3 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-23\ at\ 16.26.39.jpeg);    
+}
+
+#quarto2-slide4 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-29\ at\ 07.10.111.jpeg);    
+}
+
+#quarto2-slide5 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.562.jpeg);    
+}
+
+.chale {
+    position: absolute; 
+    top: 79rem;
+}
+
+#quarto3-slide1,#quarto3-slide2, #quarto3-slide3,#quarto3-slide4, #quarto3-slide5, #quarto3-slide6 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-23\ at\ 16.27.49.jpeg);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    width: 48rem;
+    height: 32rem;
+    float: left;
+}
+
+#quarto3-slide2 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.291.jpeg);    
+}
+
+#quarto3-slide3 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.301.jpeg);    
+}
+
+#quarto3-slide4 {
+    background-image: url(imagens/ch4.jpg);    
+}
+
+#quarto3-slide5 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-29\ at\ 07.11.082.jpeg);    
+}
+
+#quarto3-slide6 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.312.jpeg);    
+}
+
+.semi-luxo-sacada {
+    position: absolute; 
+    top: 118.5rem;
+}
+
+#quarto4-slide1,#quarto4-slide2, #quarto4-slide3,#quarto4-slide4, #quarto4-slide5 {
+    background-image: url(imagens/es1.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    width: 48rem;
+    height: 32rem;
+    float: left;
+}
+
+#quarto4-slide2 {
+    background-image: url(imagens/es3.jpg);    
+}
+
+#quarto4-slide3 {
+    background-image: url(imagens/es6.jpg);    
+}
+
+#quarto4-slide4 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.544.jpeg);    
+}
+
+#quarto4-slide5 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-23\ at\ 16.27.53.jpeg); 
+    background-position: center center;    
+}   
+
+.luxo {
+    position: absolute; 
+    top: 157.9rem;
+}
+
+.carousel-control-next-standard, .carousel-control-next-chale, .carousel-control-next-luxo {
+    position: absolute;
+    right: 8.5rem;
+    top: 15rem;
+    background-color: transparent;
+    border: none;      
+}
+
+.carousel-control-prev-semi-luxo, .carousel-control-prev-sl-sacada {
+    position: absolute;
+    left: 8.5rem;
+    top: 15rem;
+    background-color: transparent;
+    border: none;
+}
+
+
+#quarto5-slide1,#quarto5-slide2, #quarto5-slide3,#quarto5-slide4, #quarto5-slide5, #quarto5-slide6 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.203.jpeg);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    width: 48rem;
+    height: 32rem;
+    float: left;
+}
+
+#quarto5-slide2 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-23\ at\ 16.25.09.jpeg);
+    background-position: center center;    
+    
+}
+
+#quarto5-slide3 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-23\ at\ 16.25.111.jpeg);    
+}
+
+#quarto5-slide4 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-29\ at\ 07.12.071.jpeg);    
+}
+
+#quarto5-slide5 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-29\ at\ 07.12.082\ \(1\).jpeg);    
+}
+
+#quarto5-slide6 {
+    background-image: url(imagens/20210504_123622.jpg);   
+    background-position: center center;   
+}
+
+
+
+.carousel, .carousel-inner {
+    width: 48rem;
+    height: 32rem;
+   /* background-color: yellow;  */
+}
+
+.quartos1, .quarto2, .quarto3, .quarto4, .quarto5  {
+    width: 29rem;
+    height: 28rem;
+    /*background-color: brown;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.quarto1-descricao, .quarto2-descricao, .quarto3-descricao, .quarto4-descricao, .quarto5-descricao {
+    width: 22em;
+    height: 24rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: 62px;
+    right: 0px;
+    font-size: 19px;
+    line-height: 25.5px;
+    font-weight: normal;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.3px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.quarto1-descricao-texto h5, .quarto2-descricao-texto h5, .quarto3-descricao-texto h5, .quarto4-descricao-texto h5, .quarto5-descricao-texto h5 {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Gilda Display', serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #2a2c36;
+   /* padding-bottom: 5px;*/
+    padding-top: 16px;
+}
+
+.quarto2-descricao, .quarto4-descricao {
+    left:0px;
+}
+
+.quarto2-descricao {
+    top: 703px;
+}
+
+.quarto1-descricao-icones, .quarto2-descricao-icones, .quarto3-descricao-icones, .quarto4-descricao-icones, .quarto5-descricao-icones {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones1-col1, .icones1-col2, .icones2-col1, .icones2-col2, .icones3-col1, .icones3-col2, .icones4-col1, .icones4-col2, .icones5-col1, .icones5-col2 {
+    width: 50%;
+    height: 12rem;
+   /* background-color: #636363;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icones1-col2, .icones2-col2, .icones3-col2, .icones4-col2, .icones5-col2 {
+    margin-top: 6px;
+}
+
+.icones1-col2 {
+    margin-top: -65px;
+}
+.quarto1-icone, .quarto2-icone, .quarto3-icone, .quarto4-icone, .quarto5-icone {
+    width: 100%;
+    height: 4rem;
+   /* background-color: #7e6d4c;*/
+    position: relative;    
+}
+.quarto1-icone p, .quarto2-icone p, .quarto3-icone p, .quarto4-icone p, .quarto5-icone p {
+    position: absolute;
+    top: -27px;
+}
+
+.quarto1-descricao-icones p, .quarto2-descricao-icones p, .quarto3-descricao-icones p, .quarto4-descricao-icones p, .quarto5-descricao-icones p {
+    font-size: 15px;
+    font-family: 'Hind', sans-serif;
+    color: #636363;
+    font-weight:normal;
+    padding-left: 47px;
+    position: relative;
+    bottom: 18px;    
+}    
+
+.quarto1-descricao-icones i, .quarto2-descricao-icones i, .quarto3-descricao-icones i, .quarto4-descricao-icones i, .quarto5-descricao-icones i {
+    font-size: 28px;
+    color: #C6AD8C;    
+}
+
+.rodape {
+    width: 100%;
+    height: 15rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;   
+    margin-top: 7.3rem;   
+}
+
+.rodape-conteudo {
+    width: 100%;
+    height: 12.5rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0.2px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.rodape-logo {
+    width: 220px;
+    height: 17vh;
+    background-image:url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    top: 0;
+}
+
+.rodape-contato {
+    width: 340px;
+    height: 12.5rem; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.rodape-localizacao, .rodape-email, .rodape-whatsapp, .rodape-telefone {
+    width: 100%;
+    height: 5rem;  
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.rodape-idiomas {
+    width: 200px;
+    height: 12.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+    color: #c3c3ac;    
+    display: flex;
+    justify-content: left;
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+   margin-top: 1px;
+}
+
+.rodape-idiomas p, .rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a { 
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #c3c3ac;    
+}
+
+.rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a {
+    padding-left: -10px;
+}
+.rodape-localizacao a:hover {
+    color: #7e6d4c;
+}
+.rodape-whatsapp a:hover {
+    color: #7e6d4c;
+}
+.rodape-telefone a:hover {
+    color: #7e6d4c;
+}
+.rodape-email a:hover {
+    color: #7e6d4c;
+}
+
+.rodape-redes-sociais {
+    width: 200px;
+    height: 12.5rem;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    color: #c3c3ac;   
+}
+
+.rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #c3c3ac;
+}
+
+.rodape-redes-sociais a {
+    padding: 0 20px;
+ }
+
+.rodape-redes-sociais i {
+    font-size: 20px;
+    color: #c3c3ac;    
+}
+
+.rodape-redes-sociais i:hover {
+    color: #7e6d4c;
+}
+
+.rodape-copyrigth {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #030c09;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+    font-size: 8px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.3px;
+   
+}
