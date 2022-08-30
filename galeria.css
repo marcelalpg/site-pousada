@@ -30,7 +30,7 @@ header {
     align-items: center;
     flex-direction: column;
     color: #fff;   
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.244.jpeg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/galeria/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.244.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -221,7 +221,7 @@ main {
 .img1, .img13, .img21 {
     width: 17.3rem;
     height: 15rem;  
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.46.366.jpeg);    
+    background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-06-17\ at\ 13.46.366.jpeg);    
     background-size: cover;
     background-position: top center;    
     transition: all .2s;
@@ -239,13 +239,13 @@ main {
 }
 
 .img2 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.4711.jpeg);
+    background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.4711.jpeg);
     background-size: cover;
     background-position: center center;   
 }
 
 .img3 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.4555.jpeg);
+    background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.4555.jpeg);
     background-size: cover;
     background-position: center center;   
 }
@@ -262,7 +262,7 @@ main {
 }
 
 .img4 {
-    background-image: url(imagens/20201018_1333144.jpg);
+    background-image: url(imagens/galeria/20201018_1333144.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -279,7 +279,7 @@ main {
 }
 
 .img5 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-07-03\ at\ 15.22.54.jpeg);
+    background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-07-03\ at\ 15.22.544.jpeg);
     background-size: cover;
     background-position: center center;
 }
@@ -301,13 +301,13 @@ main {
 }
 
 .img6 {
-    background-image: url(imagens/20211004_1802566.jpg);
+    background-image: url(imagens/galeria/20211004_1802566.jpg);
     background-size: cover;
     background-position: center center;
 }
 
 .img7 {   
-    background-image: url(imagens/20201105_1835188.jpg);
+    background-image: url(imagens/galeria/20201105_1835188.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -327,7 +327,7 @@ main {
 }
 
 .img8 {
-    background-image: url(imagens/20211012_1807044.jpg);
+    background-image: url(imagens/galeria/20211012_1807044.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -346,49 +346,49 @@ main {
 }
 
 .img9 {
-    background-image: url(imagens/20211004_1804599.jpg);
+    background-image: url(imagens/galeria/20211004_1804599.jpg);
     background-size: cover;
     background-position: center center;
     
 }
 
 .img10 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.32.jpeg);
+    background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.322.jpeg);
     background-size: cover;
     background-position: center center;
     top: 16rem;
 }
 
 .img11 {
-    background-image: url(imagens/CASAMENTO\ PUSADA\ 01\ \(4655\).jpg);
+    background-image: url(imagens/galeria/CASAMENTO\ PUSADA\ 01\ \(4655\).jpg);
     background-size: cover;
     background-position: center center;
     top: 16rem;
 }
 
 .img12 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-08-05\ at\ 07.40.37.jpeg);
+    background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-08-05\ at\ 07.40.37.jpeg);
     background-size: cover;
     background-position: center center;
     top: 16rem;
 }
 
 .img13 {
-    background-image: url(imagens/20200930_095724.jpg);
+    background-image: url(imagens/galeria/20200930_0957244.jpg);
     background-size: cover;
     background-position: center center;
     top: 16rem;
 }
 
 .img14 {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-08-05\ at\ 07.38.033.jpeg);
+    background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-08-05\ at\ 07.38.033.jpeg);
     background-size: cover;
     background-position: bottom center;
     top: 16rem;    
 }
 
 .img15 {
-    background-image: url(imagens/pinicial09.jpg);
+    background-image: url(imagens/galeria/pinicial099.jpg);
     background-size: cover;
     background-position: center center;
     top: 16rem;    
