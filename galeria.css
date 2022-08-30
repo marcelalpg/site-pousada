@@ -1,0 +1,650 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+:target {
+    scroll-margin-top: 1em;
+}
+
+body {
+    width: 100%;
+    height: 100vh;  
+    background-color: #ffffff; 
+}
+
+header {
+    width: 100%;
+    min-height: 41rem;  
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 84px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;   
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.244.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 6.5rem;
+    background-color:-webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 99;    
+}
+
+.cabecalho a {
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 84px;
+}
+
+.cabecalho-superior {
+    width: 100%;
+    height: 2.5rem;
+   /* background-color: rgb(15, 138, 160);*/
+    display: flex;   
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 6rem;
+}
+
+.cabecalho-inferior {
+    width: 100%;
+    height: 4rem;
+    background-color: #ffffff;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+    padding: 0 8rem;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143);   
+}
+
+.cabecalho-superior a {
+    color: #ffffff;
+}
+
+.fa-phone {
+    font-size: 12px;
+}
+
+.logo {
+    width: 250px;
+    height: 20vh;
+    margin-top: 0.4rem;  
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+    position: absolute;  
+    top: 3px;
+    left: 34rem;
+}
+
+.nav1, .nav2 {
+   width: 25rem;
+   height: 3.9rem;
+ /*  background-color: palevioletred;*/
+   display: flex;
+   gap: 2rem;
+   position: absolute;
+   top: -23px;
+   left: 0;
+   list-style: none;
+   text-transform: uppercase;  
+}
+
+.nav2 {
+    justify-content: flex-end;
+    left: 43.2rem;
+}
+
+.nav-item1, .nav-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -30px;
+    color: #474747;
+    height: 3.9rem;
+}
+
+.nav-item2 {
+    left: -1px;
+}
+
+.nav-item1 a:hover,
+.nav-item2 a:hover {   
+    color: #916632; 
+    text-decoration:underline;      
+}
+
+.cabecalho-texto {
+    width: 50rem;
+    height: 15rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    top: 250px;
+}
+
+.cabecalho-texto h1 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 53.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cabecalho-texto h2 {
+    font-size: 30px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.4px;
+    line-height: 34px;
+}
+
+main {
+    width: 100%;
+    min-height: 160rem;
+    background-color: #ffffff;
+    padding: 0 8rem;
+    margin-top: 7rem;    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;        
+}
+
+.galeria {
+    width: 100%;
+    height: 160rem;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    flex-direction: column;   
+    margin-top: 0.5rem; 
+}
+
+.blocoa, .blocob, .blococ, .blocod, .blocoe {
+    width: 100%;
+    height: 32rem;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.blocob, .blocod {   
+    flex-direction: column;
+    position: relative; 
+}
+
+.blocoa-l1, .blocoa-l2, .blococ-l1, .blococ-l2, .blocoe-l1, .blocoe-l2 {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;  
+    gap: 1rem;  
+}
+
+.blococ-l2 {
+    flex-direction: row-reverse;
+    position: relative;
+    right: 5px;
+}
+
+.img1, .img13, .img21 {
+    width: 17.3rem;
+    height: 15rem;  
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.46.366.jpeg);    
+    background-size: cover;
+    background-position: top center;    
+    transition: all .2s;
+}
+
+.img2, .img3, .img11, .img12, .img22, .img23 {
+    width: 24rem;
+    height: 15rem;
+    transition: all 0.2s;
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img11:hover, .img12:hover, .img13:hover, .img21:hover, .img22:hover, .img23:hover {
+    transition: 0.2s;
+    transform: scale(0.98);
+}
+
+.img2 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.4711.jpeg);
+    background-size: cover;
+    background-position: center center;   
+}
+
+.img3 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.4555.jpeg);
+    background-size: cover;
+    background-position: center center;   
+}
+
+.img4, .img14, .img24 {   
+    width: 38rem;
+    height: 15rem;
+    transition: all .2s;    
+}
+
+.img4:hover, .img14:hover, .img24:hover {
+    transition: 0.2s;
+    transform: scale(0.98);
+}
+
+.img4 {
+    background-image: url(imagens/20201018_1333144.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img5, .img15, .img25 {    
+    width: 28.3rem;
+    height: 15rem;
+    transition: all .2s;
+}
+
+.img5:hover, .img15:hover, .img25:hover {
+    transition: 0.2s;
+    transform: scale(0.98);
+}
+
+.img5 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-07-03\ at\ 15.22.54.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.blocob-col1, .img6, .img7, .blocod-col1, .img16, .img17 {
+    width: 24.6rem;
+    height: 15rem;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all .2s;
+}
+
+.img6:hover, .img7:hover, .img16:hover, .img17:hover {
+    transition: 0.2s;
+    transform: scale(0.98);
+}
+
+.img6 {
+    background-image: url(imagens/20211004_1802566.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img7 {   
+    background-image: url(imagens/20201105_1835188.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.blocob-col2 .img8, .blocod-col2 .img18 {
+    width: 16rem;
+    height: 31rem;    
+    position: absolute;
+    top:0;
+    left: 25.6rem;  
+    transition: all .2s; 
+}
+
+.img8:hover, .img18:hover {
+    transition: .2s;
+    transform: scale(0.98);
+}
+
+.img8 {
+    background-image: url(imagens/20211012_1807044.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.blocob-col3, .img9, .img10, .blocod-col3, .img19, .img20 {
+    width: 24.6rem;
+    height: 15rem;   
+    position: absolute;
+    top:0;
+    right: 4px;
+    transition: all .2s;
+}
+
+.img9:hover, .img10:hover, .img19:hover, .img20:hover {
+    transition: .2s;
+    transform: scale(0.98);
+}
+
+.img9 {
+    background-image: url(imagens/20211004_1804599.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.img10 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.32.jpeg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.img11 {
+    background-image: url(imagens/CASAMENTO\ PUSADA\ 01\ \(4655\).jpg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.img12 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-05\ at\ 07.40.37.jpeg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.img13 {
+    background-image: url(imagens/20200930_095724.jpg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.img14 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-05\ at\ 07.38.033.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+    top: 16rem;    
+}
+
+.img15 {
+    background-image: url(imagens/pinicial09.jpg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;    
+}
+
+.img16 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-05\ at\ 07.39.577.jpeg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.img17 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.44.jpeg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.img18 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.422\ \(1\).jpeg);
+    background-size: cover;
+    background-position: center center;   
+}
+
+.img19 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-05\ at\ 17.02.155.jpeg);
+    background-size: cover;
+    background-position: center center;   
+}
+
+.img20 {
+    background-image: url(imagens/20200909_1242188.jpg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;    
+}
+
+.img21 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.334.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+    top: 16rem;
+}
+
+.img22 {
+    background-image: url(imagens/20210514_1227544.jpg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.img23 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-08\ at\ 07.29.266.jpeg);
+    background-size: cover;
+    background-position: top center;
+    top: 16rem;
+}
+
+.img24 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-08-05\ at\ 08.10.30.jpeg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.img25 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-07-03\ at\ 15.11.000.jpeg);
+    background-size: cover;
+    background-position: center center;
+    top: 16rem;
+}
+
+.rodape {
+    width: 100%;
+    height: 15rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;   
+    margin-top: 6.5rem;   
+}
+
+.rodape-conteudo {
+    width: 100%;
+    height: 12.5rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0.2px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.rodape-logo {
+    width: 220px;
+    height: 17vh;
+    background-image:url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    top: 0;
+}
+
+.rodape-contato {
+    width: 340px;
+    height: 12.5rem; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.rodape-localizacao, .rodape-email, .rodape-whatsapp, .rodape-telefone {
+    width: 100%;
+    height: 5rem;  
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.rodape-idiomas {
+    width: 200px;
+    height: 12.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+    color: #c3c3ac;    
+    display: flex;
+    justify-content: left;
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+   margin-top: 1px;
+}
+
+.rodape-idiomas p, .rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a { 
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #c3c3ac;    
+}
+
+.rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a {
+    padding-left: -10px;
+}
+.rodape-localizacao a:hover {
+    color: #7e6d4c;
+}
+.rodape-whatsapp a:hover {
+    color: #7e6d4c;
+}
+.rodape-telefone a:hover {
+    color: #7e6d4c;
+}
+.rodape-email a:hover {
+    color: #7e6d4c;
+}
+
+.rodape-redes-sociais {
+    width: 200px;
+    height: 12.5rem;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    color: #c3c3ac;   
+}
+
+.rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #c3c3ac;
+}
+
+.rodape-redes-sociais a {
+    padding: 0 20px;
+ }
+
+.rodape-redes-sociais i {
+    font-size: 20px;
+    color: #c3c3ac;    
+}
+
+.rodape-redes-sociais i:hover {
+    color: #7e6d4c;
+}
+
+.rodape-copyrigth {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #030c09;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+    font-size: 8px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.3px;
+   
+}
+
+.modal, .modal-dialog {
+    border-radius: 0%;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-img1, .modal-img1a, .modal-img2, .modal-img3, .modal-img4, .modal-img5, .modal-img6, .modal-img7, .modal-img9, .modal-img10, .modal-img11, .modal-img12, .modal-img13, .modal-img14, .modal-img15, .modal-img16, .modal-img17, .modal-img19, .modal-img20, .modal-img21, .modal-img22, .modal-img23, .modal-img24,  .modal-img25 {
+    width: 47.8rem;
+    height: 27rem;
+    object-fit: cover;    
+}
+
+.modal-img23 {
+    object-position: top center;
+}
+.modal-img8, .modal-img18 {
+    width: 45rem;
+    height: 45rem;
+    object-fit: cover; 
+}
+
+.btn-close:focus {
+    border-color: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+
