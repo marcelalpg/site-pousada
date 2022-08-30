@@ -30,7 +30,7 @@ header {
     align-items: center;
     flex-direction: column;
     color: #fff;   
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/I\ M\ \(48\ de\ 5412\).jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/festas-eventos/I\ M\ \(48\ de\ 5412\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -251,98 +251,98 @@ main {
 }
 
 #slide1-casamento {
-    background-image: /*-webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), */url(imagens/CASAMENTO\ PUSADA\ 01\ \(3655\).jpg);
+    background-image: /*-webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), */url(imagens/festas-eventos/CASAMENTO\ PUSADA\ 01\ \(36555\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 }
 
 #slide2-casamento {
-    background-image: url(imagens/CASAMENTO\ PUSADA\ 01\ \(3577\).jpg);
+    background-image: url(imagens/festas-eventos/CASAMENTO\ PUSADA\ 01\ \(3577\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #slide3-casamento {
-    background-image: url(imagens/CASAMENTO\ PUSADA\ 01\ \(4655\).jpg);
+    background-image: url(imagens/festas-eventos/CASAMENTO\ PUSADA\ 01\ \(4655\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #slide4-casamento {
-    background-image: url(imagens/IMG-20220726-WA00111.jpg);
+    background-image: url(imagens/festas-eventos/IMG-20220726-WA00111.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
 }
 
 #slide5-casamento {
-    background-image: url(imagens/I\ M\ \(28\ de\ 5411\).jpg);
+    background-image: url(imagens/festas-eventos/I\ M\ \(38\ de\ 5411\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #slide6-casamento {
-    background-image: url(imagens/I\ M\ \(38\ de\ 5411\).jpg);
+    background-image: url(imagens/festas-eventos/I\ M\ \(28\ de\ 5411\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #slide1-aniversario {
-    background-image: url(imagens/IMG_400411.jpg);
+    background-image: url(imagens/festas-eventos/IMG_400411.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 }
 
 #slide2-aniversario {
-    background-image: url(imagens/IMG_400555.jpg);
+    background-image: url(imagens/festas-eventos/IMG_400555.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 }
 
 #slide3-aniversario {
-    background-image: url(imagens/IMG_40377.jpg);
+    background-image: url(imagens/festas-eventos/IMG_40377.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 }
 
 #slide4-aniversario {
-    background-image: url(imagens/IMG_40511.jpg);
+    background-image: url(imagens/festas-eventos/IMG_405111.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 }
 
 #slide1-outros {
-    background-image: /*-webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), */url(imagens/IMG-20220726-WA0010.jpg);
+    background-image: /*-webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), */url(imagens/festas-eventos/IMG-20220726-WA0010.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #slide2-outros {
-    background-image: url(imagens/IMG-20220726-WA00122.jpg);
+    background-image: url(imagens/festas-eventos/IMG-20220726-WA00122.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #slide3-outros {
-    background-image: url(imagens/IMG-20220726-WA0017.jpg);
+    background-image: url(imagens/festas-eventos/IMG-20220726-WA00177.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 #slide4-outros {
-    background-image: url(imagens/WhatsApp\ Image\ 2022-08-29\ at\ 09.20.00.jpeg);
+    background-image: url(imagens/festas-eventos/WhatsApp\ Image\ 2022-08-29\ at\ 09.20.000.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
