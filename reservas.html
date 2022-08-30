@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/54c79639a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reservas.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Gilda+Display&family=Hind:wght@500&family=Montserrat:wght@100&display=swap');
+    </style>
+    <title>Reservas</title>
+</head>
+<body>
+  <header>
+    <div class="cabecalho">
+      <div class="cabecalho-superior"> 
+        <div class="localizacao">
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
+        </div>               
+        <div class="telefones">
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="#">&nbsp;(35)99963-4214 | </a>
+          <i id="tel" class="fa-solid fa-phone"></i>
+          <a href="#">&nbsp;(35)3371-1110</a>
+        </div>       
+      </div>
+      <div class="cabecalho-inferior">
+        <div class="logo"></div> 
+        <nav class="navbar navbar-expand-xl navbarScroll">
+          <div class="container">              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav1 nav-pills nav-fill">
+                      <li class="nav-item1 active">
+                          <a class="nav-link" href="index.html">Home</a>
+                      </li>                       
+                      <li class="nav-item1">
+                          <a class="nav-link" href="acomodacoes.html">Acomodações</a>
+                      </li>
+                      <li class="nav-item1">
+                          <a class="nav-link" href="festas-eventos.html">Festas & Eventos</a>
+                      </li>
+                 </ul> 
+                 <ul class="nav2 nav-pills nav-fill">
+                  <li class="nav-item2">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item2">
+                    <a class="nav-link" href="reservas.html">Reservas</a>
+                  </li>
+                  <li class="nav-item2">
+                    <a class="nav-link" href="cidade.html">A cidade</a>
+                  </li>
+                  <li class="nav-item2">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
+                </ul>                               
+              </div>
+           </div>
+        </nav>  
+      </div>
+    </div>     
+      <div class="cabecalho-texto">
+          <h1>Reservas</h1>          
+      </div>
+  </header>
+    <main>
+        <section class="reservas">
+          <h3>Faça sua reserva!</h3>
+            <div class="reservas-texto">                
+                <p>A Pousada Tia Ana tem preços diferenciados conforme o número de pessoas por apartamento. Na diária está incluso café da manhã.</p>
+                <p> <strong> Para a hospedagem com crianças entre em contato através dos telefones (35) 3371-1110 / (35) 99963-4214 (ligações e Whatsapp) ou por email: tiaana@pousadatiaana.com.br para esclarecimentos e redução no valor do pacote.</strong></p>
+                <p>Diferenciamos os preços porque queremos que você traga toda a sua família!</p>
+                <p>A Pousada Tia Ana terá o maior prazer em recebê-los.</p>
+            </div>        
+        </section>
+        <section class="tabela-precos">
+          <h3>Tabelas de preços</h3>
+          <div class="tabelas">
+            <div class="baixa-temporada">
+              <div class="baixa-temporada-texto">
+                <h4>Baixa Temporada</h4>
+                <p>exceto feriados e datas especiais</p>
+              </div>                
+              <div class="standard">                   
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="titulo">Standard</th>
+                      <th></th>                              
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1 pessoa</td>
+                      <td>R$180,00</td>
+                    </tr>
+                    <tr>                                
+                      <td>2 pessoas ou casal</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>3 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>4 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>5 pessoas</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>                      
+              </div>
+              <div class="semi-luxo">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="titulo">Semi-luxo</th> 
+                      <th></th>                         
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1 pessoa</td>
+                      <td>R$180,00</td>
+                    </tr>
+                    <tr>                                
+                      <td>2 pessoas ou casal</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>3 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>4 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>5 pessoas</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table> 
+              </div>
+              <div class="chale-garagem">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="titulo">Chalé com Garagem</th> 
+                      <th></th>                         
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1 pessoa</td>
+                      <td>R$180,00</td>
+                    </tr>
+                    <tr>                                
+                      <td>2 pessoas ou casal</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>3 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>4 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>5 pessoas</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table> 
+              </div>
+              <div class="sluxo-sacada">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="titulo">Semi-luxo com sacada</th> 
+                      <th></th>                         
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                     <td>1 pessoa</td>
+                     <td>R$180,00</td>
+                    </tr>
+                    <tr>                                
+                      <td>2 pessoas ou casal</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>3 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>4 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>5 pessoas</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table> 
+              </div>
+              <div class="luxo">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="titulo">Luxo</th>
+                      <th></th>                          
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1 pessoa</td>
+                      <td>R$180,00</td>
+                    </tr>
+                    <tr>                                
+                      <td>2 pessoas ou casal</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>3 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>4 pessoas</td>
+                      <td></td>
+                    </tr>
+                    <tr>                                
+                      <td>5 pessoas</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table> 
+              </div>
+            </div>
+
+            <div class="alta-temporada">
+              <div class="alta-temporada-texto">
+                <h4>Alta Temporada (férias escolares)</h4>
+                <p>exceto feriados e datas especiais</p>
+              </div>             
+              <div class="standard">                   
+                      <table class="table table-striped table-hover">
+                          <thead>
+                            <tr>
+                              <th scope="col" class="titulo">Standard</th>
+                              <th></th>
+                            
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1 pessoa</td>
+                              <td>R$180,00</td>
+                            </tr>
+                            <tr>                                
+                              <td>2 pessoas ou casal</td>
+                              <td></td>
+                            </tr>
+                            <tr>                                
+                              <td>3 pessoas</td>
+                              <td></td>
+                            </tr>
+                            <tr>                                
+                              <td>4 pessoas</td>
+                              <td></td>
+                            </tr>
+                            <tr>                                
+                              <td>5 pessoas</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                       </table>                      
+              </div>
+              <div class="semi-luxo">
+                  <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="titulo">Semi-luxo</th> 
+                          <th></th>                         
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1 pessoa</td>
+                          <td>R$180,00</td>
+                        </tr>
+                        <tr>                                
+                          <td>2 pessoas ou casal</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>3 pessoas</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>4 pessoas</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>5 pessoas</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                   </table> 
+              </div>
+              <div class="chale-garagem">
+                  <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="titulo">Chalé com Garagem</th>  
+                          <th></th>                        
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1 pessoa</td>
+                          <td>R$180,00</td>
+                        </tr>
+                        <tr>                                
+                          <td>2 pessoas ou casal</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>3 pessoas</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>4 pessoas</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>5 pessoas</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                   </table> 
+              </div>
+              <div class="sluxo-sacada">
+                  <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="titulo">Semi-luxo com sacada</th> 
+                          <th></th>                         
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1 pessoa</td>
+                          <td>R$180,00</td>
+                        </tr>
+                        <tr>                                
+                          <td>2 pessoas ou casal</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>3 pessoas</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>4 pessoas</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>5 pessoas</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                   </table> 
+              </div>
+              <div class="luxo">
+                  <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="titulo">Luxo</th>
+                          <th></th>                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1 pessoa</td>
+                          <td>R$180,00</td>
+                        </tr>
+                        <tr>                                
+                          <td>2 pessoas ou casal</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>3 pessoas</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>4 pessoas</td>
+                          <td></td>
+                        </tr>
+                        <tr>                                
+                          <td>5 pessoas</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                   </table> 
+              </div>
+          </div>           
+        </section>
+        
+        <section class="banner-promocao">
+          <div class="banner">            
+              <div class="banner-texto">                  
+                  <h2>Que tal recarregar as energias nas próximas férias?</h2>
+                  <h2>Venha para a Pousada Tia Ana.</h2>
+              </div>
+              <div class="banner-telefone">
+                  <p>Reservas</p>
+                  <h5> (35) 3371-1110 / (35) 99963-4214</h5>
+                  <i class="fa-solid fa-phone"></i>                 
+               </div>      
+          </div>
+        </section>
+        <section class="termos-condicoes">
+          <div class="termos-conteudo">
+            <h3>Termos e condições</h3>
+            <p>Ao efetuar a reserva, tenha ciência das seguintes informações:</p>
+            <h4>Diárias</h4>
+            <ul>
+              <li>Na diária está incluso café da manhã para todos os períodos e pacotes contratados;</li>
+              <li>Valores em reais, sujeitos à alteração.</li>
+            </ul><br>
+            <h4>Garantia</h4>
+            <ul>
+              <li> <strong>Depósito prévio de 30% sobre o total das diárias para efetivação da reserva.</strong> </li>
+            </ul><br>
+            <h4>Cancelamento</h4>
+            <ul>
+              <li>Somente serão aceitas solicitações de cancelamento enviadas por E-mail, pelo solicitante da reserva;</li>
+              <li>Cancelamento até 30 dias antes do check-in: devolução do valor depositado ou transferência de data, mediante disponibilidade. Taxa de transferência ou devolução: R$20,00.</li>
+              <li>Cancelamento de 29 a 15 dias antes do check-in: devolução de 50% do total da reserva ou transferência de data, mediante disponibilidade. Taxa de transferência ou devolução R$20,00.
+              </li>
+              <li>Cancelamento com menos de 15 dias de antecedência: sem devolução nem transferência de data.</li>
+            </ul><br>
+            <h4>Animais de Estimação</h4>
+            <p>A Pousada Tia Ana aceita cães e gatos.</p>
+            <p>Para manter os animais de estimação e os hóspedes felizes, as seguintes diretrizes foram implementadas:</p>
+            <ul>
+              <li>Animais de estimação não são permitidos no salão de café;</li>
+              <li>Envide todos os esforços para que seus animais de estimação não incomodem os outros hóspedes;</li>
+              <li>Os donos devem recolher qualquer "sujeira" deixada pelos seus animais de estimação.</li>
+            </ul><br>
+            <h4>Hospedagem para menores de idade</h4>
+            <ul>
+              <li>Não é permitido menores se hospedarem sozinhos;</li>
+              <li>Se desacompanhados dos pais ou responsáveis, uma autorização escrita e autenticada deve ser apresentada no check-in.</li>
+            </ul>                       
+          </div>
+        </section>
+    </main>
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+          <div class="rodape-logo"></div>
+          <div class="rodape-contato">
+              <div class="rodape-contato-titulo">
+                  <h5>Contato</h5>
+              </div>
+              <div class="rodape-localizacao">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <a href="contato.html">&nbsp;Estrada de Pinheirinhos, nº 1515. &nbsp;Passa Quatro/MG</a>            
+              </div>
+              <div class="rodape-whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank">&nbsp;(35)99963-4214</a>
+              </div>
+              <div class="rodape-telefone">
+                  <i id="tel" class="fa-solid fa-phone"></i>
+                  <a href="#">&nbsp;(35)3371-1110</a>
+              </div>           
+              <div class="rodape-email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="#">&nbsp;tiaana@pousadatianana.com.br</a>
+              </div>
+          </div>
+          <div class="rodape-idiomas">                
+                  <h5>Idiomas</h5>
+                  <p>Inglês</p>
+                  <p>Espanhol</p>
+          </div>
+          <div class="rodape-redes-sociais">
+              <div class="rodape-redes-sociais-titulo">
+                  <h5>Redes Sociais</h5>
+              </div>
+              <div class="rodape-redes-sociais-icones">
+                  <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>               
+          </div>            
+      </div>
+      <div class="rodape-copyrigth">
+          <h6>&copy;Copyrigth 2022 by MarcelaLPGay</h6>
+      </div>
+  </footer>
+  <script src="menu.js"></script>  
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
+    </body>
+</html>

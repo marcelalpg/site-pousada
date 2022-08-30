@@ -1,0 +1,556 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+:target {
+    scroll-margin-top: 1em;
+}
+
+body {
+    width: 100%;
+    height: 100vh;  
+  /*  background-color: yellow;  */
+}
+
+header {
+    width: 100%;
+    min-height: 41rem;  
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 84px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;   
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/WhatsApp\ Image\ 2022-07-03\ at\ 15.11.000.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 6.5rem;
+    background-color:-webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 99;    
+}
+
+.cabecalho a {
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 84px;
+}
+
+.cabecalho-superior {
+    width: 100%;
+    height: 2.5rem;
+   /* background-color: rgb(15, 138, 160);*/
+    display: flex;   
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 6rem;
+}
+
+.cabecalho-superior a {
+    color: #ffffff;
+}
+
+.cabecalho-inferior {
+    width: 100%;
+    height: 4rem;
+    background-color: #ffffff;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+    padding: 0 8rem;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143);       
+}
+
+.fa-phone {
+    font-size: 12px;
+}
+
+.logo {
+    width: 250px;
+    height: 20vh;
+    margin-top: 0.4rem;  
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+    position: absolute;  
+    top: 3px;
+    left: 34rem;
+}
+
+.nav1, .nav2 {
+   width: 25rem;
+   height: 3.9rem;
+ /*  background-color: palevioletred;*/
+   display: flex;
+   gap: 2rem;
+   position: absolute;
+   top: -23px;
+   left: 0;
+   list-style: none;
+   text-transform: uppercase;  
+}
+
+.nav2 {
+    justify-content: flex-end;
+    left: 43.2rem;
+}
+
+.nav-item1, .nav-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -30px;
+    color: #474747;
+    height: 3.9rem;
+}
+
+.nav-item2 {
+    left: -1px;
+}
+
+.nav-item1 a:hover,
+.nav-item2 a:hover {   
+    color: #916632; 
+    text-decoration:underline;      
+}
+
+.cabecalho-texto {
+    width: 50rem;
+    height: 15rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    top: 250px;
+}
+
+.cabecalho-texto h1 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 53.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    min-height: 232rem;
+   /* background-color: #f14040; */   
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 7rem;        
+}
+
+.reservas {
+    width: 100%;
+    height: 20rem;
+   /* background-color: #474747;*/
+    padding: 0 8rem;
+    
+}
+
+.reservas h3, .tabela-precos h3, .termos-conteudo h3 {
+    font-size: 60px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #2a2c36;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -8px;
+    margin-bottom: 38px;
+}  
+
+.reservas-texto {
+    width: 100%;
+    height: 13rem;
+    /*background-color: aqua;*/
+    text-align: justify;
+    color: #818181;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2px;  
+}
+
+.tabela-precos {
+    width: 100%;
+    height: 105rem;
+  /*  background-color: rgb(56, 29, 20);*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5.3rem;
+    padding: 0 8rem;
+}
+
+.tabelas {
+    width: 100%;
+    height: 100rem;
+  /* background-color: cornflowerblue;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.baixa-temporada, .alta-temporada {
+    width: 50%;
+    height: 100rem;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.baixa-temporada-texto, .alta-temporada-texto {
+    width: 100%;
+    height: 5rem;
+  /*  background-color: yellowgreen;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    color: #7e6d4c;
+}
+
+.standard, .semi-luxo, .chale-garagem, .sluxo-sacada, .luxo {
+    width: 100%;
+    height: auto;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.titulo {
+    width: 100%;
+    height: 3rem;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gilda Display', serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #7e6d4c;
+    position: relative;
+    left: 2.2rem;    
+}
+
+.banner-promocao {
+    width: 100%;
+    height: 20rem;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/WhatsApp\ Image\ 2022-08-05\ at\ 16.59.233.jpeg);
+    background-size: cover;  
+    background-position: center center;  
+    background-color: #7e6d4c;
+    margin-top: 10rem;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    color:#ffffff;
+    padding: 0 8rem;
+}
+
+.banner-texto {
+    width: 70%;
+    height: 15rem;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    font-size: 20px;
+    padding-top: 50px;
+    letter-spacing: 1px;
+    margin-top: 1.6rem;
+    font-family: 'Gilda Display', serif;
+    position: relative;
+}
+
+.banner-telefone {
+    width: 22rem;
+    height: 8.5rem;  
+    position: absolute;
+    right: 8rem;
+    top:5.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 21px;
+    letter-spacing: 2px;
+    color: #C6AD8C;
+    background-color: #ffffff;    
+}
+
+.banner-telefone p {
+    padding-left: 50px;
+    padding-top: 30px;
+    color:#a08b71;
+}
+
+.banner-telefone h5 {
+    padding-left: 50px;
+    margin-top: -10px;
+    font-size: 22px;
+    color: #6a5134;
+}
+
+.banner-telefone i {
+    font-size: 40px;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 47px;   
+    left: 5px;
+    color: #C6AD8C;  
+}
+
+.termos-condicoes {
+    width: 100%;
+    height: 57rem;
+  /*  background-color: rgb(150, 194, 235);*/
+    margin-top: 7rem;
+    padding: 0 8rem;    
+}
+
+.termos-conteudo {
+    width: 100%;
+    height: 57rem;
+ /*   background-color: #f81414;*/
+    color: #818181;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2px; 
+}
+
+.termos-conteudo h3 {
+    text-transform: uppercase;
+}
+
+.termos-conteudo h4 {
+    color: #927554;
+}
+
+.rodape {
+    width: 100%;
+    height: 15rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;   
+    margin-top: 7rem;   
+}
+
+.rodape-conteudo {
+    width: 100%;
+    height: 12.5rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0.2px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.rodape-logo {
+    width: 220px;
+    height: 17vh;
+    background-image:url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    top: 0;
+}
+
+.rodape-contato {
+    width: 340px;
+    height: 12.5rem; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.rodape-localizacao, .rodape-email, .rodape-whatsapp, .rodape-telefone {
+    width: 100%;
+    height: 5rem;  
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.rodape-idiomas {
+    width: 200px;
+    height: 12.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+    color: #c3c3ac;    
+    display: flex;
+    justify-content: left;
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+   margin-top: 1px;
+}
+
+.rodape-idiomas p, .rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a { 
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #c3c3ac;    
+}
+
+.rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a {
+    padding-left: -10px;
+}
+.rodape-localizacao a:hover {
+    color: #7e6d4c;
+}
+.rodape-whatsapp a:hover {
+    color: #7e6d4c;
+}
+.rodape-telefone a:hover {
+    color: #7e6d4c;
+}
+.rodape-email a:hover {
+    color: #7e6d4c;
+}
+
+.rodape-redes-sociais {
+    width: 200px;
+    height: 12.5rem;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    color: #c3c3ac;   
+}
+
+.rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #c3c3ac;
+}
+
+.rodape-redes-sociais a {
+    padding: 0 20px;
+ }
+
+.rodape-redes-sociais i {
+    font-size: 20px;
+    color: #c3c3ac;    
+}
+
+.rodape-redes-sociais i:hover {
+    color: #7e6d4c;
+}
+
+.rodape-copyrigth {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #030c09;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+    font-size: 8px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.3px;
+   
+}
+
+@media (max-width: 720px) {
+    .navbar .menu-btn i {
+        display: block;
+    }
+
+    .navbar ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #030c09;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all .3 ease;
+    }
+
+    .navbar ul.open {
+        left: 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 23px;
+    }
+
+    .navbar ul li a.active,
+    .navbar ul li a:hover {
+        background: none;
+        color: red;
+    }
+}
