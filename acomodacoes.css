@@ -1,7 +1,8 @@
 * {
     margin:0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box; 
+       
 }
 
 html {
@@ -14,9 +15,548 @@ html {
 
 body {
     width: 100%;
-    height: 100vh;    
+    height: 100vh;
+    background-color: #ffffff;    
 }
 
+header {
+    width: 100%;
+    height: 30rem;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Hind', sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 6rem;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    
+}
+
+.cabecalho a, .cabecalho i {
+    text-decoration: none;
+    font-size: 12.5px; 
+    color: #ffffff;   
+}
+
+.cabecalho-superior {
+    width: 100%;
+    height: 3rem;
+   /* background-color: rgb(4, 81, 95);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 5px;       
+}
+
+.telefones {
+    padding-bottom: 11px;
+}
+
+.cabecalho-inferior {
+    width: 100%;
+    height: 2.4rem;
+    background-color: #ffffff;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
+    display: flex;   
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: 16vh;     
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    position: absolute; 
+    top: -16px    
+}
+
+.navbar-toggler {
+    position: absolute;
+    left: 180px;
+    border: none;   
+}
+
+.cabecalho-texto {
+    width: 28rem;
+    height: 10rem;  
+    /*background-color: rgb(97, 152, 201);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative;
+    top: 160px;
+    color: #ffffff;    
+}
+
+.cabecalho-texto h1 {
+    font-size: 31px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 53.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    min-height: 257.7rem;
+    margin-top: 4rem
+    
+}
+
+.acomodacoes {
+    width: 100%;
+    min-height: 257.7rem;
+    /*background-color: #f52e2e;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;   
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    color: #8d8d8d;
+    padding: 0 10px;    
+}
+
+.acomodacoes-texto {
+    width: 100%;
+    height: 28.3rem;
+   /* background-color: #f75252;*/
+    text-align: justify;
+    margin-bottom: -1rem;    
+}
+
+.acomodacoes-texto h3 {
+    font-size: 38px;
+    color: #2a2c36;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;    
+}
+
+.acomodacoes-tipo {
+    width: 100%;
+    height: 200rem;
+ /*   background-color: blueviolet;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    position: relative;      
+}
+
+.standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo {
+    width: 100%;
+    height: 200rem;
+   /* background-color: green;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    flex-direction: column;
+    margin-top: 4rem;          
+}
+
+.carousel, .carousel-inner {
+    width: 26.9rem;
+    height: 20rem;
+   /* background-color: yellow; */
+}
+
+.carousel-control-next-standard, .carousel-control-next-chale, .carousel-control-next-luxo {
+    position: absolute;
+    right: 8.5rem;
+    top: 15rem;
+    background-color: transparent;
+    border: none;      
+}
+
+.carousel-control-prev-semi-luxo, .carousel-control-prev-sl-sacada {
+    position: absolute;
+    left: 8.5rem;
+    top: 15rem;
+    background-color: transparent;
+    border: none;
+}
+
+#quarto1-slide1,#quarto1-slide2, #quarto1-slide3,#quarto1-slide4, #quarto1-slide5, #quarto2-slide1,#quarto2-slide2, #quarto2-slide3,#quarto2-slide4,#quarto2-slide5, #quarto3-slide1,#quarto3-slide2, #quarto3-slide3,#quarto3-slide4, #quarto3-slide5, #quarto3-slide6, #quarto4-slide1,#quarto4-slide2, #quarto4-slide3,#quarto4-slide4, #quarto4-slide5,#quarto5-slide1,#quarto5-slide2, #quarto5-slide3,#quarto5-slide4, #quarto5-slide5, #quarto5-slide6 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.4611.jpeg);
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    width: 100%;
+    height: 20rem;    
+}
+
+#quarto1-slide2 {
+    background-image: url(imagens/acomodacoes/st11.jpg);    
+}
+
+#quarto1-slide3 {
+    background-image: url(imagens/acomodacoes/st22.jpg);    
+}
+
+#quarto1-slide4 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.09.481.jpeg);    
+}
+
+#quarto1-slide5 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.35.031.jpeg);    
+}
+
+#quarto2-slide1 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.26.400.jpeg);      
+}
+
+#quarto2-slide2 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5511.jpeg);    
+}
+
+#quarto2-slide3 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.26.3911.jpeg);    
+}
+
+#quarto2-slide4 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.10.111.jpeg);    
+}
+
+#quarto2-slide5 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5622.jpeg);    
+}
+
+#quarto3-slide1 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.27.499.jpeg);        
+}
+
+#quarto3-slide2 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.2911.jpeg);    
+}
+
+#quarto3-slide3 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.3011.jpeg);    
+}
+
+#quarto3-slide4 {
+    background-image: url(imagens/acomodacoes/ch44.jpg);    
+}
+
+#quarto3-slide5 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.11.0822.jpeg);    
+}
+
+#quarto3-slide6 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.3122.jpeg);    
+}
+
+#quarto4-slide1 {
+    background-image: url(imagens/acomodacoes/es11.jpg);        
+}
+
+#quarto4-slide2 {
+    background-image: url(imagens/acomodacoes/es33.jpg);    
+}
+
+#quarto4-slide3 {
+    background-image: url(imagens/acomodacoes/es66.jpg);    
+}
+
+#quarto4-slide4 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5444.jpeg);    
+}
+
+#quarto4-slide5 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.27.533.jpeg); 
+    background-position: center center;    
+} 
+
+#quarto5-slide1 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2033.jpeg);        
+}
+
+#quarto5-slide2 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.25.099.jpeg);
+    background-position: center center;      
+}
+
+#quarto5-slide3 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.25.1111.jpeg);    
+}
+
+#quarto5-slide4 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.12.071.jpeg);    
+}
+
+#quarto5-slide5 {
+    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.12.082\ \(1\).jpeg);    
+}
+
+#quarto5-slide6 {
+    background-image: url(imagens/acomodacoes/20210504_1236222.jpg);   
+    background-position: center center;   
+}
+
+
+.quarto1, .quarto2, .quarto3, .quarto4, .quarto5  {
+    width: 26.9rem;
+    height: 21.5rem;
+   /* background-color: rgb(245, 134, 31);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;   
+}
+
+.quarto1-descricao, .quarto2-descricao, .quarto3-descricao, .quarto4-descricao, .quarto5-descricao {
+    width: 100%;
+    height: 21.5rem;
+    /*background-color: #2b1414;*/
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;    
+    text-align: justify;  
+    margin-top: 1rem;  
+}
+
+.quarto1-descricao-texto h5, .quarto2-descricao-texto h5, .quarto3-descricao-texto h5, .quarto4-descricao-texto h5, .quarto5-descricao-texto h5 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gilda Display', serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #2a2c36;
+    padding-bottom: 5px;
+    padding-top: 18px;
+}
+
+.quarto1-descricao-icones, .quarto2-descricao-icones, .quarto3-descricao-icones, .quarto4-descricao-icones, .quarto5-descricao-icones {
+    width: 26.9rem;
+    height: 12rem;
+    display: flex;
+    justify-content: left;
+    align-items: left;  
+    margin-top: 10px;  
+}
+
+.icones1-col1, .icones1-col2, .icones2-col1, .icones2-col2, .icones3-col1, .icones3-col2, .icones4-col1, .icones4-col2, .icones5-col1, .icones5-col2 {
+    width: 50%;
+    height: 12rem;
+   /* background-color: #636363;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}    
+
+.icones1-col2 {
+  position: relative;
+  left: 13.5rem;
+  top: -12rem;
+  color: #C6AD8C;
+  font-size: 28px;    
+}
+
+.quarto1-icone, .quarto2-icone, .quarto3-icone, .quarto4-icone, .quarto5-icone {
+    width: 100%;
+    height: 4rem;
+    /*background-color: #7e6d4c;*/
+    position: relative;    
+}
+
+.quarto2-icone p, .quarto3-icone p, .quarto4-icone p, .quarto5-icone p {
+    position: absolute;
+    top: -27px;
+}
+
+.quarto1-descricao-icones p, .quarto2-descricao-icones p, .quarto3-descricao-icones p, .quarto4-descricao-icones p, .quarto5-descricao-icones p, .tv, .quarto1-icone p {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+    color: #2a2c36;
+    font-weight:normal;
+    padding-left: 47px;
+    position: relative;
+    bottom: 18px;    
+}    
+
+.quarto1-descricao-icones i, .quarto2-descricao-icones i, .quarto3-descricao-icones i, .quarto4-descricao-icones i, .quarto5-descricao-icones i {
+    font-size: 28px;
+    color: #C6AD8C;    
+}
+
+.rodape {
+    width: 100%;
+    height: 38rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;   
+    margin-top: 4rem;   
+}
+
+.rodape-conteudo {
+    width: 100%;
+    height: 35rem;
+   /* background-color: #04110e;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;    
+    padding: 0 10px;
+}
+
+.rodape-logo {
+    width: 210px;
+    height: 16vh; 
+    background-image:url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    top: 0;
+}
+
+.rodape-contato {
+    width: 100%;
+    height: 12rem; 
+   /* background-color: #2b1414;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;   
+}
+
+.rodape-localizacao, .rodape-email, .rodape-whatsapp, .rodape-telefone {
+    width: 100%;
+    height: 5rem;  
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+}
+
+.rodape-idiomas {
+    width: 100%;
+    height: 6.6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    gap: 5px;
+   /* background-color: #7e6d4c;  */ 
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+    color: #c3c3ac;    
+    display: flex;
+    justify-content: left;
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+   margin-top: -1px;
+}
+
+.rodape-idiomas p, .rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a { 
+    font-size: 13px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: #c3c3ac;    
+}
+
+.rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a {
+    padding-left: -10px;
+}
+
+.rodape-localizacao a:hover, .rodape-whatsapp a:hover, .rodape-telefone a:hover, .rodape-email a:hover {
+    color: #7e6d4c;
+}
+
+.rodape-redes-sociais {
+    width: 100%;
+    height: 6.4rem; 
+   /* background-color: #55432b; */
+    display: flex;      
+    gap: 5px;
+    color: #c3c3ac; 
+    position: relative;  
+}
+
+.rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #c3c3ac;
+}
+
+.rodape-redes-sociais a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;      
+ }
+
+.rodape-redes-sociais i {
+    font-size: 18px;
+    color: #c3c3ac; 
+    position: absolute;  
+    left: 0; 
+    top: 40px;    
+}
+
+.rodape-redes-sociais i:hover {
+    color: #7e6d4c;
+}
+
+#instagram-rodape {
+    top: 80px;
+}
+
+.rodape-copyrigth {
+    width: 100%;
+    height: 2rem;
+    background-color: #030c09;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+    font-size: 8px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.3px;   
+}
+
+
+
+/*
 header {
     width: 100%;
     min-height: 41rem;  
@@ -28,6 +568,7 @@ header {
     justify-content:flex-start;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     color: #fff;   
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg);
     background-repeat: no-repeat;
@@ -55,12 +596,13 @@ header {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 84px;
+    
 }
 
 .cabecalho-superior {
     width: 100%;
     height: 2.5rem;
-   /* background-color: rgb(15, 138, 160);*/
+   /* background-color: rgb(15, 138, 160);
     display: flex;   
     justify-content: space-between; 
     align-items: center;
@@ -103,7 +645,7 @@ header {
 .nav1, .nav2 {
    width: 25rem;
    height: 3.9rem;
- /*  background-color: palevioletred;*/
+ /*  background-color: palevioletred;
    display: flex;
    gap: 2rem;
    position: absolute;
@@ -185,7 +727,7 @@ main {
 .acomodacoes-texto {
     width: 100%;
     height: 21rem;
-   /* background-color: #f75252;*/
+   /* background-color: #f75252;
     text-align: justify;
     margin-bottom: -1rem;
     
@@ -202,7 +744,7 @@ main {
 .acomodacoes-tipo {
     width: 100%;
     height: 190rem;
-   /* background-color: blueviolet;*/
+   /* background-color: blueviolet;
     display: flex;
     justify-content: flex-start;
     align-items:flex-start;
@@ -214,7 +756,7 @@ main {
 .standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo {
     width: 100%;
     height: 32rem;
-   /* background-color: green;*/
+   /* background-color: green;
     display: flex;
     justify-content: flex-start;
     align-items: center;   
@@ -402,13 +944,14 @@ main {
 .carousel, .carousel-inner {
     width: 48rem;
     height: 32rem;
-   /* background-color: yellow;  */
+   /* background-color: yellow;  
+
 }
 
 .quartos1, .quarto2, .quarto3, .quarto4, .quarto5  {
     width: 29rem;
     height: 28rem;
-    /*background-color: brown;*/
+    /*background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -437,7 +980,7 @@ main {
     letter-spacing: 0.5px;
     text-align: center;
     color: #2a2c36;
-   /* padding-bottom: 5px;*/
+   /* padding-bottom: 5px;
     padding-top: 16px;
 }
 
@@ -460,7 +1003,7 @@ main {
 .icones1-col1, .icones1-col2, .icones2-col1, .icones2-col2, .icones3-col1, .icones3-col2, .icones4-col1, .icones4-col2, .icones5-col1, .icones5-col2 {
     width: 50%;
     height: 12rem;
-   /* background-color: #636363;*/
+   /* background-color: #636363;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -478,7 +1021,7 @@ main {
 .quarto1-icone, .quarto2-icone, .quarto3-icone, .quarto4-icone, .quarto5-icone {
     width: 100%;
     height: 4rem;
-   /* background-color: #7e6d4c;*/
+   /* background-color: #7e6d4c;
     position: relative;    
 }
 .quarto1-icone p, .quarto2-icone p, .quarto3-icone p, .quarto4-icone p, .quarto5-icone p {
@@ -651,6 +1194,29 @@ main {
     color: #565656;
     font-size: 8px;
     font-family: 'Hind', sans-serif;
-    letter-spacing: 0.3px;
-   
+    letter-spacing: 0.3px;   
 }
+
+@media screen (min-width: 480px) {
+    header {
+        width: 100%;
+        min-height: 23rem;  
+        font-family: 'Hind', sans-serif;
+        font-size: 11px;
+        letter-spacing: normal;
+        line-height: normal;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;   
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+}
+    
+    
+
