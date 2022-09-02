@@ -88,13 +88,62 @@ header {
     background-size: contain;
     background-repeat: no-repeat; 
     position: absolute; 
-    top: -16px    
+    top: -16px;   
 }
 
 .navbar-toggler {
     position: absolute;
     left: 180px;
     border: none;   
+}
+
+.navbar-toggler:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+.collapse navbar-collapse, .nav1, .nav2 {
+    width: 30rem;
+    height: 11rem;
+    background-color: #ffffff;
+    position: relative;  
+}
+
+.nav1 {
+    position: absolute;
+    top: 25px;
+    right: -214px;
+    padding-top: 15px;
+}
+
+.nav2 {
+    height: 11.5rem;
+    position: absolute;
+    top: 162px;
+    right: -214px;
+    padding-top: 5px;
+}
+
+.nav-item1, .nav-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.nav-item1 a, .nav-item2 a {
+    color: #474747;
+}
+
+.nav-item1 a:hover,
+.nav-item2 a:hover {   
+    color: #916632; 
+    text-decoration:underline;      
 }
 
 .cabecalho-texto {

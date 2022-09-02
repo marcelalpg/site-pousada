@@ -20,7 +20,437 @@ body {
 
 header {
     width: 100%;
-    min-height: 25rem;  
+    height: 30rem;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Hind', sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 6rem;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    
+}
+
+.cabecalho a, .cabecalho i {
+    text-decoration: none;
+    font-size: 12.5px; 
+    color: #ffffff;   
+}
+
+.cabecalho-superior {
+    width: 100%;
+    height: 3rem;
+   /* background-color: rgb(4, 81, 95);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 5px;       
+}
+
+.telefones {
+    padding-bottom: 11px;
+}
+
+.cabecalho-inferior {
+    width: 100%;
+    height: 2.4rem;
+    background-color: #ffffff;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: 16vh;     
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    position: absolute; 
+    top: -16px;   
+}
+
+.navbar-toggler {
+    position: absolute;
+    left: 170px;
+    border: none;   
+}
+
+.navbar-toggler:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+.collapse navbar-collapse, .nav1, .nav2 {
+    width: 30rem;
+    height: 11rem;
+    background-color: #ffffff;
+    position: relative;  
+}
+
+.nav1 {
+    position: absolute;
+    top: 25px;
+    right: -214px;
+    padding-top: 15px;
+}
+
+.nav2 {
+    height: 11.5rem;
+    position: absolute;
+    top: 162px;
+    right: -214px;
+    padding-top: 5px;
+}
+
+.nav-item1, .nav-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.nav-item1 a, .nav-item2 a {
+    color: #474747;
+}
+
+.nav-item1 a:hover,
+.nav-item2 a:hover {   
+    color: #916632; 
+    text-decoration:underline;      
+}
+
+.container-fluid {
+    width: 23rem;
+    height: 10rem;  
+ /*background-color: rgb(97, 152, 201);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative;
+    top: 160px;
+    color: #ffffff;    
+}
+
+.slide1-texto, .slide2-texto, .slide3-texto, .slide4-texto {
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 8px;
+    line-height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    color:#ffffff;
+}
+
+.slide1-texto1 {
+    font-size: 23px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.4px;
+    line-height: 34px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.slide1-texto2 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 53.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carousel, .carousel-inner, .carousel-item {
+    width: 100%;
+    height: 30rem;      
+    position: relative;
+    background-color: #05fc1d;   
+}    
+
+#slide1 {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/home/DSC0198744.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slide2 {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/home/20200327_12033922.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slide3 {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/home/20211012_1807477.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slide4 {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/20201010_1923111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    min-height: 254.2rem;
+    background-color: blueviolet;
+    margin-top: 5rem;
+}
+
+.sobre {
+    width: 100%;
+    height: 56.5rem;
+    background-color: #f58e8e;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;  
+         
+}
+
+.sobre-conteudo {
+    width: 100%;
+    height: 56.5rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    position: relative;
+    padding: 0 40px;
+}
+
+.sobre-texto {
+    width: 100%;
+    height: 31.5rem;
+    background-color: brown;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    color: #8d8d8d;
+    line-height: 25px;   
+    text-align: justify;    
+}
+
+.sobre-texto h3 {
+    font-size: 38px;
+    color: #2a2c36;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -7px;     
+}
+
+.sobre-texto h2 {
+    font-family: 'Gilda Display', serif;
+    font-size: 25px;
+    line-height: 35px;
+    padding: 20px 0;
+    color: #565656;
+}
+
+.sobre-img {
+    width: 100%;
+    height: 25rem;
+    background-color: rgb(183, 131, 231);
+    position: relative;
+    padding: 0 40px;    
+    object-fit: cover;
+}
+
+.sobre-img1, .sobre-img2 {
+    width: 48%;
+    height: 250px;
+    position: absolute;    
+}
+
+.sobre-img1 {
+    left: 0;
+    top: 150px;
+    background-color: blue;
+    background-image: url(imagens/home/20201030_1357499.jpg);
+    background-size: cover;    
+}
+
+.sobre-img2 {
+    position: absolute;
+    background-color: yellow;
+    right:0;
+    top: 40px;
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.31.jpeg);
+    background-size: cover;
+}
+
+.reserva {
+    width: 100%;
+    height: 4rem;
+    background-color: chocolate;
+    position: relative;
+}
+
+.reserva p {
+    position: absolute;
+    left: 50px;
+    top: 40px
+    font-size: 18px;
+}
+
+.reserva h5 {
+    font-size: 21px;
+    color: #6a5134;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.reserva i {
+    font-size: 36px;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    color: #C6AD8C;    
+}
+
+.acomodacoes {
+    width: 100%;
+    height: 80rem;
+    background-color: #f1b54d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    flex-direction: column; 
+    margin-top: 5rem;   
+}
+
+.acomodacoes-titulo {
+    width: 100%;
+    height: 3rem;
+  background-color: burlywood;      
+    color: #2a2c36;
+    position: relative;
+    padding: 0 40px;       
+}
+
+.acomodacoes-titulo h3 {
+    font-size: 38px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;         
+}
+
+.acomodacoes-linha1, .acomodacoes-linha2 {
+    width: 100%;
+    height: 35rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    align-items:flex-start;
+    background-size: cover;
+    padding:0 40px;
+    position: relative;  
+    top: -50px;
+}
+
+.acomodacoes-tipo1, .acomodacoes-tipo2, .acomodacoes-tipo3, .acomodacoes-tipo4, .acomodacoes-tipo5 {
+    width: 100%;
+    height: 280px;
+    background-color: #222222;
+    background-size: cover; 
+    transition: all 0.2s;     
+}
+
+.acomodacoes-tipo1:hover, .acomodacoes-tipo2:hover, .acomodacoes-tipo3:hover, .acomodacoes-tipo4:hover, .acomodacoes-tipo5:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.acomodacoes-tipo1 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.471.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.471.jpeg);
+    background-size: cover;
+    background-position: center center;    
+}
+
+.acomodacoes-tipo2 {
+   background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.561.jpeg);
+ background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.561.jpeg);
+    background-size: cover;
+    background-position: center center;   
+}
+
+.acomodacoes-tipo3 {
+   background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.311.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.311.jpeg);
+    background-size: cover;
+    background-position: center center;     
+}
+
+.acomodacoes-tipo4 {
+    background-image: url(imagens/20201028_151257.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/20201028_151257.jpg); 
+    background-size: cover;
+    background-position: bottom center;   
+}
+
+.acomodacoes-tipo5 {
+    background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.18.jpeg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.18.jpeg); 
+    background-size: cover;
+    background-position: top center;
+}
+
+.quarto-linha1, .quarto-linha2  {
+    width: 290px;
+    height: 30px;
+    background-color: #05fc1d;
+    position: relative;
+    top: 180px;
+}
+
+.quarto-linha2 {
+    top: 235px;
+}
+
+.quarto-linha1 a, .quarto-linha2 a {
+    font-size: 25px;
+    font-family: 'Gilda Display', serif;
+    color: #ffffff;
+    text-decoration: none;    
+}
+
+
+/*header {
+    width: 100%;
+    min-height: 41rem;  
     font-family: 'Hind', sans-serif;
     font-size: 13px;
     letter-spacing: 0.2px;
@@ -59,7 +489,7 @@ header {
 .cabecalho-superior {
     width: 100%;
     height: 2.5rem;
-   /* background-color: rgb(15, 138, 160);*/
+   /* background-color: rgb(15, 138, 160);
     display: flex;   
     justify-content: space-between; 
     align-items: center;
@@ -101,7 +531,7 @@ header {
 .nav1, .nav2 {
    width: 25rem;
    height: 3.9rem;
- /*  background-color: palevioletred;*/
+ /*  background-color: palevioletred;
    display: flex;
    gap: 2rem;
    position: absolute;
@@ -140,7 +570,7 @@ header {
 .cabecalho-texto {
     width: 50rem;
     height: 15rem;
-   /* background-color: yellow;*/
+   /* background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +583,7 @@ header {
 main {
     width: 100%;
     min-height: 254.2rem;
-   /* background-color: blueviolet;*/
+   /* background-color: blueviolet;
     margin-top: 7rem;
 }
 
@@ -161,7 +591,7 @@ main {
     width: 100%;
     height: 41rem;      
     position: relative;
-   /* background-color: #05fc1d;*/    
+   /* background-color: #05fc1d;   
 }    
 
 #slide1 {
@@ -188,7 +618,7 @@ main {
     background-size: cover;
 }
 
-/* text css above hero image*/
+/* text css above hero image
 .hero_title {
     font-size: 2.2rem;
     font-family: 'Hind', sans-serif;
@@ -205,7 +635,7 @@ main {
     font-weight: bold;
     text-transform: uppercase;
    /* font-size: 5.5rem;
-    font-weight: bold;*/
+    font-weight: bold;
     padding-top: 50px;   
 }
 
@@ -232,7 +662,7 @@ main {
 .sobre {
     width: 100%;
     height: 40.5rem;
-   /* background-color: #f58e8e;*/
+   /* background-color: #f58e8e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +672,7 @@ main {
 .sobre-conteudo {
     width: 100%;
     height: 40rem;
-  /*  background-color: aquamarine;*/
+  /*  background-color: aquamarine;
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
@@ -252,7 +682,7 @@ main {
 .sobre-texto {
     width: 40%;
     height: 40rem;
-  /*  background-color: brown;*/
+  /*  background-color: brown;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
     color: #8d8d8d;
@@ -282,7 +712,7 @@ main {
 .sobre-img {
     width: 60%;
     height: 40rem;
- /*   background-color: blueviolet;*/
+ /*   background-color: blueviolet;
     position: relative;
     padding-left: 8rem;
     padding-right: 2rem;
@@ -301,14 +731,14 @@ main {
     position: absolute;
     bottom: 5px;
     left: 60px;
-   /* background-color: blue;*/
+   /* background-color: blue;
     background-image: url(imagens/home/20201030_1357499.jpg);
     background-size: cover;    
 }
 
 .sobre-img2 {
     position: absolute;
-    /*background-color: yellow;*/
+    /*background-color: yellow;
     right: 130px;
     background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.31.jpeg);
     background-size: cover;
@@ -317,7 +747,7 @@ main {
 .reserva {
     width: 25rem;
     height: 6.5rem;
-    /*background-color: chocolate;*/
+    /*background-color: chocolate;
     position: relative;
 }
 
@@ -325,7 +755,7 @@ main {
     position: absolute;
     left: 50px;
     top: 10px
-  /*  font-size: 15px;*/
+  /*  font-size: 15px;
 }
 
 .reserva h5 {
@@ -349,7 +779,7 @@ main {
 .acomodacoes {
     width: 100%;
     height: 65rem;
-   /* background-color: #f1b54d;*/
+   /* background-color: #f1b54d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,7 +790,7 @@ main {
 .acomodacoes-titulo {
     width: 100%;
     height: 5rem;
-  /*background-color: burlywood;   */     
+  /*background-color: burlywood;      
     color: #2a2c36;
     display: inline-flex;
     padding-left: 8rem;
@@ -384,7 +814,7 @@ main {
 .acomodacoes-linha1 {
     width: 100%;
     height: 30rem;
- /*   background-color: aquamarine;*/
+ /*   background-color: aquamarine;
     display: flex;
     justify-content: space-between;
     gap: 25px;
@@ -399,13 +829,13 @@ main {
 .acomodacoes-tipo1, .acomodacoes-tipo2, .acomodacoes-tipo3 {
     width: 350px;
     height: 450px;
- /* background-color: #222222;*/
+ /* background-color: #222222;
     background-size: cover; 
     transition: all 0.2s;
 }
 
 .acomodacoes-tipo1 {
-   /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.471.jpeg);*/
+   /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.471.jpeg);
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.471.jpeg);
     background-size: cover;
     background-position: center center;    
@@ -417,28 +847,28 @@ main {
 }
 
 .acomodacoes-tipo2 {
-   /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.561.jpeg);*/
+   /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.561.jpeg);
  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.561.jpeg);
     background-size: cover;
     background-position: center center;   
 }
 
 .acomodacoes-tipo3 {
-  /*  background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.311.jpeg);*/
+  /*  background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.311.jpeg);
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.311.jpeg);
     background-size: cover;
     background-position: center center;     
 }
 
 .acomodacoes-tipo4 {
- /*   background-image: url(imagens/20201028_151257.jpg);*/
+ /*   background-image: url(imagens/20201028_151257.jpg);
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/20201028_151257.jpg); 
     background-size: cover;
     background-position: bottom center;   
 }
 
 .acomodacoes-tipo5 {
-   /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.18.jpeg);*/
+   /* background-image: url(imagens/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.18.jpeg);
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.18.jpeg); 
     background-size: cover;
     background-position: top center;
@@ -447,7 +877,7 @@ main {
 .acomodacoes-linha2 {
     width: 100%;
     height: 23rem;
-  /*  background-color: rgb(36, 61, 53);*/
+  /*  background-color: rgb(36, 61, 53);
     display: flex;
     justify-content: space-between;
     gap: 25px;
@@ -462,7 +892,7 @@ main {
     height: 350px;
     overflow: hidden;
     transition: all 0.2s;
-  /*  background-color: #222222;*/
+  /*  background-color: #222222;
 }
 
 .quarto {
@@ -471,18 +901,18 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  /*  background-color: #6a5134;*/
+  /*  background-color: #6a5134;
     position: relative;
 }
 
 .quarto-linha1 a:hover {
-/*    background-color: rgba(0, 0, 0, 0.6);*/
+/*    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .quarto-linha1 {
     width: 250px;
     height: 100px;
-  /*  background-color: #05fc1d;*/
+  /*  background-color: #05fc1d;
     position: absolute;
     top: 350px;
     left: 15px; 
@@ -499,7 +929,7 @@ main {
 .quarto-linha2 {
     width: 450px;
     height: 100px;
-   /* background-color: #112914;*/
+   /* background-color: #112914;
     position: absolute;
     top: 250px;
     left: 15px;
@@ -509,7 +939,7 @@ main {
 .linha1 {
     width: 80px;
     height: 30px;
-  /*  background-color: red;*/
+  /*  background-color: red;
     position: absolute;
     top: 410px;
     left: 15px; 
@@ -519,7 +949,7 @@ main {
 .linha2 {
     width: 80px;
     height: 30px;
-  /*  background-color: red;*/
+  /*  background-color: red;
     position: absolute;
     top: 310px;
     left: 15px; 
@@ -570,7 +1000,7 @@ main {
 .nossos-servicos {
     width: 100%;
     height: 44rem;
-   /* background-color: #743939;*/
+   /* background-color: #743939;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -586,7 +1016,7 @@ main {
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
- /*   background-color: #6a5134;*/
+ /*   background-color: #6a5134;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -599,7 +1029,7 @@ main {
 .tipos-servicos1, .tipos-servicos2 {
     width: 100%;
     height: 15rem;
-   /* background-color: brown;*/
+   /* background-color: brown;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -612,12 +1042,12 @@ main {
 .estacionamento, .piscina, .wifi, .cafe-manha, .playground, .frigobar {
     width: 350px;
     height: 220px;
- /*   background-color: blanchedalmond;*/
+ /*   background-color: blanchedalmond;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-   /* gap: 10px;*/
+   /* gap: 10px;
     padding: 15px;
     font-size: 15px;
     font-family: 'Barlow Condensed', sans-serif;
@@ -645,9 +1075,9 @@ main {
 }
 
 #servicos:hover {
-   /* background-color: #04110e;*/
+   /* background-color: #04110e;
     border: 1px solid #b1aeae;
-   /* color: #C6AD8C;*/
+   /* color: #C6AD8C;
 }
 
 .icone {
@@ -656,7 +1086,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-   /* background-color: red;*/
+   /* background-color: red;
 }
 
 .balanco{
@@ -673,7 +1103,7 @@ main {
 .texto {
     width: 100%;
     height: 120px;
-  /*  background-color: gold;*/
+  /*  background-color: gold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -722,7 +1152,7 @@ main {
     background-repeat: no-repeat;
     background-position: top center;
     margin-top: 6.1rem;
- /*   background-color: #04110e;*/   
+ /*   background-color: #04110e;   
 }
 
 .faca-reserva {
@@ -739,7 +1169,7 @@ main {
 .faca-reserva-texto {
     width: 70%;
     height: 15rem;
-    /*background-color: aqua;*/
+    /*background-color: aqua;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -757,7 +1187,7 @@ main {
     width: 40%;
     height: 15rem;
     background-color: #ffffff;
-  /*  position: absolute;*/
+  /*  position: absolute;
     margin-top: 1.6rem;
     padding: 25px;
     font-family: 'Barlow Condensed', sans-serif;
@@ -805,13 +1235,13 @@ main {
     height: 44rem;
     padding-top: 120px;   
     padding-bottom: 120px;
-   /* background-color: #a87b2c;    */
+   /* background-color: #a87b2c;    
 }
 
 .galeria-titulo a {
     width: 100%;
     height: 6rem;    
- /*   background-color: aquamarine;*/
+ /*   background-color: aquamarine;
     display: flex;
     justify-content:left;
     align-items: center;
@@ -831,7 +1261,7 @@ main {
 .galeria-fotos {
     width: 100%;
     height: 30rem;
-   /* background-color: #6a5134;*/
+   /* background-color: #6a5134;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -846,19 +1276,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-  /*  background-color: chartreuse;*/
+  /*  background-color: chartreuse;
 }
 
 .foto1, .foto5, .foto11, .foto14 {
     width: 300px;
     height: 15rem;
-   /* background-color: azure;*/
+   /* background-color: azure;
 }
 
 .foto2, .foto3, .foto4, .foto7, .foto8, .foto9, .foto10, .foto12, .foto13 {
     width: 187px;
     height: 15rem;
-   /* background-color: aqua;*/
+   /* background-color: aqua;
 }
 
 .foto1 {
@@ -909,7 +1339,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s;
-}*/
+}
 
 .foto7 {
     background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.099.jpeg);
