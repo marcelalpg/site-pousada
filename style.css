@@ -20,7 +20,7 @@ body {
 
 header {
     width: 100%;
-    height: 37rem;
+    height: 40rem;
     /*background-color: aqua;*/
     display: flex;
     justify-content: flex-start;
@@ -42,8 +42,7 @@ header {
     align-items: center;
     flex-direction: column;
     position: fixed;
-    z-index: 99;
-    
+    z-index: 99;    
 }
 
 .cabecalho a, .cabecalho i {
@@ -61,7 +60,7 @@ header {
     align-items: center;
     flex-direction: column;
     margin-bottom: 10px;
-    margin-top: 5px;       
+    margin-top: 10px;       
 }
 
 .telefones {
@@ -93,10 +92,10 @@ header {
 .menu-btn {
     width: 100%;
     height: 2rem;
-    background-color: #05fc1d;
+    /*background-color: #05fc1d;*/
     position: absolute;
     display: block;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 4px;   
 }
 
@@ -137,7 +136,7 @@ header {
 .container-fluid {
     width: 80%;
     height: 10rem;  
-    background-color: rgb(97, 152, 201);
+  /*  background-color: rgb(97, 152, 201);*/
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -150,7 +149,7 @@ header {
     width: 100%;
     height: 37rem;      
     position: relative;
-    background-color: #05fc1d;   
+  /*  background-color: #05fc1d;   */
 }   
 
 .slide1-texto, .slide2-texto, .slide3-texto, .slide4-texto {
@@ -162,7 +161,7 @@ header {
     letter-spacing: 5px;
     text-align: center;
     color:#ffffff;
-    background-color: #f58e8e;    
+    /*background-color: #f58e8e;  */  
 }
 
 .slide1-texto1 {
@@ -209,28 +208,26 @@ header {
 
 main {
     width: 100%;
-    min-height: 254.2rem;
-    background-color: blueviolet;
-   
+    min-height: 380rem;
+ /* background-color: blueviolet;  */ 
     margin:auto;
 }
 
 .sobre {
     width: 100%;
     height: 56.5rem;
-    background-color: #f58e8e;
+   /* background-color: #f58e8e;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column; 
-    margin-top: 6rem; 
-         
+    margin-top: 3rem;         
 }
 
 .sobre-conteudo {
     width: 100%;
     height: 56.5rem;
-    background-color: aquamarine;
+   /* background-color: aquamarine;*/
     display: flex;
     justify-content: flex-start;
     align-items:flex-start;
@@ -242,7 +239,7 @@ main {
 .sobre-texto {
     width: 100%;
     height: 31.5rem;
-    background-color: brown;
+   /* background-color: brown;*/
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
     color: #8d8d8d;
@@ -269,7 +266,7 @@ main {
 .sobre-img {
     width: 100%;
     height: 25rem;
-    background-color: rgb(183, 131, 231);
+   /* background-color: rgb(183, 131, 231);*/
     position: relative;
     padding: 0 40px;    
     object-fit: cover;
@@ -284,14 +281,14 @@ main {
 .sobre-img1 {
     left: 0;
     top: 150px;
-    background-color: blue;
+   /* background-color: blue;*/
     background-image: url(imagens/home/20201030_1357499.jpg);
     background-size: cover;    
 }
 
 .sobre-img2 {
     position: absolute;
-    background-color: yellow;
+   /* background-color: yellow;*/
     right:0;
     top: 40px;
     background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.31.jpeg);
@@ -301,7 +298,7 @@ main {
 .reserva {
     width: 100%;
     height: 4rem;
-    background-color: chocolate;
+   /* background-color: chocolate;*/
     position: relative;
 }
 
@@ -333,44 +330,44 @@ main {
 .acomodacoes {
     width: 100%;
     height: 144.6rem;
-    background-color: #f1b54d;
+   /* background-color: #f1b54d;*/
     display: flex;
     justify-content: center;
     align-items: center;
     gap:45px;
     flex-direction: column; 
-    margin-top: 6rem; 
-    
+    margin-top: 6rem;     
     position: relative;
 }
 
 .acomodacoes > h3 {
     width: 100%;
     height: 3rem;
-    background-color: #6a5134;
+   /* background-color: #6a5134;*/
     font-size: 38px;
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;  
-    padding: 0 40px;       
+    padding: 0 40px; 
+    color: #2a2c36;      
 }
 
 .acomodacoes-tipos {
     width: 100%;
     height: 136.8rem;
-    background-color: #565656;
+   /* background-color: #565656;*/
     display: flex;
     justify-content: start;
     align-items: flex-start;
     flex-direction: column;
     gap: 45px;  
-    margin-top: 20px;  
+   /* margin-top: 20px; */ 
 }
 
 .acomodacoes-linha1, .acomodacoes-linha2 {
     width: 100%;
     height: 80.8rem;
-    background-color: #05fc1d;
+    /*background-color: #05fc1d;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -386,7 +383,7 @@ main {
 .acomodacoes-tipo1, .acomodacoes-tipo2, .acomodacoes-tipo3, .acomodacoes-tipo4, .acomodacoes-tipo5 {
     width: 100%;
     height: 25rem;
-    background-color: rgb(113, 165, 165);
+   /* background-color: rgb(113, 165, 165);*/
     background-size: cover; 
     transition: all 0.2s;
 }
@@ -438,7 +435,7 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #f8acac;
+   /* background-color: #f8acac;*/
     margin-top: 20.5rem;
     padding: 0 40px;   
 }
@@ -452,7 +449,7 @@ main {
 }
 
 .video-pousada, .video-entrada-pousada {
-    background-color: #ffffff;
+   /* background-color: #ffffff;*/
     width: 100%;
     height: 25rem;      
     position: relative; 
@@ -468,13 +465,14 @@ main {
 
 .nossos-servicos {
     width: 100%;
-    height: 120rem;
-    background-color: #743939;
+    height: 107rem;
+  /*  background-color: #743939;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 0 40px;
+    gap: 28px;
     position: relative; 
     margin-top: 6rem;    
 }
@@ -482,26 +480,523 @@ main {
 .nossos-servicos > h3{
     width: 100%;
     height: 3rem;
-    background-color: #6a5134;
+   /* background-color: #6a5134;*/
     font-size: 38px;
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 1px;
-    text-transform: uppercase;  
-   /* padding: 0 40px; */   
+    text-transform: uppercase; 
+    color: #2a2c36; 
+    
 }
 
 .tipos-servicos1, .tipos-servicos2 {
     width: 100%;
-    height: 60rem;
-    background-color: rgb(138, 138, 201);
+    height: 53rem;
+   /* background-color: rgb(138, 138, 201);*/
     display: flex;
     justify-content: flex-start;
     align-items: center;    
     gap: 45px;
     flex-wrap: wrap;
-    margin-top: 20px;
-   
+    margin-top: 20px;   
 }
+
+.estacionamento, .piscina, .wifi, .cafe-manha, .playground, .frigobar {
+    width: 100%;
+    height: 220px;
+    /*background-color: blanchedalmond;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+     gap: 10px;
+    padding: 18px;
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #636363;
+    border: 0.5px solid #e9e9e9;
+    position: relative;
+}
+
+.estacionamento i, .piscina i, .wifi i, .cafe-manha i, .playground i, .frigobar i {
+    font-size: 37px;
+    color: #C6AD8C;
+}
+
+.playground img {
+    width: 68px;
+    height: 68px;    
+}
+
+.estacionamento h4, .piscina h4, .wifi h4, .cafe-manha h4, .playground h4, .frigobar h4 {
+    font-size: 24px;
+    font-family: 'Gilda Display', serif;
+    color: #222222;
+}
+
+#servicos:hover {
+    background-color: #04110e;
+    border: 1px solid #b1aeae;
+    color: #C6AD8C;
+}
+
+.icone {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  background-color: red;*/
+}
+
+.balanco{
+    position: absolute;
+    top: 12px;
+}
+
+#frigobar {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+}
+
+.texto {
+    width: 100%;
+    height: 120px;
+    /*background-color: gold;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.estacionamento-titulo {
+    position: absolute;
+    top: 95px;
+}
+
+.faca-sua-reserva {
+    width: 100%;
+    height: 23rem;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/home/20210504_1238066.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 6.1rem;
+ /*   background-color: #04110e;  */ 
+}
+
+.faca-reserva {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    color:#ffffff;
+    padding: 0 40px;
+}
+
+.faca-reserva-texto {
+    width:100%;
+    height: 9rem;
+  /*  background-color: aqua;*/
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 20px;
+    padding-top: 25px;
+    letter-spacing: 1px;
+    margin-top: .6rem;
+    font-family: 'Gilda Display', serif;
+}
+
+.faca-reserva-telefone {
+    width: 100%;
+    height: 9rem;
+    background-color: #ffffff;
+  /*  position: absolute;*/
+    padding: 25px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #6a5134;
+}
+
+.faca-reserva-telefone p {
+    padding-left: 60px;
+    color:#838383;
+    margin-top: -12px;
+}
+
+.faca-reserva-telefone h5 {
+    padding-left: 60px;
+   margin-top: -12px;
+    font-size: 20px;
+}
+
+.faca-reserva-telefone i {
+    font-size: 30px;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 222px; 
+    left: 80px;  
+    color: #C6AD8C;  
+}
+
+#consulte-precos {
+    width: 230px;
+    height: 40px;
+    position: absolute;
+    left: 125px;
+    top: 268px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: #C6AD8C;
+    color: #ffffff;
+    border: none;
+    border-radius: 0%;
+}
+
+.galeria-conteudo {
+    width: 100%;
+    height: 253.2rem;
+    margin-top: 6rem;
+    /*background-color: #a87b2c;  */
+    position: relative;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 45px;
+    padding: 0 40px;
+}
+
+.galeria-conteudo > a > h3 {
+    width: 100%;
+    height: 3rem;
+   /* background-color: #6a5134;*/
+    font-size: 38px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;       
+    text-decoration: none;  
+    color: #2a2c36;     
+}
+
+.galeria-conteudo > a {
+   text-decoration: none;
+}
+
+.galeria-fotos {
+    width: 100%;
+    height: 246.9rem;
+   /* background-color: #6b6052;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;  
+    gap:2rem;     
+}
+
+.galeria-fotos-linha1, .galeria-fotos-linha2 {
+    width: 100%;
+    height: 122.1rem;
+    margin-top: 20px;
+ /*   background-color: rgb(99, 145, 53);*/
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap:45px;
+}
+
+.galeria-fotos-linha1 {
+    margin-top: -10px;    
+}
+
+.foto1, .foto5, .foto11, .foto14 {
+    width: 402px;
+    height: 14rem;
+   /* background-color: azure; */  
+}
+
+.foto2, .foto3, .foto4, .foto7, .foto8, .foto9, .foto10, .foto12, .foto13 {
+    width: 402px;
+    height: 20rem;    
+   /* background-color: aqua;  */  
+}
+
+.foto1 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.444.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+}
+
+.foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover, .foto6:hover, .foto7:hover, .foto9:hover, .foto10:hover, .foto11:hover, .foto12:hover, .foto13:hover, .foto14:hover {
+    transition: 0.2s;
+    transform: scale(1.03);
+    filter: grayscale(1)
+}
+.foto2 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.3611.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: all 0.2s;   
+}
+
+.foto3 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.322.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    transition: all 0.2s;   
+}
+
+.foto4 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.481.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.2s;
+}    
+
+.foto5 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.411.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: all 0.2s;    
+}
+
+
+/*.foto6 {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    
+}*/
+
+.foto7 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.099.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.2s;
+    top:109rem;
+}
+
+.foto9 {
+    background-image: url(imagens/home/pousada60.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;    
+}
+
+.foto10 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.488\ \(1\).jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    top: 17rem;
+}
+
+.foto11 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.46.366.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    top: 42rem;
+}
+
+.foto12 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.5111.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 0.2s;
+    top: 67rem;
+}
+
+.foto13 {
+    background-image: url(imagens/home/WhatsApp\ Image\ 2022-06-16\ at\ 11.44.222.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+    top:92rem;
+}
+
+.foto14 {
+    background-image: url(imagens/home/20201018_1333144.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    transition: all 0.2s; 
+    top:109rem;  
+}
+
+.rodape {
+    width: 100%;
+    height: 38rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;   
+    margin-top: 6rem;   
+}
+
+.rodape-conteudo {
+    width: 100%;
+    height: 35rem;
+   /* background-color: #04110e;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;    
+    padding: 0 10px;
+}
+
+.rodape-logo {
+    width: 210px;
+    height: 16.2vh; 
+    background-image:url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    top: 0;
+}
+
+.rodape-contato {
+    width: 100%;
+    height: 12rem; 
+   /* background-color: #2b1414;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;   
+}
+
+.rodape-localizacao, .rodape-email, .rodape-whatsapp, .rodape-telefone {
+    width: 100%;
+    height: 5rem;  
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+}
+
+.rodape-idiomas {
+    width: 100%;
+    height: 6.6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    gap: 5px;
+   /* background-color: #7e6d4c;  */ 
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+    color: #c3c3ac;    
+    display: flex;
+    justify-content: left;
+}
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+   margin-top: 2px;
+}
+
+.rodape-idiomas p, .rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a { 
+    font-size: 13px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: #c3c3ac;    
+}
+
+.rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a {
+    padding-left: -10px;
+}
+
+.rodape-localizacao a:hover, .rodape-whatsapp a:hover, .rodape-telefone a:hover, .rodape-email a:hover {
+    color: #7e6d4c;
+}
+
+.rodape-redes-sociais {
+    width: 100%;
+    height: 6.4rem; 
+   /* background-color: #55432b; */
+    display: flex;      
+    gap: 5px;
+    color: #c3c3ac; 
+    position: relative;  
+}
+
+.rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #c3c3ac;
+}
+
+.rodape-redes-sociais a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;      
+ }
+
+.rodape-redes-sociais i {
+    font-size: 18px;
+    color: #c3c3ac; 
+    position: absolute;  
+    left: 0; 
+    top: 40px;    
+}
+
+.rodape-redes-sociais i:hover {
+    color: #7e6d4c;
+}
+
+#instagram-rodape {
+    top: 80px;
+}
+
+.rodape-copyrigth {
+    width: 100%;
+    height: 2rem;
+    background-color: #030c09;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+    font-size: 8px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.3px;   
+}
+
+
+
 /*.linha1 {
     width: 80px;
     height: 15px;
