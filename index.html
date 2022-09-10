@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Gilda+Display&family=Hind:wght@500&family=Montserrat:wght@100&family=Pompiere&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Gilda+Display&family=Hind:wght@500&family=Kanit:wght@200&family=Montserrat:wght@100;500;900&family=Pompiere&family=Prompt:wght@200;300;700&family=Staatliches&family=Tenali+Ramakrishna&display=swap');
         </style>
     <title>Pousada Tia Ana</title>
 </head>
@@ -33,93 +33,161 @@
               <div class="logo"></div>
               <div class="menu-btn">
                 <i id="icone-menu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
-              </div>            
-           <!-- <span id="icone-menu" class="material-symbols-outlined">menu</span>      --> 
-             <nav class="navbar" id="itens">
+              </div>   
+              <nav class="navbar" id="itens">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="">Home</a></li>
-                    <li class="nav-item"><a href="acomodacoes.html">Acomodações</a></li>
-                    <li class="nav-item"><a href="festas-eventos.html">Festa & Eventos</a></li>
-                    <li class="nav-item"><a href="galeria.html">Galeria</a></li>
-                    <li class="nav-item"><a href="reservas.html">Reservas</a></li>
-                    <li class="nav-item"><a href="cidade.html">A Cidade</a></li>
-                    <li class="nav-item"><a href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
+                    <li class="nav-item"><a href="festas-eventos.html" class="nav-link">Festa & Eventos</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item"><a href="reservas.html" class="nav-link">Reservas</a></li>
+                    <li class="nav-item"><a href="cidade.html" class="nav-link">A Cidade</a></li>
+                    <li class="nav-item"><a href="contato.html"class="nav-link">Contato</a></li>
                 </ul>
               </nav>     
            </div>
         </div>        
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" id="slide1">            
-                <div class="container-fluid">
+    </header>   
+    <main>
+        
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="slide1">            
+               <div class="container-fluid">
                     <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                        <h2 class="slide1-texto1">Bem-vindo à </h2>
-                        <h1 class="slide1-texto2">Pousada Tia Ana</p>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text" id="slide1-texto">                                
+                            <h1>Pousada Tia Ana</h1>
+                            <h2>Sejam bem-vindos! </h2>
+                            <p>Localizada a 3km do centro da cidade de Passa Quatro, às margens da Estrada Real e da estrada de ferro, dela você pode ver e ouvir o apito da Maria Fumaça, em seu passeio turístico. A Pousada Tia Ana tem o que você mais quer: natureza, hospitalidade e bom atendimento.</p>                                
+                            
+                        </div>
+                        <div class="redes-sociais">                                
+                           <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>                    
+                           <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram" id="instagram-rodape" ></i></a>                          
+                           <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>                             
+                        </div>             
                     </div>
-                    </div>
-                </div>
+               </div>
+           </div>
+           <div class="carousel-item" id="slide2">
+               <div class="container-fluid">
+                   <div class="row">                    
+                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text" id="slide2-texto">
+                           <h1>Acomodações</h1> 
+                        <!--   <div class="linha-decorativa">
+                            <img src="imagens/linha-decorativa2.png" alt="">
+                           </div>-->
+                           <p>Os apartamentos são amplos, podendo acomodar de 4 a 5 pessoas confortavelmente. A Pousada Tia Ana tem preços diferenciados, conforme o número de pessoas por apartamento. Consulte-nos! Da varanda dos apartamentos avista-se a Serra da Mantiqueira, com toda sua beleza e majestade.</p>     
+                                          
+                      </div>
+                      <div class="redes-sociais">                                
+                        <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>                    
+                        <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram" id="instagram-rodape" ></i></a>                          
+                        <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>                             
+                     </div>  
+                  </div>
+               </div>
+            </div>
+           <div class="carousel-item" id="slide3">
+               <div class="container-fluid">
+                   <div class="row">
+                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text" id="slide3-texto">
+                           <h1>Festas & Eventos</h1>
+                         <!--  <div class="linha-decorativa">
+                            <img src="imagens/linha-decorativa2.png" alt="">
+                           </div> -->
+                           <h2>Nosso ramo é realizar sonhos</h2>
+                           <p>A Pousada Tia Ana também oferece um espaço para eventos integrado à natureza e com serviço de buffet opcional. Os menus podem ser personalizados de acordo com as necessidades de cada evento. O cenário perfeito para diversas comemorações está aqui.</p>                       
+                      </div>
+                      <div class="redes-sociais">                                
+                        <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>                    
+                        <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram" id="instagram-rodape" ></i></a>                          
+                        <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>                             
+                     </div>  
+                   </div>
+               </div>
+           </div>
+           <div class="carousel-item" id="slide4">
+               <div class="container-fluid">
+                   <div class="row">
+                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text" id="slide4-texto">
+                           <h1>Galeria</h1>   
+                        <!--   <div class="linha-decorativa">
+                            <img src="imagens/linha-decorativa2.png" alt="">
+                           </div>-->
+                           <h2>Fotos e vídeos.</h2>                    
+                       </div>
+                       <div class="redes-sociais">                                
+                        <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>                    
+                        <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram" id="instagram-rodape" ></i></a>                          
+                        <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>                             
+                     </div>  
+                   </div>
+               </div>
+            </div>
+           <div class="carousel-item" id="slide5">
+              <div class="container-fluid">
+                   <div class="row">
+                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text" id="slide5-texto">
+                           <h1>Reservas</h1>
+                        <!--   <div class="linha-decorativa">
+                            <img src="imagens/linha-decorativa2.png" alt="">
+                           </div>-->
+                           <h2>Faça sua reserva!</h2>     
+                           <p>A Pousada Tia Ana tem preços diferenciados conforme o número de pessoas por apartamento. Diferenciamos os preços porque queremos que você traga toda a sua família! Na diária está incluso um inigualável café da manhã com itens produzidos na própria pousada.</p>                  
+                       </div>
+                       <div class="redes-sociais">                                
+                        <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>                    
+                        <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram" id="instagram-rodape" ></i></a>                          
+                        <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>                             
+                     </div>  
+                   </div>
               </div>
-              <div class="carousel-item" id="slide2">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                        <h2 class="slide2-texto">Viagem pela vida... </h2>                       
-                    </div>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" id="slide3">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                        <h2 class="slide3-texto">A natureza se hospeda aqui! </h2>
-                        
-                    </div>
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item" id="slide4">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                        <h2 class="slide4-texto">Viaje para Passa Quatro, hospede-se aqui!</h2>                       
-                    </div>
-                    </div>
-                </div>
-              </div>              
-            </div>
-            <div class="carousel-item" id="slide5">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                        <h2 class="slide4-texto">Viaje para Passa Quatro, hospede-se aqui!</h2>                       
-                    </div>
-                    </div>
-                </div>
-              </div>              
-            </div>
-            <div class="carousel-item" id="slide6">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                        <h2 class="slide4-texto">Viaje para Passa Quatro, hospede-se aqui!</h2>                       
-                    </div>
-                    </div>
-                </div>
-              </div>              
-            </div>
-            <div class="carousel-item" id="slide7">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                        <h2 class="slide4-texto">Viaje para Passa Quatro, hospede-se aqui!</h2>                       
-                    </div>
-                    </div>
-                </div>
-              </div>              
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+           </div> 
+           <div class="carousel-item" id="slide6">
+              <div class="container-fluid">
+                   <div class="row">
+                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text" id="slide6-texto">
+                           <h1>A Cidade</h1> 
+                        <!--   <div class="linha-decorativa">
+                            <img src="imagens/linha-decorativa2.png" alt="">
+                           </div> -->
+                           <h2>Passa Quatro</h2>
+                           <p>Incrustada num vale das “Terras Altas da Mantiqueira”, com belas cachoeiras e trilhas, a cidade é cortada de norte a sul pela “Estrada Real” e pela antiga Estada de Ferro. Passa Quatro destaca-se por ser uma cidade pacata, onde reina a paz e a tranqüilidade. Seu povo é acolhedor, receptivo. Venha visitar Passa Quatro. Você vai gostar!</p>  
+                                           
+                       </div>
+                       <div class="redes-sociais">                                
+                        <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>                    
+                        <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram" id="instagram-rodape" ></i></a>                          
+                        <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>                             
+                     </div>  
+                   </div>
+               </div>
+           </div>
+           <div class="carousel-item" id="slide7">
+               <div class="container-fluid">
+                   <div class="row">
+                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text" id="slide7-texto">
+                           <h1>Contato</h1> 
+                        <!--   <div class="linha-decorativa">
+                            <img src="imagens/linha-decorativa2.png" alt="">
+                           </div>  -->
+                           <h2>Olá, como vai? Será um prazer atender você!</h2>                    
+                       </div>
+                       <div class="redes-sociais">                                
+                        <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>                    
+                        <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram" id="instagram-rodape" ></i></a>                          
+                        <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>                             
+                     </div>  
+                   </div>
+               </div>
+           </div>  
+        </div>               
+    </main>      
+           <!-- <span id="icone-menu" class="material-symbols-outlined">menu</span>      --> 
+             
+                  
+        <!--    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
@@ -127,8 +195,9 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-        </div>                     
-    </header>
+        </div> -->
+               
+   
  <!--   <main>   
       <section id="sobre">
           <div class="sobre">
@@ -388,6 +457,7 @@
                 itens.style.display = "block"
             }
         }
+
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
