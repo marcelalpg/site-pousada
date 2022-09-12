@@ -217,7 +217,7 @@ header, .cabecalho{
 }
 
 #slide1-texto > p, #slide2-texto > p, #slide3-texto > p, #slide4-texto > p, #slide5-texto > p, #slide6-texto > p, #slide7-texto > p {
-    font-size: 15px;
+    font-size: 15.5px;
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
     letter-spacing: 0.4px;
@@ -270,8 +270,7 @@ header, .cabecalho{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 320px; 
-    
+    margin-top: 305px;     
 }   
 
 .redes-sociais a {
