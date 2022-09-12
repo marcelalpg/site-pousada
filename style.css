@@ -171,7 +171,7 @@ header, .cabecalho{
 
 .container-fluid {
     width: 90%;
-    height: 30rem;
+    height: 32rem;
   /* background-color: #2a2c36;*/
     position: relative;
     margin-top: -60px;
@@ -183,8 +183,8 @@ header, .cabecalho{
 
 #slide1-texto, #slide2-texto, #slide3-texto, #slide4-texto, #slide5-texto, #slide6-texto, #slide7-texto {
     width: 100%;
-    height: 25rem;
-   /* background-color: rgb(124, 124, 12);*/
+    height: 30rem;
+   /*background-color: rgb(124, 124, 12);*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -241,7 +241,7 @@ header, .cabecalho{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 170px;             
+    margin-top: 212px;             
 }
 
 .saibamais a {
@@ -262,23 +262,24 @@ header, .cabecalho{
 .redes-sociais {
     width: 100%;
     height: 2rem;
-  /* background-color: chocolate;*/
-    display: flex;
+   /* background-color: chocolate;*/
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 240px;    
-}
+    margin-top: 320px; 
+    margin-left: 10px;   
+}   
 
 .redes-sociais a {
     margin: 0 45px;
     font-family: 'Kanit', sans-serif;
     font-size: 24px;
     color: #ffffff;
-   margin: 0 30px;
+    margin-right: 40px; 
 }
 
 
@@ -290,6 +291,8 @@ header, .cabecalho{
     justify-content: center;
     align-items: center;
     position: relative;
+    left: 220px;
+    top: -33px;
     border-radius: 50%;
     margin-left: 30px;
 }
