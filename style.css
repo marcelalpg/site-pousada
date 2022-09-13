@@ -149,13 +149,6 @@ header, .cabecalho{
     top: 212px;
     color: #ffffff;    
 }
-/*
-.carousel, .carousel-inner, .carousel-item {
-    width: 100%;
-    height: 45rem;      
-    position: relative;
-  /*  background-color: #05fc1d;   
-} */  
 
 .slide1-texto, .slide2-texto, .slide3-texto, .slide4-texto {
     font-size: 23px;
@@ -172,7 +165,7 @@ header, .cabecalho{
 .container-fluid {
     width: 90%;
     height: 32rem;
-  background-color: #2a2c36;
+ /* background-color: #2a2c36;*/
     position: relative;
     margin-top: -60px;
     display: flex;
@@ -184,7 +177,7 @@ header, .cabecalho{
 #slide1-texto, #slide2-texto, #slide3-texto, #slide4-texto, #slide5-texto, #slide6-texto, #slide7-texto {
     width: 100%;
     height: 30rem;
-   background-color: rgb(124, 124, 12);
+  /* background-color: rgb(124, 124, 12);*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -241,7 +234,7 @@ header, .cabecalho{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 212px;             
+    margin-top: 190px;             
 }
 
 .saibamais a {
@@ -262,15 +255,11 @@ header, .cabecalho{
 .redes-sociais {
     width: 100%;
     height: 2rem;
-   /* background-color: chocolate;*/
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 300px;     
+    margin-top: 278px;     
 }   
 
 .redes-sociais a {
@@ -359,7 +348,7 @@ header, .cabecalho{
 }
 
 #slide5 {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/reservas/WhatsApp\ Image\ 2022-07-03\ at\ 15.11.000.jpeg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(20, 20, 20, 0.4)), url(imagens/reservas/WhatsApp\ Image\ 2022-07-03\ at\ 15.11.000.jpeg);
     /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/20201010_1923111.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
