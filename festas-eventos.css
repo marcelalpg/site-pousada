@@ -160,7 +160,7 @@ header, .cabecalho{
     text-transform: uppercase;
     text-align: center;    
     text-shadow:1px  rgb(43, 43, 43); 
-    padding-top: 80px;         
+    padding-top: 60px;         
 }
 
 .hero-texto > h2 {
@@ -169,14 +169,14 @@ header, .cabecalho{
     font-weight: 200;
     letter-spacing: 0.4px;
    /* line-height: 34px;*/
-    margin-top: 37px;    
+    margin-top: 35px;    
     text-align: center;
     text-shadow:1px solid rgb(43, 43, 43);    
 }
 
 .festas-eventos {
     width: 100%;
-    height: 228.3rem;
+    height: 223.6rem;
     /*background-color: rgb(127, 214, 214);*/
     display: flex;
     justify-content: flex-start;
@@ -186,8 +186,8 @@ header, .cabecalho{
 
 .festas-eventos-conteudo {
     width: 100%;
-    height: 215.3rem;
-  /*  background-color: #7e6d4c;*/
+    height: 198.6rem;
+   /* background-color: #7e6d4c;*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -198,12 +198,12 @@ header, .cabecalho{
 
 .festas-eventos-texto {
     width: 100%;
-    height: 34rem;
-    background-color: #ffffff;
+    height: 28.5rem;
+    /*background-color: #f31818;*/
     text-align: justify;
     color: #818181;
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     margin-top: 5rem;    
 }
@@ -213,13 +213,25 @@ header, .cabecalho{
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #2a2c36;        
+    color: #2a2c36;   
+    margin-top: -8px;     
+}
+
+.festas-eventos-texto h2 {
+    font-size: 29px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.4px;
+   /* line-height: 34px;*/
+    margin-top: 25px;    
+    text-align: center;
+    text-shadow:1px solid rgb(43, 43, 43);    
 }
 
 .festas-eventos-tipos {
     width: 100%;
     height: 160rem;
- /*   background-color: #f18b8b;*/
+  /*  background-color: #f18b8b;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -230,7 +242,7 @@ header, .cabecalho{
 .festas-eventos-casamento, .festas-eventos-aniversario, .festas-eventos-outros {
     width: 100%;
     height: 50rem;
-   /* background-color: #921515;*/
+    /*background-color: #921515;*/
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -398,7 +410,8 @@ header, .cabecalho{
      background-size: cover;
      background-position: bottom center;
      position: relative;
-     margin-top: -6.4rem;    
+     margin-top: 5rem;
+
  }
  
  .orcamento-texto {
@@ -508,7 +521,7 @@ header, .cabecalho{
  
  .rodape {
     width: 100%;
-    height: 21.8rem;
+    height: 23rem;
     background-color: #04110e;
     display: flex;
     justify-content: flex-start;
@@ -530,7 +543,7 @@ header, .cabecalho{
     flex-direction: column;
     gap:2px;
     position: absolute;
-    top: 20px;   
+    top: 30px;   
 }
 
 .rodape-logo {
@@ -540,7 +553,7 @@ header, .cabecalho{
     background-size: contain;
     background-repeat: no-repeat; 
     position: absolute;
-    top: -15px; 
+    top: -12px; 
     z-index: 10;   
 }
 
@@ -566,6 +579,12 @@ header, .cabecalho{
     align-items: flex-start;
     gap: 2px;
 }
+
+.rodape-localizacao > i {
+    position: absolute;
+    top: 36px;
+    left: 52px;
+}
 .rodape-whatsapp, .rodape-whatsapp i {
     position: absolute;
     top: 70px;
@@ -585,7 +604,8 @@ header, .cabecalho{
 
 .rodape-telefone i {
     top: -6px;
-    left: 168px;
+    left: 170px;
+    font-size: 14px;
 }
 
 .rodape-email, .rodape-email i {
@@ -601,7 +621,7 @@ header, .cabecalho{
 
 .rodape-idiomas {
     width: 100%;
-    height: 3.5rem;
+    height: 3.3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -622,7 +642,7 @@ header, .cabecalho{
 }
 
 .espanhol {
-    left: 250px;
+    left: 245px;
 }
 
 .rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
@@ -665,7 +685,7 @@ header, .cabecalho{
     gap: 2px;
     color: #c3c3ac;
     position: relative;  
-    top: 42px;
+    top: 52px;
    /* background-color: #921515;*/
    
 }
@@ -695,10 +715,10 @@ header, .cabecalho{
 
 .rodape-copyrigth {
     width: 100%;
-    height: 2rem;
+    height: 2.2rem;
     background-color: #030c09;
     position: absolute;
-    bottom: -4px;
+    bottom: -6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -708,7 +728,9 @@ header, .cabecalho{
     letter-spacing: 0.3px;   
 }
 
-
+.rodape-copyrigth > h6 {
+    margin-top: 10px;
+}
 /*
 body {
     width: 100%;
