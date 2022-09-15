@@ -28,6 +28,40 @@
             </div>       
           </div>
   
+           <div class="cabecalho-inferior">
+              <div class="logo"></div>
+              <div class="menu-btn">
+                <i id="icone-menu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+              </div>   
+              <nav class="navbar" id="itens">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
+                    <li class="nav-item"><a href="festas-eventos.html" class="nav-link">Festa & Eventos</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item"><a href="reservas.html" class="nav-link">Reservas</a></li>
+                    <li class="nav-item"><a href="cidade.html" class="nav-link">A Cidade</a></li>
+                    <li class="nav-item"><a href="contato.html"class="nav-link">Contato</a></li>
+                </ul>
+              </nav>     
+           </div>
+        </div>        
+    </header>   
+    <!-- <header>
+       <div class="cabecalho">
+          <div class="cabecalho-superior"> 
+            <div class="localizacao">
+              <i class="fa-solid fa-location-dot"></i>
+              <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
+            </div>               
+            <div class="telefones">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="#">&nbsp;(35)99963-4214 | </a>
+              <i id="tel" class="fa-solid fa-phone"></i>
+              <a href="#">&nbsp;(35)3371-1110</a>
+            </div>       
+          </div>
+  
           <div class="cabecalho-inferior">
             <div class="logo"></div> 
             <nav class="navbar navbar-expand-xl navbarScroll">
@@ -69,11 +103,16 @@
         <div class="cabecalho-texto">
             <h1>Acomodações</h1>            
         </div>  
-    </header>
+    </header>-->
     <main>
+        <div class="hero">
+            <div class="hero-texto">
+                <h1>Acomodações</h1>  
+            </div>
+        </div>
         <section class="acomodacoes">
-            <div class="acomodacoes-texto">
-                <h3>Acomodações</h3>
+           <div class="acomodacoes-texto">
+               <h3> Nossas Acomodações</h3>
                 <p>Os apartamentos são amplos, podendo acomodar de 4 a 5 pessoas confortavelmente.</p>
                 <p>A Pousada Tia Ana tem preços diferenciados, conforme o número de pessoas por apartamento. Consulte-nos.</p>
                 <p>PARA A HOSPEDAGEM COM CRIANÇAS, ENTRAR EM CONTATO PELOS TELEFONES
@@ -81,7 +120,7 @@
                     PARA ESCLARECIMENTOS E REDUÇÃO NO VALOR DO PACOTE.</p>
                 <p>Na diária está incluso um inigualável café da manhã, com a maioria dos itens produzidos na própria pousada.</p>
                 <p> Da varanda dos apartamentos avista-se a Serra da Mantiqueira, com toda sua beleza e majestade.</p>               
-            </div>
+           </div>
             <div class="acomodacoes-tipo">
                 <div class="standard">
                     <div class="standard-carousel">                     
@@ -113,14 +152,14 @@
                                     <i class="fa-solid fa-people-group"> <p>1 a 6 pessoas</p></i>
                                     <i class="fa-solid fa-mug-saucer"> <p>Café da manhã</p> </i>
                                     <i class="fa-solid fa-wifi"> <p> Wifi gratuito</p></i> 
-                                </div>        
-                            </div>
-                            <div class="icones1-col2">
-                                <i class="fa-solid fa-tv"><p class="tv">TV c/ parabólica</p></i>
-                                <div class="quarto1-icone">
+                                </div>                        
+                               <div class="icones1-col2">
+                                   <i class="fa-solid fa-tv"><p class="tv">TV c/ parabólica</p></i>                                 
+                                  <div class="quarto1-icone">
                                     <img src="imagens/icons8-fridge-50.png" alt="frigobar" id="frigobar"  width="32px">
                                     <p>Frigobar</p>
-                                </div>    
+                                  </div>  
+                                </div>   
                             </div>                                         
                         </div>                    
                     </div> 
@@ -207,10 +246,11 @@
                                 <div class="icones3-col2">
                                     <i class="fa-solid fa-bed"> <p> Cama box</p></i>                            
                                     <i class="fa-solid fa-tv"> <p> TV c/ parabólica</p></i>
-                                <div class="quarto3-icone">
+                                    <div class="quarto3-icone">
                                         <img src="imagens/icons8-fridge-50.png" alt="frigobar" id="frigobar"  width="32px">
                                         <p>Frigobar</p> 
-                                </div>           
+                                    </div> 
+                                </div>          
                             </div>                                        
                         </div>
                     </div>               
@@ -247,7 +287,7 @@
                                     <i class="fa-solid fa-mug-saucer"> <p>Café da manhã</p> </i>
                                     <i class="fa-solid fa-wifi"> <p> Wifi gratuito</p></i>
                                 </div>
-                                <div class="icones4-col1">
+                                <div class="icones4-col2">
                                     <i class="fa-solid fa-tv"> <p> TV c/ parabólica</p></i>
                                     <i class="fa-solid fa-bed"> <p> Cama box</p></i>
                                     <div class="quarto4-icone">
@@ -350,7 +390,17 @@
         <div class="rodape-copyrigth">
             <h6>&copy;Copyrigth 2022 by MarcelaLPGay</h6>
         </div>
-    </footer>  
+    </footer>
+    
+    <script>
+        function clickMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            }else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>

@@ -13,7 +13,42 @@
     <title>Festas & Eventos</title>
 </head>
 <body>
-    <header>
+  <header>
+    <div class="cabecalho">
+      <div class="cabecalho-superior"> 
+        <div class="localizacao">
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
+        </div>               
+        <div class="telefones">
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="#">&nbsp;(35)99963-4214 | </a>
+          <i id="tel" class="fa-solid fa-phone"></i>
+          <a href="#">&nbsp;(35)3371-1110</a>
+        </div>       
+      </div>
+
+       <div class="cabecalho-inferior">
+          <div class="logo"></div>
+          <div class="menu-btn">
+            <i id="icone-menu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+          </div>   
+          <nav class="navbar" id="itens">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
+                <li class="nav-item"><a href="festas-eventos.html" class="nav-link">Festa & Eventos</a></li>
+                <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="reservas.html" class="nav-link">Reservas</a></li>
+                <li class="nav-item"><a href="cidade.html" class="nav-link">A Cidade</a></li>
+                <li class="nav-item"><a href="contato.html"class="nav-link">Contato</a></li>
+            </ul>
+          </nav>     
+       </div>
+    </div>        
+</header>   
+
+  <!--  <header>
         <div class="cabecalho">
           <div class="cabecalho-superior"> 
             <div class="localizacao">
@@ -70,8 +105,14 @@
             <h1>Festas & Eventos</h1>
             <h2>Nosso ramo é realizar sonhos</h2>            
         </div>  
-    </header>
+    </header>-->
     <main>
+      <div class="hero">
+        <div class="hero-texto">
+            <h1>Festas & Eventos</h1>  
+            <h2>Nosso ramo é realizar sonhos!</h2>
+        </div>
+    </div>
         <section class="festas-eventos">
             <div class="festas-eventos-conteudo">
                 <div class="festas-eventos-texto">
@@ -175,8 +216,9 @@
             <div class="festas-eventos-orcamento">
                 <div class="orcamento-texto">
                     <h5>Seu evento, do seu jeito, em um único lugar.</h5>
-                    <p >Solicite um orçamento: &nbsp;<i class="fa-brands fa-whatsapp"></i>&nbsp;(35)99963-4214</p>
-                    <p class="orcamento-texto-tel" ><i id="tel" class="fa-solid fa-phone"></i>&nbsp;(35)3371-1110</p>
+                    <p >Solicite um orçamento:</p>
+                      <p class="orcamento-texto-whatsapp"><i class="fa-brands fa-whatsapp" id="whatsapp-orcamento"></i>&nbsp;(35)99963-4214</p>
+                    <p class="orcamento-texto-tel" ><i id="tel-orcamento" class="fa-solid fa-phone"></i>&nbsp;(35)3371-1110</p>
                     <p class="orcamento-texto-email"><i class="fa-solid fa-envelope"></i>&nbsp;tiaana@pousadatianana.com.br</p>
                 </div>
                 <div class="orcamento-foto1"></div>
@@ -211,8 +253,8 @@
             </div>
             <div class="rodape-idiomas">                
                     <h5>Idiomas</h5>
-                    <p>Inglês</p>
-                    <p>Espanhol</p>
+                    <p class="ingles">Inglês</p>
+                    <p class="espanhol">Espanhol</p>
             </div>
             <div class="rodape-redes-sociais">
                 <div class="rodape-redes-sociais-titulo">
@@ -228,6 +270,16 @@
             <h6>&copy;Copyrigth 2022 by MarcelaLPGay</h6>
         </div>
     </footer>  
+    <script>
+      function clickMenu() {
+          if (itens.style.display == "block") {
+              itens.style.display = "none"
+          }else {
+              itens.style.display = "block"
+          }
+      }
+  </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>
 </html>

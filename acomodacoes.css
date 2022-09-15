@@ -1,51 +1,40 @@
 * {
     margin:0;
     padding: 0;
-    box-sizing: border-box; 
-       
+    box-sizing: border-box;        
 }
 
 html {
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth; 
+   
 }
 
 :target {
     scroll-margin-top: 1em;
 }
 
-body {
+body, main{
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;    
+    background-color: #ffffff;  
+    overflow-x: hidden;  
 }
 
-header {
+header, .cabecalho{
     width: 100%;
-    height: 30rem;
-    /*background-color: aqua;*/
+    height: 8rem;
+    /* background-color: aqua;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg);
+ /*   flex-wrap: wrap;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     font-family: 'Hind', sans-serif;
-}
-
-.cabecalho {
-    width: 100%;
-    height: 6rem;
-    /*background-color: blue;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     position: fixed;
-    z-index: 99;
-    
+    z-index: 99;   
 }
 
 .cabecalho a, .cabecalho i {
@@ -62,8 +51,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 10px;
-    margin-top: 5px;       
+    margin: 15px 0;    
+}
+
+.cabecalho-superior .bgwhite {
+    background-color: #ffffff;
 }
 
 .telefones {
@@ -72,12 +64,12 @@ header {
 
 .cabecalho-inferior {
     width: 100%;
-    height: 2.4rem;
+    height: 3rem;
     background-color: #ffffff;
     box-shadow: 3px 0px 2px rgb(145, 143, 143); 
     display: flex;   
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
     position: relative;
 }
 
@@ -89,95 +81,93 @@ header {
     background-repeat: no-repeat; 
     position: absolute; 
     top: -16px;   
+    z-index: 99;
 }
 
-.navbar-toggler {
+.menu-btn {
+    width: 100%;
+    height: 2rem;
+   /* background-color: #05fc1d;*/
     position: absolute;
-    left: 180px;
-    border: none;   
+    display: block;
+    padding-left: 30px;
+    padding-top: 4px;   
 }
 
-.navbar-toggler:focus {
-    border-color: none;
-    box-shadow: none;
+.menu-btn > i {
+    font-size: 25px;
+    color: #2a2c36; 
 }
 
-.collapse navbar-collapse, .nav1, .nav2 {
-    width: 30rem;
-    height: 11rem;
+.navbar {
+    width: 100%;
+    margin-top: 22rem;
+    display: none; 
+    margin: auto; 
+}
+
+.navbar > ul {
+    list-style: none;   
+}
+
+.navbar > ul > li > a {
+    display: block;
+    width: 100%;    
     background-color: #ffffff;
-    position: relative;  
-}
-
-.nav1 {
-    position: absolute;
-    top: 25px;
-    right: -214px;
-    padding-top: 15px;
-}
-
-.nav2 {
-    height: 11.5rem;
-    position: absolute;
-    top: 162px;
-    right: -214px;
-    padding-top: 5px;
-}
-
-.nav-item1, .nav-item2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 0;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
     font-family: 'Hind', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     cursor: pointer;
-    
+    color: #2a2c36;    
 }
 
-.nav-item1 a, .nav-item2 a {
-    color: #474747;
+.navbar > ul > li > a:hover {
+    color: #ffffff;  
+    background-color: #b19879;
 }
 
-.nav-item1 a:hover,
-.nav-item2 a:hover {   
-    color: #916632; 
-    text-decoration:underline;      
-}
-
-.cabecalho-texto {
-    width: 28rem;
-    height: 10rem;  
-    /*background-color: rgb(97, 152, 201);*/
+.hero {
+    width: 100%;
+    height: 70vh;  
     display: flex;
     justify-content: center;
-    align-items: center;    
-    position: relative;
-    top: 160px;
-    color: #ffffff;    
+    align-items: center; 
+    flex-direction: column;   
+    color: #ffffff;  
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;     
 }
 
-.cabecalho-texto h1 {
+.hero-texto {
+    width: 100%;
+    height: 10rem;
+     display: flex;
+    justify-content: center;
+    align-items: center;    
+    /*background-color: #2a2c36;*/
+}
+
+.hero-texto > h1 {
     font-size: 31px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.2px;
     line-height: 53.5px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
-}
-
-main {
-    width: 100%;
-    min-height: 257.7rem;
-    margin-top: 6rem
-    
+    text-align: center;    
+    text-shadow:1px  rgb(43, 43, 43);   
+    margin-top: 75px;     
 }
 
 .acomodacoes {
     width: 100%;
-    min-height: 257.7rem;
-    /*background-color: #f52e2e;*/
+    height: 280rem;
+    background-color: #d30606;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -185,16 +175,17 @@ main {
     gap: 20px;   
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
-    color: #8d8d8d;
-    padding: 0 10px;    
+    color: #8d8d8d;       
+    margin-top: 5rem; 
 }
 
 .acomodacoes-texto {
     width: 100%;
-    height: 28.3rem;
-   /* background-color: #f75252;*/
+    height: 30rem;
+    background-color: #f75252;
     text-align: justify;
-    margin-bottom: -1rem;    
+    margin-bottom: -1rem; 
+    padding: 0 40px;   
 }
 
 .acomodacoes-texto h3 {
@@ -207,50 +198,62 @@ main {
 
 .acomodacoes-tipo {
     width: 100%;
-    height: 200rem;
- /*   background-color: blueviolet;*/
+    height: 231rem;
+   background-color: blueviolet;
     display: flex;
     justify-content: flex-start;
     align-items:flex-start;
     flex-direction: column;
-    position: relative;      
+    position: relative;   
+    margin-top: 5rem;   
 }
 
-.standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo {
+.standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo{
     width: 100%;
-    height: 200rem;
-   /* background-color: green;*/
+    height: 50rem;
+   background-color: green;
     display: flex;
     justify-content: flex-start;
     align-items: center; 
-    flex-direction: column;
-    margin-top: 4rem;          
+    flex-direction: column;    
+    position: absolute;     
 }
 
-.carousel, .carousel-inner {
-    width: 26.9rem;
+.standard {
+    top:0;
+}
+
+.semi-luxo {
+    top: 50rem;
+}
+
+.chale {
+    top:100rem;
+}
+
+.semi-luxo-sacada {
+    top:150rem
+}
+
+.luxo {
+    top: 120rem
+}
+.standard-carousel, .semi-luxo-carousel, .chale-carousel, .sl-sacada-carousel, .luxo-carousel {
+    width: 100%;
     height: 20rem;
-   /* background-color: yellow; */
+    background-color: blue;
 }
 
-.carousel-control-next-standard, .carousel-control-next-chale, .carousel-control-next-luxo {
+.carousel-control-next-standard, .carousel-control-next-chale, .carousel-control-next-luxo, .carousel-control-prev-semi-luxo, .carousel-control-prev-sl-sacada {
     position: absolute;
     right: 8.5rem;
     top: 15rem;
     background-color: transparent;
-    border: none;      
-}
-
-.carousel-control-prev-semi-luxo, .carousel-control-prev-sl-sacada {
-    position: absolute;
-    left: 8.5rem;
-    top: 15rem;
-    background-color: transparent;
-    border: none;
-}
+    border: none;   
+}  
 
 #quarto1-slide1,#quarto1-slide2, #quarto1-slide3,#quarto1-slide4, #quarto1-slide5, #quarto2-slide1,#quarto2-slide2, #quarto2-slide3,#quarto2-slide4,#quarto2-slide5, #quarto3-slide1,#quarto3-slide2, #quarto3-slide3,#quarto3-slide4, #quarto3-slide5, #quarto3-slide6, #quarto4-slide1,#quarto4-slide2, #quarto4-slide3,#quarto4-slide4, #quarto4-slide5,#quarto5-slide1,#quarto5-slide2, #quarto5-slide3,#quarto5-slide4, #quarto5-slide5, #quarto5-slide6 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.4611.jpeg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.4611.jpeg);
     background-repeat: no-repeat;  
     background-size: cover;  
     width: 100%;
@@ -258,134 +261,137 @@ main {
 }
 
 #quarto1-slide2 {
-    background-image: url(imagens/acomodacoes/st11.jpg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/st11.jpg);    
 }
 
 #quarto1-slide3 {
-    background-image: url(imagens/acomodacoes/st22.jpg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/st22.jpg);    
 }
 
 #quarto1-slide4 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.09.481.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.09.481.jpeg);    
 }
 
 #quarto1-slide5 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.35.031.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.35.031.jpeg);    
 }
 
 #quarto2-slide1 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.26.400.jpeg);      
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.26.400.jpeg);      
 }
 
 #quarto2-slide2 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5511.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5511.jpeg);    
 }
 
 #quarto2-slide3 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.26.3911.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.26.3911.jpeg);    
 }
 
 #quarto2-slide4 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.10.111.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.10.111.jpeg);    
 }
 
 #quarto2-slide5 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5622.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5622.jpeg);    
 }
 
 #quarto3-slide1 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.27.499.jpeg);        
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.27.499.jpeg);        
 }
 
 #quarto3-slide2 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.2911.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.2911.jpeg);    
 }
 
 #quarto3-slide3 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.3011.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.3011.jpeg);    
 }
 
 #quarto3-slide4 {
-    background-image: url(imagens/acomodacoes/ch44.jpg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/ch44.jpg);    
 }
 
 #quarto3-slide5 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.11.0822.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.11.0822.jpeg);    
 }
 
 #quarto3-slide6 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.3122.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.42.3122.jpeg);    
 }
 
 #quarto4-slide1 {
-    background-image: url(imagens/acomodacoes/es11.jpg);        
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/es11.jpg);        
 }
 
 #quarto4-slide2 {
-    background-image: url(imagens/acomodacoes/es33.jpg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/es33.jpg);    
 }
 
 #quarto4-slide3 {
-    background-image: url(imagens/acomodacoes/es66.jpg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/es66.jpg);    
 }
 
 #quarto4-slide4 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5444.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.5444.jpeg);    
 }
 
 #quarto4-slide5 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.27.533.jpeg); 
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.27.533.jpeg); 
     background-position: center center;    
 } 
 
 #quarto5-slide1 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2033.jpeg);        
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2033.jpeg);        
 }
 
 #quarto5-slide2 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.25.099.jpeg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.25.099.jpeg);
     background-position: center center;      
 }
 
 #quarto5-slide3 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.25.1111.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-23\ at\ 16.25.1111.jpeg);    
 }
 
 #quarto5-slide4 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.12.071.jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.12.071.jpeg);    
 }
 
 #quarto5-slide5 {
-    background-image: url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.12.082\ \(1\).jpeg);    
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-08-29\ at\ 07.12.082\ \(1\).jpeg);    
 }
 
 #quarto5-slide6 {
-    background-image: url(imagens/acomodacoes/20210504_1236222.jpg);   
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/20210504_1236222.jpg);   
     background-position: center center;   
 }
 
-
-.quarto1, .quarto2, .quarto3, .quarto4, .quarto5  {
-    width: 26.9rem;
-    height: 21.5rem;
-   /* background-color: rgb(245, 134, 31);*/
+/*quarto1-standard, quarto2-semi luxo, quarto3-chale, quarto4-semiluxo sacada, quarto5-luxo*/
+.quarto1 .quarto2, .quarto3, .quarto4, .quarto5 {
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(245, 134, 31);
     display: flex;
     justify-content: center;
     align-items: center;  
     flex-direction: column;   
+   
 }
 
 .quarto1-descricao, .quarto2-descricao, .quarto3-descricao, .quarto4-descricao, .quarto5-descricao {
     width: 100%;
-    height: 21.5rem;
-    /*background-color: #2b1414;*/
+    height: 30rem;
+    background-color: #2b1414;
     font-size: 18px;
     line-height: 25px;
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 1px;    
     text-align: justify;  
-    margin-top: 1rem;  
+     
+    
 }
+
 
 .quarto1-descricao-texto h5, .quarto2-descricao-texto h5, .quarto3-descricao-texto h5, .quarto4-descricao-texto h5, .quarto5-descricao-texto h5 {
     font-size: 25px;
@@ -399,42 +405,36 @@ main {
 }
 
 .quarto1-descricao-icones, .quarto2-descricao-icones, .quarto3-descricao-icones, .quarto4-descricao-icones, .quarto5-descricao-icones {
-    width: 26.9rem;
+    width: 100%;
     height: 12rem;
     display: flex;
     justify-content: left;
     align-items: left;  
     margin-top: 10px;  
+    background-color: aqua;
 }
 
 .icones1-col1, .icones1-col2, .icones2-col1, .icones2-col2, .icones3-col1, .icones3-col2, .icones4-col1, .icones4-col2, .icones5-col1, .icones5-col2 {
     width: 50%;
     height: 12rem;
-   /* background-color: #636363;*/
+    background-color: #636363;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 }    
 
-.icones1-col2 {
-  position: relative;
-  left: 13.5rem;
-  top: -12rem;
-  color: #C6AD8C;
-  font-size: 28px;    
-}
-
+/*frigobar*/
 .quarto1-icone, .quarto2-icone, .quarto3-icone, .quarto4-icone, .quarto5-icone {
     width: 100%;
     height: 4rem;
-    /*background-color: #7e6d4c;*/
+    background-color: #7e6d4c;
     position: relative;    
 }
 
 .quarto2-icone p, .quarto3-icone p, .quarto4-icone p, .quarto5-icone p {
     position: absolute;
-    top: -27px;
+    top: -25px;
 }
 
 .quarto1-descricao-icones p, .quarto2-descricao-icones p, .quarto3-descricao-icones p, .quarto4-descricao-icones p, .quarto5-descricao-icones p, .tv, .quarto1-icone p {
@@ -442,7 +442,7 @@ main {
     font-family: 'Hind', sans-serif;
     color: #2a2c36;
     font-weight:normal;
-    padding-left: 47px;
+    padding-left: 42px;
     position: relative;
     bottom: 18px;    
 }    
