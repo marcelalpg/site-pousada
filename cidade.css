@@ -274,20 +274,21 @@ header, .cabecalho{
 .navbar {
     width: 100%;
     height: auto;
-    margin-top: 22rem;
+    padding-top: 26.2rem;
     display: none;  
-    /*background-color: blueviolet;   */   
+    /*background-color: blueviolet; */  
 }
 
 .navbar > ul {
     list-style: none;   
+    padding-left: 0;
 }
 
 .navbar > ul > li > a {
     display: block;
     width: 100%;    
     background-color: #ffffff;
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
