@@ -1,4 +1,4 @@
-* {
+/** {
     margin:0;
     padding: 0;
     box-sizing: border-box;    
@@ -15,7 +15,7 @@ html {
 body {
     width: 100%;
     height: 100vh;  
-   /* background-color: yellow;  */
+   /* background-color: yellow;  
 }
 
 header {
@@ -30,7 +30,7 @@ header {
     align-items: center;
     flex-direction: column;
     color: #fff;   
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/cidade/IMG-20220726-WA00148.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url();
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -60,7 +60,7 @@ header {
 .cabecalho-superior {
     width: 100%;
     height: 2.5rem;
-   /* background-color: rgb(15, 138, 160);*/
+   /* background-color: rgb(15, 138, 160);
     display: flex;   
     justify-content: space-between; 
     align-items: center;
@@ -103,7 +103,7 @@ header {
 .nav1, .nav2 {
    width: 25rem;
    height: 3.9rem;
- /*  background-color: palevioletred;*/
+ /*  background-color: palevioletred;
    display: flex;
    gap: 2rem;
    position: absolute;
@@ -172,25 +172,214 @@ main {
     background-color: #ffffff;   
     margin-top: 7.3rem;
 }
+*/
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    scroll-behavior: smooth;     
+     
+}
+
+/*:target {
+    scroll-margin-top: 1em;
+}
+*/
+body  {
+    width: 100%;
+    height: 100vh;  
+    background-color: #ffffff;      
+}    
+
+header, .cabecalho{
+    width: 100%;
+    height: 8rem;
+    /* background-color: aqua;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Hind', sans-serif;
+    position: fixed;
+    z-index: 99;      
+}
+
+.cabecalho a, .cabecalho i {
+    text-decoration: none;
+    font-size: 12.5px; 
+    color: #ffffff;   
+}
+
+.cabecalho-superior {
+    width: 100%;
+    height: 3rem;
+   /* background-color: rgb(4, 81, 95);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   margin: 15px 0;    
+}
+
+.telefones {
+    padding-bottom: 11px;
+}
+
+.cabecalho-inferior {
+    width: 100%;
+    height: 3rem;
+    background-color: #ffffff;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    position: relative;  
+}
+
+.logo {
+    width: 150px;
+    height: 16vh;     
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    position: absolute; 
+    top: -16px;   
+    z-index: 200;
+    overflow: visible;    
+}
+
+.menu-btn {
+    width: 100%;
+    height: 2rem;
+   /* background-color: #05fc1d;*/
+    position: absolute;
+    display: block;
+    padding-left: 30px;
+    padding-top: 4px;   
+}
+
+.menu-btn > i {
+    font-size: 25px;
+    color: #2a2c36; 
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    margin-top: 22rem;
+    display: none;  
+    /*background-color: blueviolet;   */   
+}
+
+.navbar > ul {
+    list-style: none;   
+}
+
+.navbar > ul > li > a {
+    display: block;
+    width: 100%;    
+    background-color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2a2c36;    
+}
+
+.navbar > ul > li > a:hover {
+    color: #ffffff;  
+    background-color: #b19879;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;   
+    color: #ffffff;  
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/cidade/IMG-20220726-WA00148.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;     
+}
+
+.hero-texto {
+    width: 100%;
+    height: 15rem;
+     display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;  
+    /*background-color: #2a2c36;*/
+}
+
+.hero-texto > h1 {
+    font-size: 31px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 53.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;    
+    text-shadow:1px  rgb(43, 43, 43); 
+    padding-top: 60px;         
+}
+
+.hero-texto > h2 {
+    font-size: 27px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.4px;
+   /* line-height: 34px;*/
+    margin-top: 35px;    
+    text-align: center;
+    text-shadow:1px solid rgb(43, 43, 43);    
+}
 
 .cidade {
     width: 100%;
-    height: 339rem;
+    height: auto;
     /*background-color: #474747;*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    gap: 30px;
-    padding: 0 8rem;
+    gap: 5rem;
+    margin-top: 5rem;
+    padding: 0 40px;
 }
 
 .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
     width: 100%;
-    height: 45rem;
-  /* background-color: aqua;*/
+    height: auto;
+  /*  background-color: aqua;*/
     position: relative;
-    margin-bottom: 5.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+      
+   /* margin-bottom: 5.8rem;*/
 }
 
 .cidade-foto1, .maria-fumaca-foto1, .praca-leoes-foto1, .gomeira-foto1, .itaguare-foto1, .ibama-foto1, .ingazeiro-foto1 {
@@ -199,7 +388,8 @@ main {
    /* background-color: blue; */
     position: absolute; 
     transition: all 0.3s;
-    cursor: pointer;    
+    cursor: pointer;   
+    display: none; 
 }
 
 .cidade-foto1 {
@@ -260,19 +450,14 @@ main {
     background-position: center center;
 }
 
-
 .cidade-foto2, .praca-leoes-foto2, .gomeira-foto2, .itaguare-foto2, .ibama-foto2, .ingazeiro-foto2 {
-    width: 47rem;
-    height: 20rem;
-/*    background-color: yellowgreen;*/
-    position: absolute; 
+    width: 100%;
+    height: 15rem;
+    /*background-color: yellowgreen;*/
+    /*position: absolute; 
     bottom: 0;
-    right: 0;    
+    right: 0;    */
     transition: all 0.3s;
-}
-
-.gomeira-foto2, .ibama-foto2 {
-    left:0;
 }
 
 .cidade-foto2 {
@@ -290,12 +475,12 @@ main {
 }
 
 .maria-fumaca-video {
-    width: 47rem;
-    height: 20rem;
-   /* background-color: yellowgreen;*/
-    position: relative; 
+    width: 100%;
+    height: 15rem;
+  /* background-color: yellowgreen;*/
+   /* position: relative; 
     top: 362px;    
-    left: 0;  
+    left: 0; */ 
     transition: all 0.3s; 
 }
 
@@ -309,7 +494,7 @@ main {
 .maria-fumaca-video > video {
     position: absolute;
     width: 100%;
-    height: 20rem;
+    height: 15rem;
     object-fit: cover;
 }
 
@@ -349,155 +534,219 @@ main {
 }
 
 .cidade-texto, .maria-fumaca-texto, .praca-leoes-texto, .gomeira-texto, .itaguare-texto, .ibama-texto, .ingazeiro-texto {
-    width: 48rem;
-    height: 25rem;
+    width: 100%;
+    height: auto;
    /* background-color: rebeccapurple;*/
-    position: absolute; 
+    /*position: absolute; 
     right: 0;
-    padding: 20px;    
-}
-
-.maria-fumaca-texto, .gomeira-texto, .ibama-texto {
-    left: 0;
-    
+    padding: 20px;    */
 }
 
 .cidade-texto h5, .maria-fumaca-texto h5, .praca-leoes-texto h5, .gomeira-texto h5, .itaguare-texto h5, .ibama-texto h5, .ingazeiro-texto h5 {
-    text-align: center;
-    color: #2a2c36;
-    font-family: 'Gilda Display', serif;
+    font-size: 25px;
     font-weight: bold;
-    font-size: 27px;
+    font-family: 'Gilda Display', serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #2a2c36;   
 }
 
 .cidade-texto p, .maria-fumaca-texto p, .praca-leoes-texto p, .gomeira-texto p, .itaguare-texto p, .ibama-texto p, .ingazeiro-texto p {
-    text-align: justify;
-    color: #818181;
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.2px;    
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #818181;
+    font-size: 16px;     
 }
 
 .rodape {
     width: 100%;
-    height: 15rem;
+    height: 23rem;
     background-color: #04110e;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    position: relative; 
-    margin-top: 1.6rem;  
-       
+    position: relative;   
+    margin-top: 5rem;     
+    padding: 0 40px;
 }
 
 .rodape-conteudo {
     width: 100%;
-    height: 12.5rem;
-    background-color: #04110e;
+    height: 20rem;
+  /* background-color: #39a78d;*/
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap:2px;
     position: absolute;
-    top: 0.2px;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    top: 50px;   
 }
 
 .rodape-logo {
-    width: 220px;
-    height: 17vh;
-    background-image:url(imagens/LOGO\ POUSADA-fundobranco.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    background-size: cover;
-    top: 0;
+    width: 150px;
+    height: 16vh;     
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    position: absolute;
+    top: -38px; 
+    z-index: 10;   
 }
 
 .rodape-contato {
-    width: 340px;
-    height: 12.5rem; 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    position: relative;
-}
-
-.rodape-localizacao, .rodape-email, .rodape-whatsapp, .rodape-telefone {
     width: 100%;
-    height: 5rem;  
+    height: 7rem; 
+    /*background-color: #7a5a1a;*/
     display: flex;
-    justify-content: left;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 5px;
+    padding: 5px;
+    /*position: relative;
+    top: 60px;*/
 }
 
+.rodape-localizacao, .rodape-email, .rodape-fones {
+    width: 100%;
+    height: 6rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+   /* background-color: blue;*/
+}
+
+.rodape-fones {
+    gap: 25px;
+}
+
+.rodape-localizacao > i {
+   position: relative;
+   top: -5px;
+   font-size: 14px;
+}
+
+.rodape-telefone > i {
+    font-size: 14px;
+}
+
+.rodape-email > i {
+    position: relative;
+    top: -2px;
+    font-size: 14px;
+}
+
+/*.rodape-localizacao > i {
+    position: absolute;
+    top: 36px;
+    left: 52px;
+}
+.rodape-whatsapp, .rodape-whatsapp i {
+    position: absolute;
+    top: 70px;
+    left: -70px;
+}
+
+.rodape-whatsapp i {
+    top: -6px;
+    left: 162px;
+}
+
+.rodape-telefone, .rodape-telefone i {
+    position: absolute;
+    left: 99px;
+    top: 70px;
+}
+
+.rodape-telefone i {
+    top: -6px;
+    left: 170px;
+    font-size: 14px;
+}
+
+.rodape-email, .rodape-email i {
+    position: absolute;
+    top: 95px;
+    left: 5px;
+}
+
+.rodape-email i {
+    top: -6px;
+    left: 110px;
+}
+*/
 .rodape-idiomas {
-    width: 200px;
-    height: 12.5rem;
+    width: 100%;
+    height: 3.4rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
-    gap: 10px;
+  /* background-color: #21973f; */
+   padding: 5px;
 }
 
-.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
-    color: #c3c3ac;    
+.idiomas {
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+/*.rodape-idiomas > p, .ingles, .espanhol {
+    position: absolute;
+    top: 40px;       
 }
 
+.ingles {
+    left: 180px;
+}
+
+.espanhol {
+    left: 245px;
+}*/
+
 .rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
-   margin-top: 1px;
+    color: #c3c3ac; 
+    margin-top: 1px;   
 }
 
 .rodape-idiomas p, .rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a { 
     font-size: 14px;
     font-family: 'Hind', sans-serif;
     letter-spacing: 0.2px;
-    line-height: 20px;
+    line-height: 10px;
     text-decoration: none;
     color: #c3c3ac;    
+    text-align: center;
 }
 
-.rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a {
-    padding-left: -10px;
-}
-.rodape-localizacao a:hover {
-    color: #7e6d4c;
-}
-.rodape-whatsapp a:hover {
-    color: #7e6d4c;
-}
-.rodape-telefone a:hover {
-    color: #7e6d4c;
-}
-.rodape-email a:hover {
+.rodape-localizacao a:hover, .rodape-whatsapp a:hover, .rodape-telefone a:hover, .rodape-email a:hover {
     color: #7e6d4c;
 }
 
 .rodape-redes-sociais {
-    width: 200px;
-    height: 12.5rem;  
+    width: 100%;
+    height: 4rem;  
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-    color: #c3c3ac;   
+    padding: 5px;
+    gap: 2px;
+    color: #ffffff;
+   /* background-color: #921515; */
 }
 
 .rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.2px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 24px;
     text-transform: uppercase;
@@ -519,16 +768,19 @@ main {
 
 .rodape-copyrigth {
     width: 100%;
-    height: 2.5rem;
+    height: 2.2rem;
     background-color: #030c09;
     position: absolute;
-    bottom: 0px;
+    bottom: -6px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #565656;
     font-size: 8px;
     font-family: 'Hind', sans-serif;
-    letter-spacing: 0.3px;
-   
+    letter-spacing: 0.3px;   
+}
+
+.rodape-copyrigth > h6 {
+    margin-top: 10px;
 }

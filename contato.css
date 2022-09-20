@@ -12,13 +12,158 @@ html {
     scroll-margin-top: 1em;
 }
 
-body {
+body, main  {
     width: 100%;
     height: 100vh;  
-  /*  background-color: yellow;*/  
+    background-color: #ffffff; 
+    overflow-x: hidden;
 }
 
-header {
+header, .cabecalho{
+    width: 100%;
+    height: 8rem;
+    /* background-color: aqua;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Hind', sans-serif;
+    position: fixed;
+    z-index: 99;   
+}
+
+.cabecalho a, .cabecalho i {
+    text-decoration: none;
+    font-size: 12.5px; 
+    color: #ffffff;   
+}
+
+.cabecalho-superior {
+    width: 100%;
+    height: 3rem;
+   /* background-color: rgb(4, 81, 95);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   margin: 15px 0;    
+}
+
+.cabecalho-superior .bgwhite {
+    background-color: #ffffff;
+}
+
+.telefones {
+    padding-bottom: 11px;
+}
+
+.cabecalho-inferior {
+    width: 100%;
+    height: 3rem;
+    background-color: #ffffff;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: 16vh;     
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    position: absolute; 
+    top: -16px;   
+    z-index: 99;
+}
+
+.menu-btn {
+    width: 100%;
+    height: 2rem;
+   /* background-color: #05fc1d;*/
+    position: absolute;
+    display: block;
+    padding-left: 30px;
+    padding-top: 4px;   
+}
+
+.menu-btn > i {
+    font-size: 25px;
+    color: #2a2c36; 
+}
+
+.navbar {
+    width: 100%;
+    margin-top: 22rem;
+    display: none;    
+}
+
+.navbar > ul {
+    list-style: none;   
+}
+
+.navbar > ul > li > a {
+    display: block;
+    width: 100%;    
+    background-color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2a2c36;
+}
+
+.navbar > ul > li > a:hover {
+    color: #ffffff;  
+    background-color: #b19879;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;   
+    color: #ffffff;  
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;     
+}
+
+.hero-texto {
+    width: 100%;
+    height: 15rem;
+     display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;  
+    /*background-color: #2a2c36;*/
+}
+
+.hero-texto > h1 {
+    font-size: 31px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 53.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;    
+    text-shadow:1px  rgb(43, 43, 43); 
+    padding-top: 60px;         
+}
+
+/*header {
     width: 100%;
     min-height: 41rem;  
     font-family: 'Hind', sans-serif;
@@ -60,7 +205,7 @@ header {
 .cabecalho-superior {
     width: 100%;
     height: 2.5rem;
-   /* background-color: rgb(15, 138, 160);*/
+   /* background-color: rgb(15, 138, 160);
     display: flex;   
     justify-content: space-between; 
     align-items: center;
@@ -103,7 +248,7 @@ header {
 .nav1, .nav2 {
    width: 25rem;
    height: 3.9rem;
- /*  background-color: palevioletred;*/
+ /*  background-color: palevioletred;
    display: flex;
    gap: 2rem;
    position: absolute;
@@ -173,7 +318,7 @@ main {
     background-color: #ffffff;   
     
 }
-
+*/
 .contato {
     width: 100%;
     height: 110em;
