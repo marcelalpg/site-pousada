@@ -12,12 +12,11 @@ html {
     scroll-margin-top: 1em;
 }
 
-body, main  {
+body  {
     width: 100%;
     height: 100vh;  
-    background-color: #ffffff; 
-    overflow-x: hidden;
-}
+    background-color: #ffffff;      
+}   
 
 header, .cabecalho{
     width: 100%;
@@ -128,6 +127,12 @@ header, .cabecalho{
     background-color: #b19879;
 }
 
+main {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 .hero {
     width: 100%;
     height: 60vh;  
@@ -177,8 +182,8 @@ header, .cabecalho{
 
 .festas-eventos {
     width: 100%;
-    height: 222rem;
-    /*background-color: rgb(127, 214, 214);*/
+    height: 230rem;
+   /* background-color: rgb(127, 214, 214);*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -187,7 +192,7 @@ header, .cabecalho{
 
 .festas-eventos-conteudo {
     width: 100%;
-    height:200rem;
+    height:auto;
    /* background-color: #7e6d4c;*/
     display: flex;
     justify-content: flex-start;
@@ -199,7 +204,7 @@ header, .cabecalho{
 
 .festas-eventos-texto {
     width: 100%;
-    height: 28.5rem;
+    height: 33rem;
     /*background-color: #f31818;*/
     text-align: justify;
     color: #818181;
@@ -231,8 +236,8 @@ header, .cabecalho{
 
 .festas-eventos-tipos {
     width: 100%;
-    height: 159rem;
-   /* background-color: #f18b8b;*/
+    height: auto;
+  /* background-color: #f18b8b;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -242,8 +247,8 @@ header, .cabecalho{
 
 .festas-eventos-casamento, .festas-eventos-aniversario, .festas-eventos-outros {
     width: 100%;
-    height: 48.5rem;
-   /* background-color: #6d441f;*/
+    height: 50rem;
+    /*background-color: #6d441f;*/
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -253,7 +258,7 @@ header, .cabecalho{
 }
 
 .festas-eventos-outros {
-    height: 51.5rem;
+    height: 53.1rem;
 }
 .festas-eventos-aniversario {
     height: 49rem;
@@ -366,8 +371,8 @@ header, .cabecalho{
 
 .casamento-texto, .aniversario-texto, .outros-texto {
     width: 100%;
-    height: 16.5rem;
-    /*background-color: #9c0101;*/
+    height: 22rem;
+   /* background-color: #9c0101;*/
     font-family: 'Barlow Condensed', sans-serif;
     text-align: justify;
     letter-spacing: 1px;
@@ -380,7 +385,7 @@ header, .cabecalho{
 }
 
 .outros-texto {
-    height: 19.3rem;
+    height: 21rem;
 }
 
 .casamento-texto h5, .aniversario-texto h5, .outros-texto h5 {
