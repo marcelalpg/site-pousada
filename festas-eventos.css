@@ -177,8 +177,8 @@ header, .cabecalho{
 
 .festas-eventos {
     width: 100%;
-    height: auto;
-    background-color: rgb(127, 214, 214);
+    height: 222rem;
+    /*background-color: rgb(127, 214, 214);*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -187,8 +187,8 @@ header, .cabecalho{
 
 .festas-eventos-conteudo {
     width: 100%;
-    height: 197.6rem;
-    background-color: #7e6d4c;
+    height:200rem;
+   /* background-color: #7e6d4c;*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -232,7 +232,7 @@ header, .cabecalho{
 .festas-eventos-tipos {
     width: 100%;
     height: 159rem;
-    background-color: #f18b8b;
+   /* background-color: #f18b8b;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -243,7 +243,7 @@ header, .cabecalho{
 .festas-eventos-casamento, .festas-eventos-aniversario, .festas-eventos-outros {
     width: 100%;
     height: 48.5rem;
-    background-color: #6d441f;
+   /* background-color: #6d441f;*/
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -367,7 +367,7 @@ header, .cabecalho{
 .casamento-texto, .aniversario-texto, .outros-texto {
     width: 100%;
     height: 16.5rem;
-    background-color: #9c0101;
+    /*background-color: #9c0101;*/
     font-family: 'Barlow Condensed', sans-serif;
     text-align: justify;
     letter-spacing: 1px;
@@ -746,6 +746,7 @@ header, .cabecalho{
 .rodape-copyrigth > h6 {
     margin-top: 10px;
 }
+/*
 body {
     width: 100%;
     height: 100vh;  
