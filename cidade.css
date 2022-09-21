@@ -358,13 +358,13 @@ main {
 
 .cidade {
     width: 100%;
-    height: 310rem;
-    background-color: #474747;
+    height: 280.5rem;
+   /* background-color: #474747;*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    gap: 5rem;
+    gap: 4rem;
     margin-top: 5rem;
     padding: 0 40px;
 }
@@ -372,7 +372,7 @@ main {
 .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
     width: 100%;
     height: auto;
-    background-color: aqua;
+   /* background-color: aqua;*/
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -535,16 +535,33 @@ main {
 
 .cidade-texto, .maria-fumaca-texto, .praca-leoes-texto, .gomeira-texto, .itaguare-texto, .ibama-texto, .ingazeiro-texto {
     width: 100%;
-    height: auto;
-    background-color: rebeccapurple;
+    height: 34rem;
+    /*background-color: rebeccapurple;*/
     /*position: absolute; 
     right: 0;
     padding: 20px;    */
 }
 
+.maria-fumaca-texto {
+    height: 30rem;
+}
+
 .praca-leoes-texto {
     height: 30%;
 }
+
+.gomeira-texto, .ingazeiro-texto {
+    height: 15rem;
+}
+
+.itaguare-texto {
+    height: 22rem;
+}
+
+.ibama-texto {
+    height: 26rem;
+}
+
 .cidade-texto h5, .maria-fumaca-texto h5, .praca-leoes-texto h5, .gomeira-texto h5, .itaguare-texto h5, .ibama-texto h5, .ingazeiro-texto h5 {
     font-size: 25px;
     font-weight: bold;
@@ -571,7 +588,7 @@ main {
     align-items: center;
     flex-direction: column;
     position: relative;   
-    margin-top: 5rem;     
+    margin-top: 4rem;     
     padding: 0 40px;
 }
 
