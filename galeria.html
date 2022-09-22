@@ -13,7 +13,7 @@
     <title>Galeria</title>
 </head>
 <body>
-    <header>
+  <!--  <header>
       <div class="cabecalho">
         <div class="cabecalho-superior"> 
           <div class="localizacao">
@@ -70,8 +70,48 @@
         <h1>Nossa Galeria</h1>
         <h2>Fotos e Vídeos</h2>
       </div>
-    </header>
+    </header>-->
+    <header>
+      <div class="cabecalho">
+        <div class="cabecalho-superior"> 
+          <div class="localizacao">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
+          </div>               
+          <div class="telefones">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="#">&nbsp;(35)99963-4214 | </a>
+            <i id="tel" class="fa-solid fa-phone"></i>
+            <a href="#">&nbsp;(35)3371-1110</a>
+          </div>       
+        </div>
+  
+         <div class="cabecalho-inferior">
+            <div class="logo"></div>
+            <div class="menu-btn">
+              <i id="icone-menu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+            </div>   
+            <nav class="navbar" id="itens">
+              <ul class="nav-list">
+                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
+                  <li class="nav-item"><a href="festas-eventos.html" class="nav-link">Festa & Eventos</a></li>
+                  <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                  <li class="nav-item"><a href="reservas.html" class="nav-link">Reservas</a></li>
+                  <li class="nav-item"><a href="cidade.html" class="nav-link">A Cidade</a></li>
+                  <li class="nav-item"><a href="contato.html"class="nav-link">Contato</a></li>
+              </ul>
+            </nav>     
+         </div>
+      </div>        
+  </header>   
     <main>
+      <div class="hero">
+        <div class="hero-texto">
+            <h1>Galeria</h1>  
+            <h2>Fotos e Vídeos</h2>
+        </div>
+    </div>
         <div class="galeria">
             <div class="blocoa">
               <div class="blocoa-l1">                    
@@ -194,48 +234,51 @@
         </div>                      
     </main>
     <footer class="rodape">
-        <div class="rodape-conteudo">
-            <div class="rodape-logo"></div>
-            <div class="rodape-contato">
-                <div class="rodape-contato-titulo">
-                    <h5>Contato</h5>
-                </div>
-                <div class="rodape-localizacao">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <a href="contato.html">&nbsp;Estrada de Pinheirinhos, nº 1515. &nbsp;Passa Quatro/MG</a>            
-                </div>
-                <div class="rodape-whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <a href=" https://api.whatsapp.com/send?phone=5535999634214"  target="_blank">&nbsp;(35)99963-4214</a>
-                </div>
-                <div class="rodape-telefone">
-                    <i id="tel" class="fa-solid fa-phone"></i>
-                    <a href="#">&nbsp;(35)3371-1110</a>
-                </div>           
-                <div class="rodape-email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="#">&nbsp;tiaana@pousadatianana.com.br</a>
-                </div>
-            </div>
-            <div class="rodape-idiomas">                
-                    <h5>Idiomas</h5>
-                    <p>Inglês</p>
-                    <p>Espanhol</p>
-            </div>
-            <div class="rodape-redes-sociais">
-                <div class="rodape-redes-sociais-titulo">
-                    <h5>Redes Sociais</h5>
-                </div>
-                <div class="rodape-redes-sociais-icones">
-                    <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>               
-            </div>            
-        </div>
-        <div class="rodape-copyrigth">
-            <h6>&copy;Copyrigth 2022 by MarcelaLPGay</h6>
-        </div>
-    </footer> 
+      <div class="rodape-conteudo">
+          <div class="rodape-logo"></div>
+          <div class="rodape-contato">                
+                  <h5>Contato</h5>                
+              <div class="rodape-localizacao">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <a href="contato.html">&nbsp;Estrada de Pinheirinhos, nº 1515. &nbsp;Passa Quatro/MG</a>            
+              </div>
+              <div class="rodape-fones">
+                  <div class="rodape-whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                      <a href=" https://api.whatsapp.com/send?phone=5535999634214"  target="_blank">&nbsp;(35)99963-4214</a>
+                  </div>
+                  <div class="rodape-telefone">
+                      <i id="tel" class="fa-solid fa-phone"></i>
+                      <a href="#">&nbsp;(35)3371-1110</a>
+                  </div>           
+              </div>                
+              <div class="rodape-email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="#">&nbsp;tiaana@pousadatianana.com.br</a>
+              </div>
+          </div>
+          <div class="rodape-idiomas">                
+                  <h5>Idiomas</h5>
+                  <div class="idiomas">
+                      <p>Inglês</p>
+                      <p>Espanhol</p>
+                  </div>                   
+          </div>
+          <div class="rodape-redes-sociais">
+              <div class="rodape-redes-sociais-titulo">
+                  <h5>Redes Sociais</h5>
+              </div>
+              <div class="rodape-redes-sociais-icones">
+                  <a href="https://www.facebook.com/joserobertopousada" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/pousadatiaana/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>               
+          </div>            
+      </div>
+      <div class="rodape-copyrigth">
+          <h6>&copy;Copyrigth 2022 by MarcelaLPGay</h6>
+      </div>
+  </footer>  
+
     
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -552,7 +595,16 @@
       </div>
     </div>
   </div>
-    <script src="galeria.js"></script>
+  <script>
+    function clickMenu() {
+        if (itens.style.display == "block") {
+            itens.style.display = "none"
+        }else {
+            itens.style.display = "block"
+        }
+    }
+</script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>
 </html>

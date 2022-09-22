@@ -1,4 +1,4 @@
-* {
+/** {
     margin:0;
     padding: 0;
     box-sizing: border-box;    
@@ -60,7 +60,7 @@ header {
 .cabecalho-superior {
     width: 100%;
     height: 2.5rem;
-   /* background-color: rgb(15, 138, 160);*/
+   /* background-color: rgb(15, 138, 160);
     display: flex;   
     justify-content: space-between; 
     align-items: center;
@@ -102,7 +102,7 @@ header {
 .nav1, .nav2 {
    width: 25rem;
    height: 3.9rem;
- /*  background-color: palevioletred;*/
+ /*  background-color: palevioletred;
    display: flex;
    gap: 2rem;
    position: absolute;
@@ -176,26 +176,212 @@ main {
     align-items: flex-start;
     flex-direction: column;        
 }
+*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    scroll-behavior: smooth;     
+     
+}
+
+/*:target {
+    scroll-margin-top: 1em;
+}
+*/
+body  {
+    width: 100%;
+    height: 100vh;  
+    background-color: #ffffff;      
+}    
+
+header, .cabecalho{
+    width: 100%;
+    height: 8rem;
+    /* background-color: aqua;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Hind', sans-serif;
+    position: fixed;
+    z-index: 99;      
+}
+
+.cabecalho a, .cabecalho i {
+    text-decoration: none;
+    font-size: 12.5px; 
+    color: #ffffff;   
+}
+
+.cabecalho-superior {
+    width: 100%;
+    height: 3rem;
+   /* background-color: rgb(4, 81, 95);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   margin: 15px 0;    
+}
+
+.telefones {
+    padding-bottom: 11px;
+}
+
+.cabecalho-inferior {
+    width: 100%;
+    height: 3rem;
+    background-color: #ffffff;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    position: relative;  
+}
+
+.logo {
+    width: 150px;
+    height: 16vh;     
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    position: absolute; 
+    top: -16px;   
+    z-index: 200;
+    overflow: visible;    
+}
+
+.menu-btn {
+    width: 100%;
+    height: 2rem;
+   /* background-color: #05fc1d;*/
+    position: absolute;
+    display: block;
+    padding-left: 30px;
+    padding-top: 4px;   
+}
+
+.menu-btn > i {
+    font-size: 25px;
+    color: #2a2c36; 
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    padding-top: 26.2rem;
+    display: none;  
+    /*background-color: blueviolet; */  
+}
+
+.navbar > ul {
+    list-style: none;   
+    padding-left: 0;
+}
+
+.navbar > ul > li > a {
+    display: block;
+    width: 100%;    
+    background-color: #ffffff;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2a2c36;    
+}
+
+.navbar > ul > li > a:hover {
+    color: #ffffff;  
+    background-color: #b19879;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.hero {
+    width: 100%;
+    height: 60vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;   
+    color: #ffffff;  
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/galeria/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.244.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;     
+}
+
+.hero-texto {
+    width: 100%;
+    height: 15rem;
+     display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;  
+    /*background-color: #2a2c36;*/
+}
+
+.hero-texto > h1 {
+    font-size: 31px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 53.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;    
+    text-shadow:1px  rgb(43, 43, 43); 
+    padding-top: 100px;         
+}
+
+.hero-texto > h2 {
+    font-size: 27px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.4px;
+   /* line-height: 34px;*/
+    margin-top: 20px;    
+    text-align: center;
+    text-shadow:1px solid rgb(43, 43, 43);    
+}
 
 .galeria {
     width: 100%;
-    height: 160rem;  
+    height: 110rem;  
     display: flex;
     justify-content: flex-start;
     align-items: flex-start; 
     flex-direction: column;   
-    margin-top: 0.5rem; 
+    margin-top: 5rem; 
+  /*  padding: 0 40px;*/
+  background-color: aqua;
 }
 
 .blocoa, .blocob, .blococ, .blocod, .blocoe {
     width: 100%;
-    height: 32rem;  
+    height: 22rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
     position: relative;
+    background-color: #2a2c36;
 }
 
 .blocob, .blocod {   
@@ -205,11 +391,18 @@ main {
 
 .blocoa-l1, .blocoa-l2, .blococ-l1, .blococ-l2, .blocoe-l1, .blocoe-l2 {
     width: 100%;
-    height: 15rem;
+    height: 10rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;  
     gap: 1rem;  
+}
+.blocoa-l1, .blococ-l1,.blocoe-l1 {
+    background-color: brown;
+}
+
+.blocoa-l2, .blococ-l2, .blocoe-l2 {
+    background-color: chartreuse;
 }
 
 .blococ-l2 {
@@ -219,8 +412,8 @@ main {
 }
 
 .img1, .img13, .img21 {
-    width: 17.3rem;
-    height: 15rem;  
+    width: /*17.3rem;*/5rem;
+    height: 10rem;  
     background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-06-17\ at\ 13.46.366.jpeg);    
     background-size: cover;
     background-position: top center;    
@@ -228,8 +421,8 @@ main {
 }
 
 .img2, .img3, .img11, .img12, .img22, .img23 {
-    width: 24rem;
-    height: 15rem;
+    width: /*24rem;*/8.5rem;
+    height: /*15rem;*/10rem;
     transition: all 0.2s;
 }
 
@@ -251,8 +444,8 @@ main {
 }
 
 .img4, .img14, .img24 {   
-    width: 38rem;
-    height: 15rem;
+    width: /*38rem;*/13rem;
+    height: /*15rem;*/ 10rem;
     transition: all .2s;    
 }
 
@@ -268,8 +461,8 @@ main {
 }
 
 .img5, .img15, .img25 {    
-    width: 28.3rem;
-    height: 15rem;
+    width: /*28.3rem;*/ 10rem;
+    height: /*15rem;*/10rem;
     transition: all .2s;
 }
 
@@ -285,8 +478,8 @@ main {
 }
 
 .blocob-col1, .img6, .img7, .blocod-col1, .img16, .img17 {
-    width: 24.6rem;
-    height: 15rem;  
+    width: /*24.6rem;*/7rem;
+    height: /*15rem;*/10rem;  
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -313,11 +506,11 @@ main {
 }
 
 .blocob-col2 .img8, .blocod-col2 .img18 {
-    width: 16rem;
-    height: 31rem;    
+    width: /*16rem;*/ 8rem;
+    height:/* 31rem;*/21rem;    
     position: absolute;
     top:0;
-    left: 25.6rem;  
+    left: 8rem;  
     transition: all .2s; 
 }
 
@@ -332,11 +525,11 @@ main {
     background-position: center center;
 }
 .blocob-col3, .img9, .img10, .blocod-col3, .img19, .img20 {
-    width: 24.6rem;
-    height: 15rem;   
+    width:/* 24.6rem;*/7rem;
+    height: /*15rem; */10rem;  
     position: absolute;
     top:0;
-    right: 4px;
+    right: 0;
     transition: all .2s;
 }
 
@@ -356,21 +549,21 @@ main {
     background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-06-08\ at\ 12.12.322.jpeg);
     background-size: cover;
     background-position: center center;
-    top: 16rem;
+    top: 11rem;
 }
 
 .img11 {
     background-image: url(imagens/galeria/CASAMENTO\ PUSADA\ 01\ \(4655\).jpg);
     background-size: cover;
     background-position: center center;
-    top: 16rem;
+    /*top: 5rem;*/
 }
 
 .img12 {
     background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-08-05\ at\ 07.40.37.jpeg);
     background-size: cover;
     background-position: center center;
-    top: 16rem;
+   /* top: 16rem;*/
 }
 
 .img13 {
@@ -424,7 +617,7 @@ main {
     background-image: url(imagens/galeria/20200909_1242188.jpg);
     background-size: cover;
     background-position: center center;
-    top: 16rem;    
+    top: 11rem;    
 }
 
 .img21 {
@@ -463,6 +656,232 @@ main {
 }
 
 .rodape {
+    width: 100%;
+    height: 23rem;
+    background-color: #04110e;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;   
+    margin-top: 5rem;     
+    padding: 0 40px;
+}
+
+.rodape-conteudo {
+    width: 100%;
+    height: 20rem;
+  /* background-color: #39a78d;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2px;
+    position: absolute;
+    top: 50px;   
+}
+
+.rodape-logo {
+    width: 150px;
+    height: 16vh;     
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    position: absolute;
+    top: -38px; 
+    z-index: 10;   
+}
+
+.rodape-contato {
+    width: 100%;
+    height: 7rem; 
+    /*background-color: #7a5a1a;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    /*position: relative;
+    top: 60px;*/
+}
+
+.rodape-localizacao, .rodape-email, .rodape-fones {
+    width: 100%;
+    height: 6rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+   /* background-color: blue;*/
+}
+
+.rodape-fones {
+    gap: 25px;
+}
+
+.rodape-localizacao > i {
+   position: relative;
+   top: -5px;
+   font-size: 14px;
+}
+
+.rodape-telefone > i {
+    font-size: 14px;
+}
+
+.rodape-email > i {
+    position: relative;
+    top: -2px;
+    font-size: 14px;
+}
+
+/*.rodape-localizacao > i {
+    position: absolute;
+    top: 36px;
+    left: 52px;
+}
+.rodape-whatsapp, .rodape-whatsapp i {
+    position: absolute;
+    top: 70px;
+    left: -70px;
+}
+
+.rodape-whatsapp i {
+    top: -6px;
+    left: 162px;
+}
+
+.rodape-telefone, .rodape-telefone i {
+    position: absolute;
+    left: 99px;
+    top: 70px;
+}
+
+.rodape-telefone i {
+    top: -6px;
+    left: 170px;
+    font-size: 14px;
+}
+
+.rodape-email, .rodape-email i {
+    position: absolute;
+    top: 95px;
+    left: 5px;
+}
+
+.rodape-email i {
+    top: -6px;
+    left: 110px;
+}
+*/
+.rodape-idiomas {
+    width: 100%;
+    height: 3.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  /* background-color: #21973f; */
+   padding: 5px;
+}
+
+.idiomas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+/*.rodape-idiomas > p, .ingles, .espanhol {
+    position: absolute;
+    top: 40px;       
+}
+
+.ingles {
+    left: 180px;
+}
+
+.espanhol {
+    left: 245px;
+}*/
+
+.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
+    color: #c3c3ac; 
+    margin-top: 1px;   
+}
+
+.rodape-idiomas p, .rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a { 
+    font-size: 14px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 10px;
+    text-decoration: none;
+    color: #c3c3ac;    
+    text-align: center;
+}
+
+.rodape-localizacao a:hover, .rodape-whatsapp a:hover, .rodape-telefone a:hover, .rodape-email a:hover {
+    color: #7e6d4c;
+}
+
+.rodape-redes-sociais {
+    width: 100%;
+    height: 4rem;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    gap: 2px;
+    color: #ffffff;
+   /* background-color: #921515; */
+}
+
+.rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #c3c3ac;
+}
+
+.rodape-redes-sociais a {
+    padding: 0 20px;
+ }
+
+.rodape-redes-sociais i {
+    font-size: 20px;
+    color: #c3c3ac;    
+}
+
+.rodape-redes-sociais i:hover {
+    color: #7e6d4c;
+}
+
+.rodape-copyrigth {
+    width: 100%;
+    height: 2.2rem;
+    background-color: #030c09;
+    position: absolute;
+    bottom: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+    font-size: 8px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.3px;   
+}
+
+.rodape-copyrigth > h6 {
+    margin-top: 10px;
+}
+
+/*.rodape {
     width: 100%;
     height: 15rem;
     background-color: #04110e;
