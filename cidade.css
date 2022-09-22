@@ -358,7 +358,7 @@ main {
 
 .cidade {
     width: 100%;
-    height: 289.4rem;
+    height: 294.3rem;
     /*background-color: #474747;*/
     display: flex;
     justify-content: flex-start;
@@ -372,7 +372,7 @@ main {
 .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
     width: 100%;
     height: auto;
-    /*background-color: aqua;*/
+   /* background-color: aqua;*/
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -543,7 +543,7 @@ main {
 }
 
 .maria-fumaca-texto {
-    height: 29.3rem;
+    height: 30.9rem;
 }
 
 .praca-leoes-texto {
@@ -559,7 +559,7 @@ main {
 }
 
 .ibama-texto {
-    height: 25rem;
+    height: 28.4rem;
 }
 
 .cidade-texto h5, .maria-fumaca-texto h5, .praca-leoes-texto h5, .gomeira-texto h5, .itaguare-texto h5, .ibama-texto h5, .ingazeiro-texto h5 {

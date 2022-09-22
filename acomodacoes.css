@@ -1,24 +1,23 @@
 * {
     margin:0;
     padding: 0;
-    box-sizing: border-box;        
+    box-sizing: border-box;    
 }
 
 html {
-    scroll-behavior: smooth; 
-   
+    scroll-behavior: smooth;     
+     
 }
 
-:target {
+/*:target {
     scroll-margin-top: 1em;
 }
-
-body, main{
+*/
+body  {
     width: 100%;
-    height: 100vh;
-    background-color: #ffffff;  
-    overflow-x: hidden;  
-}
+    height: 100vh;  
+    background-color: #ffffff;      
+}    
 
 header, .cabecalho{
     width: 100%;
@@ -28,13 +27,13 @@ header, .cabecalho{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
- /*   flex-wrap: wrap;*/
+    flex-wrap: wrap;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     font-family: 'Hind', sans-serif;
     position: fixed;
-    z-index: 99;   
+    z-index: 99;      
 }
 
 .cabecalho a, .cabecalho i {
@@ -51,11 +50,7 @@ header, .cabecalho{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 15px 0;    
-}
-
-.cabecalho-superior .bgwhite {
-    background-color: #ffffff;
+   margin: 15px 0;    
 }
 
 .telefones {
@@ -70,7 +65,7 @@ header, .cabecalho{
     display: flex;   
     justify-content: center;
     align-items: center; 
-    position: relative;
+    position: relative;  
 }
 
 .logo {
@@ -81,7 +76,8 @@ header, .cabecalho{
     background-repeat: no-repeat; 
     position: absolute; 
     top: -16px;   
-    z-index: 99;
+    z-index: 200;
+    overflow: visible;    
 }
 
 .menu-btn {
@@ -101,20 +97,22 @@ header, .cabecalho{
 
 .navbar {
     width: 100%;
-    margin-top: 22rem;
-    display: none; 
-    margin: auto; 
+    height: auto;
+    padding-top: 26.2rem;
+    display: none;  
+    /*background-color: blueviolet; */  
 }
 
 .navbar > ul {
     list-style: none;   
+    padding-left: 0;
 }
 
 .navbar > ul > li > a {
     display: block;
     width: 100%;    
     background-color: #ffffff;
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
@@ -129,9 +127,15 @@ header, .cabecalho{
     background-color: #b19879;
 }
 
+main {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 .hero {
     width: 100%;
-    height: 70vh;  
+    height: 60vh;  
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -145,10 +149,11 @@ header, .cabecalho{
 
 .hero-texto {
     width: 100%;
-    height: 10rem;
+    height: 15rem;
      display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    flex-direction: column;  
     /*background-color: #2a2c36;*/
 }
 
@@ -160,66 +165,83 @@ header, .cabecalho{
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;    
-    text-shadow:1px  rgb(43, 43, 43);   
-    margin-top: 75px;     
+    text-shadow:1px  rgb(43, 43, 43); 
+    padding-top: 100px;         
+}
+
+.hero-texto > h2 {
+    font-size: 27px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.4px;
+   /* line-height: 34px;*/
+    margin-top: 20px;    
+    text-align: center;
+    text-shadow:1px solid rgb(43, 43, 43);    
 }
 
 .acomodacoes {
     width: 100%;
-    height: 280rem;
-    background-color: #d30606;
+    height: 272.8rem;
+   /* background-color: #d35106;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 20px;   
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 18px;
     color: #8d8d8d;       
     margin-top: 5rem; 
 }
 
 .acomodacoes-texto {
     width: 100%;
-    height: 30rem;
-    background-color: #f75252;
+    height: 32.6rem;
+  /*  background-color: #e63e3e;*/
     text-align: justify;
-    margin-bottom: -1rem; 
-    padding: 0 40px;   
+    color: #818181;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;    
+    padding: 0 40px;       
 }
+
+/*.acomodacoes-texto > p {
+    margin-top: 25px;
+}*/
 
 .acomodacoes-texto h3 {
     font-size: 38px;
-    color: #2a2c36;
+    font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 20px;    
+    color: #2a2c36;   
+    margin-top: -8px;      
 }
 
 .acomodacoes-tipo {
     width: 100%;
-    height: 231rem;
-   background-color: blueviolet;
+    height: auto;
+  /* background-color: blueviolet;*/
     display: flex;
     justify-content: flex-start;
     align-items:flex-start;
     flex-direction: column;
-    position: relative;   
-    margin-top: 5rem;   
+    position: relative;      
 }
 
 .standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo{
     width: 100%;
-    height: 50rem;
-   background-color: green;
+    height: auto;
+  /* background-color: green;*/
     display: flex;
     justify-content: flex-start;
     align-items: center; 
-    flex-direction: column;    
-    position: absolute;     
+    flex-direction: column; 
+    gap: 1rem;   
+    margin-top: 5rem;
+   /* position: absolute;   */  
 }
 
-.standard {
+/*.standard {
     top:0;
 }
 
@@ -237,11 +259,11 @@ header, .cabecalho{
 
 .luxo {
     top: 120rem
-}
+}*/
 .standard-carousel, .semi-luxo-carousel, .chale-carousel, .sl-sacada-carousel, .luxo-carousel {
     width: 100%;
     height: 20rem;
-    background-color: blue;
+   /* background-color: blue;*/
 }
 
 .carousel-control-next-standard, .carousel-control-next-chale, .carousel-control-next-luxo, .carousel-control-prev-semi-luxo, .carousel-control-prev-sl-sacada {
@@ -368,18 +390,25 @@ header, .cabecalho{
 }
 
 /*quarto1-standard, quarto2-semi luxo, quarto3-chale, quarto4-semiluxo sacada, quarto5-luxo*/
-.quarto1 .quarto2, .quarto3, .quarto4, .quarto5 {
+.quarto1 .quarto2, .quarto3, .quarto4, .quarto5, .quarto1-descricao, .quarto2-descricao, .quarto3-descricao, .quarto4-descricao, .quarto5-descricao {
     width: 100%;
-    height: 30rem;
-    background-color: rgb(245, 134, 31);
+    height: 23rem;
+    /*background-color: rgb(245, 195, 31);*/
     display: flex;
     justify-content: center;
     align-items: center;  
-    flex-direction: column;   
-   
+    flex-direction: column;         
 }
 
-.quarto1-descricao, .quarto2-descricao, .quarto3-descricao, .quarto4-descricao, .quarto5-descricao {
+.quarto1, .quarto1-descricao {
+    height: 20rem;
+}
+
+.quarto2, .quarto2-descricao {
+    height: 21.5rem;
+}
+
+/*.quarto1-descricao, .quarto2-descricao, .quarto3-descricao, .quarto4-descricao, .quarto5-descricao {
     width: 100%;
     height: 30rem;
     background-color: #2b1414;
@@ -389,8 +418,7 @@ header, .cabecalho{
     letter-spacing: 1px;    
     text-align: justify;     
     
-}
-
+}*/
 
 .quarto1-descricao-texto h5, .quarto2-descricao-texto h5, .quarto3-descricao-texto h5, .quarto4-descricao-texto h5, .quarto5-descricao-texto h5 {
     font-size: 25px;
@@ -398,19 +426,25 @@ header, .cabecalho{
     font-family: 'Gilda Display', serif;
     letter-spacing: 0.5px;
     text-align: center;
-    color: #2a2c36;
-    padding-bottom: 5px;
-    padding-top: 18px;
+    color: #2a2c36;  
+    padding: 0 40px;     
 }
-
+.quarto1-descricao-texto p, .quarto2-descricao-texto p, .quarto3-descricao-texto p, .quarto4-descricao-texto p, .quarto5-descricao-texto p {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #818181;
+    font-size: 16px;   
+    padding: 0 40px;
+}
 .quarto1-descricao-icones, .quarto2-descricao-icones, .quarto3-descricao-icones, .quarto4-descricao-icones, .quarto5-descricao-icones {
     width: 100%;
-    height: 12rem;
+    height: 11rem;
     display: flex;
     justify-content: left;
     align-items: left;  
     margin-top: 10px;  
-    background-color: aqua;
+   /* background-color: aqua;*/
 }
 
 .icones1-col1, .icones1-col2, .icones2-col1, .icones2-col2, .icones3-col1, .icones3-col2, .icones4-col1, .icones4-col2, .icones5-col1, .icones5-col2 {
@@ -423,11 +457,15 @@ header, .cabecalho{
     flex-direction: column;
 }    
 
+.icones1-col1, .icones2-col1, .icones3-col1, .icones4-col1, .icones5-col1 {
+    padding-left: 40px;
+}
+
 /*frigobar*/
 .quarto1-icone, .quarto2-icone, .quarto3-icone, .quarto4-icone, .quarto5-icone {
     width: 100%;
     height: 4rem;
-    background-color: #7e6d4c;
+   /* background-color: #7e6d4c;*/
     position: relative;    
 }
 
@@ -453,93 +491,169 @@ header, .cabecalho{
 
 .rodape {
     width: 100%;
-    height: 38rem;
+    height: 23rem;
     background-color: #04110e;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     position: relative;   
-    margin-top: 4rem;   
+    margin-top: 5rem;     
+    padding: 0 40px;
 }
 
 .rodape-conteudo {
     width: 100%;
-    height: 35rem;
-   /* background-color: #04110e;*/
+    height: 20rem;
+  /* background-color: #39a78d;*/
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8px;    
-    padding: 0 10px;
+    gap:2px;
+    position: absolute;
+    top: 50px;   
 }
 
 .rodape-logo {
-    width: 210px;
-    height: 16vh; 
-    background-image:url(imagens/LOGO\ POUSADA-fundobranco.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    background-size: cover;
-    top: 0;
+    width: 150px;
+    height: 16vh;     
+    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    position: absolute;
+    top: -38px; 
+    z-index: 10;   
 }
 
 .rodape-contato {
     width: 100%;
-    height: 12rem; 
-   /* background-color: #2b1414;*/
+    height: 7rem; 
+    /*background-color: #7a5a1a;*/
     display: flex;
-    justify-content: flex-start;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 5px;
-    padding-top: 10px;   
+    padding: 5px;
+    /*position: relative;
+    top: 60px;*/
 }
 
-.rodape-localizacao, .rodape-email, .rodape-whatsapp, .rodape-telefone {
+.rodape-localizacao, .rodape-email, .rodape-fones {
     width: 100%;
-    height: 5rem;  
+    height: 6rem;  
     display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    gap: 5px;
-    font-size: 13px;
-    letter-spacing: 0.2px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+   /* background-color: blue;*/
 }
 
+.rodape-fones {
+    gap: 25px;
+}
+
+.rodape-localizacao > i {
+   position: relative;
+   top: -5px;
+   font-size: 14px;
+}
+
+.rodape-telefone > i {
+    font-size: 14px;
+}
+
+.rodape-email > i {
+    position: relative;
+    top: -2px;
+    font-size: 14px;
+}
+
+/*.rodape-localizacao > i {
+    position: absolute;
+    top: 36px;
+    left: 52px;
+}
+.rodape-whatsapp, .rodape-whatsapp i {
+    position: absolute;
+    top: 70px;
+    left: -70px;
+}
+
+.rodape-whatsapp i {
+    top: -6px;
+    left: 162px;
+}
+
+.rodape-telefone, .rodape-telefone i {
+    position: absolute;
+    left: 99px;
+    top: 70px;
+}
+
+.rodape-telefone i {
+    top: -6px;
+    left: 170px;
+    font-size: 14px;
+}
+
+.rodape-email, .rodape-email i {
+    position: absolute;
+    top: 95px;
+    left: 5px;
+}
+
+.rodape-email i {
+    top: -6px;
+    left: 110px;
+}
+*/
 .rodape-idiomas {
     width: 100%;
-    height: 6.6rem;
+    height: 3.4rem;
     display: flex;
     justify-content: flex-start;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
-    gap: 5px;
-   /* background-color: #7e6d4c;  */ 
+  /* background-color: #21973f; */
+   padding: 5px;
 }
 
-.rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
-    color: #c3c3ac;    
+.idiomas {
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+/*.rodape-idiomas > p, .ingles, .espanhol {
+    position: absolute;
+    top: 40px;       
 }
 
+.ingles {
+    left: 180px;
+}
+
+.espanhol {
+    left: 245px;
+}*/
+
 .rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
-   margin-top: -1px;
+    color: #c3c3ac; 
+    margin-top: 1px;   
 }
 
 .rodape-idiomas p, .rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a { 
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Hind', sans-serif;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
+    line-height: 10px;
     text-decoration: none;
     color: #c3c3ac;    
-}
-
-.rodape-localizacao a, .rodape-whatsapp a, .rodape-telefone a, .rodape-email a {
-    padding-left: -10px;
+    text-align: center;
 }
 
 .rodape-localizacao a:hover, .rodape-whatsapp a:hover, .rodape-telefone a:hover, .rodape-email a:hover {
@@ -548,18 +662,21 @@ header, .cabecalho{
 
 .rodape-redes-sociais {
     width: 100%;
-    height: 6.4rem; 
-   /* background-color: #55432b; */
-    display: flex;      
-    gap: 5px;
-    color: #c3c3ac; 
-    position: relative;  
+    height: 4rem;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    gap: 2px;
+    color: #ffffff;
+   /* background-color: #921515; */
 }
 
 .rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.3px;
-    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 24px;
     text-transform: uppercase;
@@ -567,32 +684,24 @@ header, .cabecalho{
 }
 
 .rodape-redes-sociais a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: left;      
+    padding: 0 20px;
  }
 
 .rodape-redes-sociais i {
-    font-size: 18px;
-    color: #c3c3ac; 
-    position: absolute;  
-    left: 0; 
-    top: 40px;    
+    font-size: 20px;
+    color: #c3c3ac;    
 }
 
 .rodape-redes-sociais i:hover {
     color: #7e6d4c;
 }
 
-#instagram-rodape {
-    top: 80px;
-}
-
 .rodape-copyrigth {
     width: 100%;
-    height: 2rem;
+    height: 2.2rem;
     background-color: #030c09;
-    padding-top: 15px;
+    position: absolute;
+    bottom: -6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -602,6 +711,9 @@ header, .cabecalho{
     letter-spacing: 0.3px;   
 }
 
+.rodape-copyrigth > h6 {
+    margin-top: 10px;
+}
 
 
 /*
