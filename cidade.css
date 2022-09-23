@@ -383,10 +383,13 @@ main {
    /* margin-bottom: 5.8rem;*/
 }
 
-.maria-fumaca, .praca-leoes {
+.maria-fumaca, .ingazeiro {
     margin-top: 3rem;
 }
 
+.praca-leoes {
+    margin-top: 2rem;
+}
 
 .cidade-foto1, .maria-fumaca-foto1, .praca-leoes-foto1, .gomeira-foto1, .itaguare-foto1, .ibama-foto1, .ingazeiro-foto1 {
     width: 20.3rem;
@@ -593,7 +596,7 @@ main {
     align-items: center;
     flex-direction: column;
     position: relative;   
-    margin-top: 5rem;     
+    margin-top: 4rem;     
     padding: 0 40px;
 }
 

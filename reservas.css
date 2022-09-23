@@ -391,7 +391,7 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 0 40px;
 }
 
@@ -575,7 +575,7 @@ main {
     align-items: center;
     flex-direction: column;
     position: relative;   
-    margin-top: 5rem;     
+    margin-top: 3rem;     
     padding: 0 40px;
 }
 

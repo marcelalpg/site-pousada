@@ -13,7 +13,7 @@
     <title>Contato</title>
 </head>
 <body>
-    <header>
+  <!--  <header>
         <div class="cabecalho">
           <div class="cabecalho-superior"> 
             <div class="localizacao">
@@ -70,13 +70,53 @@
             <h1>Contato</h1>
             <h2>Será um prazer atender você!</h2>
         </div>
-    </header>
+    </header>-->
+    <header>
+        <div class="cabecalho">
+          <div class="cabecalho-superior"> 
+            <div class="localizacao">
+              <i class="fa-solid fa-location-dot"></i>
+              <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
+            </div>               
+            <div class="telefones">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="#">&nbsp;(35)99963-4214 | </a>
+              <i id="tel" class="fa-solid fa-phone"></i>
+              <a href="#">&nbsp;(35)3371-1110</a>
+            </div>       
+          </div>
+    
+           <div class="cabecalho-inferior">
+              <div class="logo"></div>
+              <div class="menu-btn">
+                <i id="icone-menu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+              </div>   
+              <nav class="navbar" id="itens">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
+                    <li class="nav-item"><a href="festas-eventos.html" class="nav-link">Festa & Eventos</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item"><a href="reservas.html" class="nav-link">Reservas</a></li>
+                    <li class="nav-item"><a href="cidade.html" class="nav-link">A Cidade</a></li>
+                    <li class="nav-item"><a href="contato.html"class="nav-link">Contato</a></li>
+                </ul>
+              </nav>     
+           </div>
+        </div>        
+    </header>   
     <main>
+        <div class="hero">
+            <div class="hero-texto">
+                <h1>Contato</h1>  
+                <h2>Olá, como vai? Será um prazer atender você!</h2>
+            </div>
+        </div>
         <section class="contato">
             <div class="contato-conteudo">                
                 <div class="contato-formulario">
-                    <h3>Olá, como vai? Entre em contato conosco.</h3>
-                    <div class="col-lg-15">   
+                    <h3>Entre em contato conosco.</h3>
+                 <!--   <div class="col-lg-15">   
                         <form action="https://formsubmit.co/tiaana@pousadatiaana.com.br" method="POST">
                             <input type="text" class="form-control-lg" placeholder="Nome:" required>
                             <input type="email" class="form-personalizado" placeholder="Email:" required>
@@ -86,7 +126,18 @@
                             <input type="hidden" name="_next" value="https://http://127.0.0.1:5500/thanks.html">
                             <button type="submit" class="btn">Enviar</button>
                        </form>                                                
-                    </div>
+                    </div>-->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                        <input type="text" class="form-control mb-3" id="exampleFormControlInput1" placeholder="">
+                        <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
 
                 <div class="contato-dados">
@@ -94,7 +145,7 @@
                     <div class="contato-informacoes">
                         <div class="endereco">
                             <i class="fa-solid fa-location-dot"></i>
-                            <a href="#mapa">&nbsp;Estrada de Pinheirinhos, nº 1515. &nbsp;Passa Quatro/MG</a>            
+                            <a href="#mapa">&nbsp;Estrada de Pinheirinhos, nº 1515.</a>            
                         </div>
                         <div class="whatsapp">
                             <i class="fa-brands fa-whatsapp"></i>
@@ -150,38 +201,40 @@
                 </div>
             </div>  
             <div class="contato-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.465812635612!2d-44.98429098598532!3d-22.411486885265884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9dff3626cdecf1%3A0xcc59b52c5dcc80be!2sPousada%20Tia%20Ana!5e0!3m2!1spt-BR!2sbr!4v1656935292747!5m2!1spt-BR!2sbr" id="mapa" width="100%" height="500" style="border:0; object-fit: cover;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.465812635612!2d-44.98429098598532!3d-22.411486885265884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9dff3626cdecf1%3A0xcc59b52c5dcc80be!2sPousada%20Tia%20Ana!5e0!3m2!1spt-BR!2sbr!4v1656935292747!5m2!1spt-BR!2sbr" id="mapa" width="100%" height="300" style="border:0; object-fit: cover;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </div>                 
         </section>        
     </main>
     <footer class="rodape">
         <div class="rodape-conteudo">
             <div class="rodape-logo"></div>
-            <div class="rodape-contato">
-                <div class="rodape-contato-titulo">
-                    <h5>Contato</h5>
-                </div>
+            <div class="rodape-contato">                
+                    <h5>Contato</h5>                
                 <div class="rodape-localizacao">
                     <i class="fa-solid fa-location-dot"></i>
                     <a href="contato.html">&nbsp;Estrada de Pinheirinhos, nº 1515. &nbsp;Passa Quatro/MG</a>            
                 </div>
-                <div class="rodape-whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <a href="https://api.whatsapp.com/send?phone=5535999634214"  target="_blank">&nbsp;(35)99963-4214</a>
-                </div>
-                <div class="rodape-telefone">
-                    <i id="tel" class="fa-solid fa-phone"></i>
-                    <a href="#">&nbsp;(35)3371-1110</a>
-                </div>           
+                <div class="rodape-fones">
+                    <div class="rodape-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href=" https://api.whatsapp.com/send?phone=5535999634214"  target="_blank">&nbsp;(35)99963-4214</a>
+                    </div>
+                    <div class="rodape-telefone">
+                        <i id="tel" class="fa-solid fa-phone"></i>
+                        <a href="#">&nbsp;(35)3371-1110</a>
+                    </div>           
+                </div>                
                 <div class="rodape-email">
                     <i class="fa-solid fa-envelope"></i>
-                    <a href="#">&nbsp;tiaana@pousadatiaana.com.br</a>
+                    <a href="#">&nbsp;tiaana@pousadatianana.com.br</a>
                 </div>
             </div>
             <div class="rodape-idiomas">                
                     <h5>Idiomas</h5>
-                    <p>Inglês</p>
-                    <p>Espanhol</p>
+                    <div class="idiomas">
+                        <p>Inglês</p>
+                        <p>Espanhol</p>
+                    </div>                   
             </div>
             <div class="rodape-redes-sociais">
                 <div class="rodape-redes-sociais-titulo">
@@ -196,7 +249,18 @@
         <div class="rodape-copyrigth">
             <h6>&copy;Copyrigth 2022 by MarcelaLPGay</h6>
         </div>
-    </footer>  
+    </footer> 
+    
+    <script>
+        function clickMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            }else {
+                itens.style.display = "block"
+            }
+        }
+    </script> 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>
 </html>

@@ -412,7 +412,7 @@ main {
 }
 
 .img1, .img13, .img21 {
-    width: /*17.3rem;*/5rem;
+    width: /*17.3rem;*/6rem;
     height: 10rem;  
     background-image: url(imagens/galeria/WhatsApp\ Image\ 2022-06-17\ at\ 13.46.366.jpeg);    
     background-size: cover;
@@ -461,7 +461,7 @@ main {
 }
 
 .img5, .img15, .img25 {    
-    width: /*28.3rem;*/ 10rem;
+    width: /*28.3rem;*/ 11rem;
     height: /*15rem;*/10rem;
     transition: all .2s;
 }
