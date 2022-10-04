@@ -225,7 +225,7 @@ header, .cabecalho{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);*/
-    margin-top: 70px;
+    margin-top: 100px;
    /*background-color: #2a2c36;  */
     display: flex;
     justify-content: center;
@@ -386,6 +386,9 @@ header, .cabecalho{
        margin-top: 120px;          
     }
     
+    .redes-sociais {        
+        margin-top: 70px;       
+    }   
     
     /*
     .redes-sociais {
