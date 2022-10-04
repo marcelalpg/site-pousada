@@ -198,7 +198,7 @@ body  {
 header, .cabecalho{
     width: 100%;
     height: 8rem;
-    /* background-color: aqua;*/
+    /*background-color: rgb(17, 100, 100);*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -359,7 +359,7 @@ main {
 .cidade {
     width: 100%;
     height: 295.3rem;
-   /* background-color: #474747;*/
+    background-color: #474747;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -371,7 +371,7 @@ main {
 .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
     width: 100%;
     height: auto;
-   /* background-color: aqua;*/
+    background-color: aqua;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -811,4 +811,153 @@ main {
 
 .rodape-copyrigth > h6 {
     margin-top: 10px;
+}
+
+
+/*p/ tablet*/
+@media (min-width: 768px) {
+    .cabecalho a, .cabecalho i {
+        text-decoration: none;
+        font-size: 14px; 
+        color: #ffffff;   
+    }
+
+    .logo {
+        width: 170px;
+        height: 17vh;     
+        background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+        background-size: contain;
+        background-repeat: no-repeat; 
+        position: absolute; 
+        top: -16px;   
+        z-index: 200;
+        overflow: visible;    
+    }
+
+    .menu-btn > i {
+        font-size: 28px;        
+    }
+
+    .hero-texto > h1 {
+        font-size: 40px;            
+    }
+
+    .hero-texto > h2 {
+        font-size: 30px;       
+    }
+    
+    .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
+        flex-direction: column;       
+    }
+
+    .cidade-foto1, .maria-fumaca-foto1, .praca-leoes-foto1, .gomeira-foto1, .itaguare-foto1, .ibama-foto1, .ingazeiro-foto1 {
+        width: 34.5%;
+        height: 25rem;
+        display: flex; 
+    }
+
+    /*.cidade-foto1 {
+        background-image: url(imagens/cidade/20201028_1058599.jpg);  
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+    
+    .cidade-foto1:hover, .maria-fumaca-foto1:hover, .praca-leoes-foto1:hover, .gomeira-foto1:hover, .itaguare-foto1:hover, .ibama-foto1:hover, .ingazeiro-foto1:hover {
+       opacity: 0.8;
+       transition: .3s;
+       transform: scale(1.001);   
+       border: 5px solid #e1bd85;
+    }
+    
+    .maria-fumaca-foto1 {
+        background-image: url(imagens/cidade/20220507_1022555.jpg);  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        right: 0;    
+    }
+    
+    .praca-leoes-foto1 {
+        background-image: url(imagens/cidade/20201028_1045066.jpg);  
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .gomeira-foto1 {
+        background-image: url(imagens/cidade/acidade04.jpg);  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        right: 0;
+    }
+    
+    .itaguare-foto1 {
+        background-image: url(imagens/cidade/acidade166.jpg);  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: rigth center;
+    }
+    
+    .ibama-foto1 {
+        background-image: url(imagens/cidade/acidade05.jpg);  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+        right: 0;
+    }
+    
+    .ingazeiro-foto1 {
+        background-image: url(imagens/cidade/acidade12.jpg);  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }*/
+
+    .cidade-foto2, .praca-leoes-foto2, .gomeira-foto2, .itaguare-foto2, .ibama-foto2, .ingazeiro-foto2 {
+        width: 65%;
+        height: 14rem;
+        /*background-color: yellowgreen;*/
+        position: absolute; 
+        bottom: 0;
+        right: 0;    
+        transition: all 0.3s;
+    }
+
+    .maria-fumaca-video {
+        width: 80%;
+        height: 15rem;
+      /* background-color: yellowgreen;*/
+        position: relative; 
+      /*  top: 362px;    
+        left: 0; */ 
+        transition: all 0.3s; 
+    }
+    
+    .maria-fumaca-video:hover {
+       border: 3px solid #e1bd85;
+       opacity: 0.8;
+       transition: .3s;
+       transform: scale(0.999);
+    }
+    
+    .maria-fumaca-video > video {
+        position: absolute;
+        width: 80%;
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    .cidade-texto, .maria-fumaca-texto, .praca-leoes-texto, .gomeira-texto, .itaguare-texto, .ibama-texto, .ingazeiro-texto {
+        width: 65%;
+        height: 33rem;
+        background-color: rebeccapurple;
+        /*position: absolute; 
+        right: 0;
+        padding: 20px;    */
+    }
+
+    .cidade-texto {
+        height: 35rem;
+       margin-left: 240px;
+    }
 }

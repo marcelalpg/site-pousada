@@ -17,6 +17,8 @@ body, main, .carousel, .carousel-inner, .carousel-item  {
     height: 100vh;  
     background-color: #ffffff; 
     position: relative; 
+    margin: auto;
+    
 }
 
 header, .cabecalho{
@@ -99,7 +101,7 @@ header, .cabecalho{
     height: auto;
     padding-top: 26.2rem;
     display: none;  
-    /*background-color: blueviolet; */  
+   /* background-color: blueviolet;*/ 
 }
 
 .navbar > ul {
@@ -111,7 +113,7 @@ header, .cabecalho{
     display: block;
     width: 100%;    
     background-color: #ffffff;
-    padding: 15px;
+    padding: 15px;    
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
@@ -147,6 +149,7 @@ header, .cabecalho{
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 20px;
+    /*background-color: black;*/
 }
 
 #slide1-texto > h1, #slide2-texto > h1, #slide3-texto > h1, #slide4-texto > h1, #slide5-texto > h1, #slide6-texto > h1, #slide7-texto > h1 {
@@ -218,34 +221,34 @@ header, .cabecalho{
 .redes-sociais {
     width: 100%;
     height: 2rem;
-    position: absolute;
+    /*position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 278px;     
+    transform: translate(-50%, -50%);*/
+    margin-top: 70px;
+   /*background-color: #2a2c36;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }   
 
-.redes-sociais a {
-    margin: 0 45px;
+.redes-sociais a {   
     font-family: 'Kanit', sans-serif;
     font-size: 24px;
-    color: #ffffff;
-    margin-right: 40px; 
+    color: #ffffff;   
 }
-
 
 .pulsar  {
     width: 2rem;
-    height: 2rem;
-   /* background-color: #ffffff;*/
+    height: 2rem;   
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 220px;
-    top: -33px;
-    border-radius: 50%;
-    margin-left: 30px;
+    left: 2px;
+    top: 0px;
+    border-radius: 50%; 
 }
 
 .pulsar:before , .pulsar::after {
@@ -280,7 +283,7 @@ header, .cabecalho{
 }
 
 #slide1 {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.471.jpeg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.4)), url(imagens/home/WhatsApp\ Image\ 2022-06-17\ at\ 13.59.471.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center ;
@@ -288,7 +291,7 @@ header, .cabecalho{
 
 #slide2 {
     /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/home/20200327_12033922.jpg);*/
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg); 
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -333,6 +336,109 @@ header, .cabecalho{
     background-position: center center;
 }
 
+@media (min-width: 768px) {
+    .cabecalho a, .cabecalho i {
+        text-decoration: none;
+        font-size: 14px; 
+        color: #ffffff;   
+    }
+
+    #zap-cabecalho {
+        font-size: 16px;
+    }
+
+    .menu-btn {        
+        overflow: visible;   
+    }
+    
+    .menu-btn > i {
+        font-size: 27px;
+        color: #2a2c36; 
+    }
+
+    .logo {
+        width: 170px;
+        height: 17vh;         
+    }
+
+    .nav-list {
+        padding-top: 39px;
+    }
+
+    #slide1-texto, #slide2-texto, #slide3-texto, #slide4-texto, #slide5-texto, #slide6-texto, #slide7-texto {
+        height: 20rem;       
+    }
+
+    #slide1-texto > h1, #slide2-texto > h1, #slide3-texto > h1, #slide4-texto > h1, #slide5-texto > h1, #slide6-texto > h1, #slide7-texto > h1 {
+        font-size: 32px;         
+        margin-top: 12px; 
+    } 
+    
+    #slide1-texto > h2, #slide2-texto > h2, #slide3-texto > h2, #slide4-texto > h2, #slide5-texto > h2, #slide6-texto > h2, #slide7-texto > h2 {
+        font-size: 30px;        
+    }
+    
+    #slide1-texto > p, #slide2-texto > p, #slide3-texto > p, #slide4-texto > p, #slide5-texto > p, #slide6-texto > p, #slide7-texto > p {
+        font-size: 17px;        
+    }
+
+    .saibamais {       
+       margin-top: 120px;          
+    }
+    
+    
+    /*
+    .redes-sociais {
+        width: 100%;
+        height: 2rem;
+        background-color: blueviolet;
+        /*position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 178px;     
+    }   
+    
+    .face, .insta, .zapzap {
+        width: 4rem;
+        height: 4rem;
+        background-color: chartreuse;
+    }
+    .redes-sociais a {
+        margin: 0 45px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        margin-right: 40px; 
+    }
+    
+   /* .pulsar  {
+        width: 2rem;
+        height: 2rem;
+       background-color: #8f0a0a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      /*  margin-left: 30px;
+    }
+    
+    .pulsar:before , .pulsar::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -20%;
+        right: -20%;
+        top: -20%;
+        bottom: -20%;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        animation: animar 1.5s linear infinite;
+    }
+}
 /*main {
     width: 100%;
     min-height: 380rem;
