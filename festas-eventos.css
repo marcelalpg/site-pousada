@@ -607,45 +607,6 @@ main {
     font-size: 14px;
 }
 
-/*.rodape-localizacao > i {
-    position: absolute;
-    top: 36px;
-    left: 52px;
-}
-.rodape-whatsapp, .rodape-whatsapp i {
-    position: absolute;
-    top: 70px;
-    left: -70px;
-}
-
-.rodape-whatsapp i {
-    top: -6px;
-    left: 162px;
-}
-
-.rodape-telefone, .rodape-telefone i {
-    position: absolute;
-    left: 99px;
-    top: 70px;
-}
-
-.rodape-telefone i {
-    top: -6px;
-    left: 170px;
-    font-size: 14px;
-}
-
-.rodape-email, .rodape-email i {
-    position: absolute;
-    top: 95px;
-    left: 5px;
-}
-
-.rodape-email i {
-    top: -6px;
-    left: 110px;
-}
-*/
 .rodape-idiomas {
     width: 100%;
     height: 3.4rem;
@@ -665,18 +626,6 @@ main {
     align-items: center;
     gap: 25px;
 }
-/*.rodape-idiomas > p, .ingles, .espanhol {
-    position: absolute;
-    top: 40px;       
-}
-
-.ingles {
-    left: 180px;
-}
-
-.espanhol {
-    left: 245px;
-}*/
 
 .rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
     color: #c3c3ac; 
@@ -751,6 +700,491 @@ main {
 .rodape-copyrigth > h6 {
     margin-top: 10px;
 }
+
+/*tablet*/
+@media (min-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+    
+    .cabecalho a, .cabecalho i {
+        text-decoration: none;
+        font-size: 13.5px; 
+        color: #ffffff;   
+    }
+    
+    #zap-cabecalho {
+        font-size: 16px;
+    }
+    
+    .cabecalho-superior {      
+        margin: 3px; 
+        margin-bottom: 25px;                    
+    }
+    
+    .telefones {
+        padding-bottom: 0;
+    }
+    
+    .menu-btn > i {
+        font-size: 27px;
+        color: #2a2c36; 
+    }
+    
+    .logo {
+        width: 190px;
+        height: 18vh; 
+        position: fixed;         
+        z-index: 101; 
+        top: 52px; 
+    } 
+    
+    .navbar {       
+        padding-top: 26.5rem;       
+    }
+
+    .festas-eventos {
+        width: 100%;
+        height: 193.7rem;
+        /*background-color: rgb(127, 214, 214);*/       
+    }
+    
+    .festas-eventos-conteudo {      
+        height:auto;
+       /* background-color: #7e6d4c; */       
+        gap: 0;
+        padding: 0 2rem;
+    }
+
+    .festas-eventos-texto {       
+        height: auto;            
+        font-size: 17px;        
+        margin-top: 4rem;    
+    }
+    
+    .festas-eventos-texto h3 {
+        font-size: 40px;        
+        margin-top: 0; 
+        margin-bottom: 20px;    
+    }    
+    
+    .festas-eventos-tipos {       
+     /*  background-color: #f18b8b;     */  
+        gap: 4rem;    
+        margin-top: 3rem;
+    }
+
+    .festas-eventos-casamento, .festas-eventos-aniversario, .festas-eventos-outros {
+        width: 100%;
+        height: 43rem;
+      /*  background-color: #6d441f;  */      
+        gap: 0;
+        position: relative;
+    }    
+
+    .casamento-foto1, .aniversario-foto1, .outros-foto1, .carousel-inner, .carousel-item {
+        width: 100%;
+        height: 24rem;
+         position: relative;  
+       /* background-color: yellowgreen;*/
+    }
+
+    .casamento-texto, .aniversario-texto, .outros-texto {
+        width: 57%;
+        height: 18rem;
+        background-color: #ffffff;     
+        font-size: 17px;   
+        position: absolute;
+        right: 1.5rem;
+        top: 22.5rem;
+        padding: 0 15px;
+    }
+    
+    .aniversario-texto {
+        height: 16rem; 
+        left: 1.5rem;      
+    }
+    
+    .outros-texto {
+        height: 19.5rem;
+    }
+
+    .casamento-texto h5, .aniversario-texto h5, .outros-texto h5 {
+        font-size: 27px;    
+        padding-top: 10px;    
+    }
+    
+    .casamento-foto2, .aniversario-foto2, .outros-video > video {
+        width: 33%;
+        height: 17rem;
+       /* background-color: blueviolet;*/    
+        bottom: 0rem; 
+        left:1.5rem;  
+    }
+
+    .aniversario-foto2 {
+        left: 28.5rem;
+    }
+
+    .festas-eventos-orcamento {        
+        height: 23rem;        
+        margin-top: 4rem;
+    }
+    
+    .orcamento-texto {       
+        height: 16rem;
+       /* background-color: rgb(68, 68, 16);      */
+        top: 56px;
+        right: 2rem;       
+    }
+    
+    .orcamento-texto h5 {
+        font-size: 23px;        
+    }
+    
+    .orcamento-texto p {      
+        font-size: 17px;        
+    }    
+   
+   .orcamento-texto-whatsapp, .orcamento-texto-tel, .orcamento-texto-email {
+       margin-top: -15px;       
+   }  
+    
+    #tel-orcamento {
+        font-size: 14px;
+        text-align: center;
+    } 
+    
+    .orcamento-foto1, .orcamento-foto2, .orcamento-foto3 {
+        width: 22%;
+        height: 7rem;      
+    }
+
+    .orcamento-foto1 {        
+        top: 38px;
+        left: 55px;       
+    }
+    
+    .orcamento-foto2 {       
+        top: 126px;
+        left: 140px;        
+    }
+    
+    .orcamento-foto3 {       
+        top: 230px;
+        left: 65px; 
+        transform: rotate(355deg);      
+    }
+    
+    .rodape {       
+       margin-top: 4rem;       
+   }
+}  
+
+@media (min-width: 992px) {
+
+    header, .cabecalho{
+        width: 100%;
+        height: 6.5rem;
+    } 
+
+    .cabecalho a, .cabecalho i {           
+        font-size: 14px;            
+    }
+
+    .cabecalho-inferior {
+        height: 4rem;          
+    }
+    
+    .cabecalho-superior {     
+        height: 2rem;               
+        justify-content: space-between;            
+        flex-direction: row;
+        padding: 0 6rem;  
+        margin: 0;   
+        margin-bottom: 5px;                    
+    }
+
+    .cabecalho-superior a, .cabecalho-superior i {
+        margin-top: 6px;
+    }
+
+    .telefones {
+        padding-bottom: 0;
+    }
+        
+    #zap-cabecalho {
+        font-size: 17px;
+    } 
+    
+    .logo {
+        width: 240px;
+        height: 20vh;                                 
+        margin-top: 3px;
+        position: absolute; 
+        top: 50%;   
+        left: 50%;
+        transform: translate(-50%, -50%);               
+    }        
+       
+    .menu-btn {           
+        display: none;   
+        overflow: hidden;         
+    }
+
+    .navbar, .navbar > ul {
+        width: 100%;
+        height: 4rem;
+        padding-top: 0rem;
+        display: flex;  
+        justify-content:left;
+        align-items: center;
+        gap:40px;                       
+        padding: 0 2rem;           
+    }
+              
+    .navbar > ul > li > a {
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;              
+        padding: 0px;    
+        font-size: 14px;          
+    }
+    
+    .navbar > ul > li > a:hover {
+        color: #ffffff;  
+        background-color: #b19879;
+    }
+    
+    .nav-item1 {
+        margin-left: 110px;
+    }
+    
+    .nav-item4 {
+        margin-left: 300px;            
+    }   
+    
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-texto {
+        width: 100%;
+        height: 15rem;
+         display: flex;
+        justify-content: center;
+        align-items: center;  
+        flex-direction: column;  
+       /* background-color: #2a2c36;*/
+    }
+    
+    .hero-texto > h1 {
+        font-size: 40px;        
+        line-height: 100px;        
+        padding-top: 30px;         
+    }
+    
+    .hero-texto > h2 {
+        font-size: 35px;         
+    }
+
+    .festas-eventos {       
+        height: auto;
+        /*background-color: rgb(127, 214, 214);   */
+    }
+    
+    .festas-eventos-conteudo {      
+        height:auto;       
+        padding: 0 6rem;
+    }
+
+    .festas-eventos-texto {       
+        height: auto;            
+        font-size: 20px;        
+        margin-top: 5rem; 
+      /*  background-color: rgb(10, 65, 65);   */
+    }
+    
+    .festas-eventos-texto h3 {
+        font-size: 42px;             
+    }    
+    
+    .festas-eventos-tipos {       
+     /*  background-color: #f18b8b;     */  
+        gap: 5rem;    
+        margin-top: 4rem;
+    }
+
+    .festas-eventos-casamento, .festas-eventos-aniversario, .festas-eventos-outros {
+        width: 90%;
+        height: 60rem;
+      /* background-color: #6d441f;  */   
+        gap: 0;
+        position: relative;
+    }    
+
+    .casamento-foto1, .aniversario-foto1, .outros-foto1, .carousel-inner, .carousel-item {
+        width: 100%;
+        height: 30rem;
+         position: relative;  
+      
+    }
+
+    .casamento-texto, .aniversario-texto, .outros-texto {  
+        width: 51%;     
+        height: 19rem;
+        background-color: #ffffff;     
+        font-size: 20px;            
+        top: 27.5rem;       
+    }
+    
+    .aniversario-texto {
+        height: 18rem;           
+    }
+    
+    .outros-texto {
+        height: 19.5rem;
+    }
+
+    .casamento-texto h5, .aniversario-texto h5, .outros-texto h5 {
+        font-size: 30px;    
+        padding-top: 15px;    
+    }
+    
+    .casamento-foto2, .aniversario-foto2, .outros-video > video {
+        width: 31%;
+        height: 21rem;       
+    }
+
+    .aniversario-foto2 {
+        left: 42.8rem;
+    }
+
+    .festas-eventos-orcamento {        
+        height: 27rem;        
+        margin-top: 5rem;
+    }
+    
+    .orcamento-texto {   
+        width: 41%;    
+        height: 19rem;       
+        top: 63px;
+        right: 6rem;       
+    }
+    
+    .orcamento-texto h5 {
+        font-size: 36px;        
+    }
+    
+    .orcamento-texto p {      
+        font-size: 22px;        
+    }    
+      
+    #tel-orcamento {
+        font-size: 18px;       
+    } 
+    
+    .orcamento-foto1, .orcamento-foto2, .orcamento-foto3 {
+        width: 17%;
+        height: 9rem;      
+    }
+
+    .orcamento-foto1 {        
+        top: 42px;
+        left: 125px;       
+    }
+    
+    .orcamento-foto2 {       
+        top: 136px;
+        left: 330px;        
+    }
+    
+    .orcamento-foto3 {       
+        top: 269px;
+        left: 205px;       
+    }
+
+    .rodape {
+        width: 100%;
+        height: 18rem;    
+        justify-content: space-between;    
+        flex-direction: row;     
+        margin-top: 5rem;     
+        padding: 0;        
+    }
+
+    .rodape-conteudo {
+        width: 100%;
+        height: 12rem;    
+        align-items: flex-start;
+        flex-direction: row;
+        gap:40px;
+        position: relative;  
+        top:0; 
+    }
+
+    .rodape-logo {
+       width: 240px;
+       height: 20vh;    
+       top: 15px; 
+       left: 7rem;   
+    }
+
+    .rodape-contato {
+       width: 28%;
+       height: 9rem;    
+       gap: 15px;    
+       margin-left: 19rem;    
+    }
+
+    .rodape-idiomas {
+       width: 12%;
+       height: 9rem;    
+    }
+
+    .idiomas {    
+       flex-direction: column;    
+       gap: 1px;
+    }
+
+    .rodape-redes-sociais {
+       width: 12%;
+       height: 9rem;      
+    }
+
+   .rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {    
+       font-size: 18px;    
+   }
+
+   .rodape-contato a, .rodape-idiomas p {
+       font-size: 15px;
+   }
+
+   .rodape-idiomas p {
+       margin-top: 15px;
+   }
+
+   .rodape-redes-sociais i {
+       font-size: 25px;
+       margin-top: 15px;        
+   }
+
+   .rodape-copyrigth {       
+       height: 3rem;   
+       bottom: 0;       
+   }
+
+}
+  
+    
+    
+    
+    
+    
+    
+
 /*
 body {
     width: 100%;

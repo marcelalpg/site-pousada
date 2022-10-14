@@ -863,8 +863,8 @@ main {
     
     .hero-texto > h1 {
         font-size: 40px;        
-        line-height: 70px;        
-        padding-top: 70px;         
+        line-height: 100px;        
+        padding-top: 30px;         
     }
     
     .hero-texto > h2 {
@@ -882,7 +882,8 @@ main {
         height: auto;        
         text-align: justify;        
         letter-spacing: 1px;    
-        padding: 0 4rem;       
+        padding: 0 4rem;   
+        font-size: 20px;    
     }   
 
     .acomodacoes-texto h3 {
