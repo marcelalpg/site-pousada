@@ -120,7 +120,7 @@ header, .cabecalho{
     display: block;
     width: 100%;       
     background-color: #ffffff;
-    padding: 17px;    
+    padding: 19px;    
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
@@ -359,26 +359,15 @@ header, .cabecalho{
         font-size: 16px;
     }
 
-    .cabecalho-inferior {
-        height: 3.5rem;          
+    .cabecalho-superior {      
+        margin: 3px; 
+        margin-bottom: 25px;                    
     }
     
-    .cabecalho-superior {                    
-        justify-content: space-between;            
-        flex-direction: row;
-        padding: 0 2rem;  
-        margin: 0;   
-        margin-bottom: 5px;                    
-    }
-
-    .cabecalho-superior a, .cabecalho-superior i {
-        margin-top: 6px;
-    }
-
     .telefones {
         padding-bottom: 0;
     }
-
+    
     .menu-btn > i {
         font-size: 27px;
         color: #2a2c36; 
@@ -392,7 +381,7 @@ header, .cabecalho{
     } 
     
     .navbar {       
-        padding-top: 31.1rem;       
+        padding-top: 30.7rem;       
     }
 
     #slide1-texto, #slide2-texto, #slide3-texto, #slide4-texto, #slide5-texto, #slide6-texto, #slide7-texto {
@@ -548,11 +537,6 @@ header, .cabecalho{
             font-size: 27px;
             color: #ffffff;   
         }
-        
-
-        
-        
-
     }
 
     /*
