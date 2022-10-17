@@ -1,178 +1,3 @@
-/** {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;    
-}
-
-html {
-    scroll-behavior: smooth;    
-}
-
-:target {
-    scroll-margin-top: 1em;
-}
-
-body {
-    width: 100%;
-    height: 100vh;  
-   /* background-color: yellow;  
-}
-
-header {
-    width: 100%;
-    min-height: 41rem;  
-    font-family: 'Hind', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.2px;
-    line-height: 84px;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;   
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-}
-
-.cabecalho {
-    width: 100%;
-    height: 6.5rem;
-    background-color:-webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3));
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: fixed;
-    z-index: 99;    
-}
-
-.cabecalho a {
-    text-decoration: none;
-    font-family: 'Hind', sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 84px;
-}
-
-.cabecalho-superior {
-    width: 100%;
-    height: 2.5rem;
-   /* background-color: rgb(15, 138, 160);
-    display: flex;   
-    justify-content: space-between; 
-    align-items: center;
-    padding: 0 6rem;
-}
-
-.cabecalho-inferior {
-    width: 100%;
-    height: 4rem;
-    background-color: #ffffff;
-    display: flex;   
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;    
-    padding: 0 8rem;
-    box-shadow: 3px 0px 2px rgb(145, 143, 143);       
-}
-
-.cabecalho-superior a {
-    color: #ffffff;
-}
-
-
-.fa-phone {
-    font-size: 12px;
-}
-
-.logo {
-    width: 250px;
-    height: 20vh;
-    margin-top: 0.4rem;  
-    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
-    background-size: contain;
-    background-repeat: no-repeat;  
-    position: absolute;  
-    top: 3px;
-    left: 34rem;
-}
-
-.nav1, .nav2 {
-   width: 25rem;
-   height: 3.9rem;
- /*  background-color: palevioletred;
-   display: flex;
-   gap: 2rem;
-   position: absolute;
-   top: -23px;
-   left: 0;
-   list-style: none;
-   text-transform: uppercase;  
-}
-
-.nav2 {
-    justify-content: flex-end;
-    left: 43.2rem;
-}
-
-.nav-item1, .nav-item2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: -30px;
-    color: #474747;
-    height: 3.9rem;
-}
-
-.nav-item2 {
-    left: -1px;
-}
-
-.nav-item1 a:hover,
-.nav-item2 a:hover {   
-    color: #916632; 
-    text-decoration:underline;      
-}
-
-.cabecalho-texto {
-    width: 50rem;
-    height: 15rem;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 8px;
-    position: relative;
-    top: 250px;
-}
-
-.cabecalho-texto h1 {
-    font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.2px;
-    line-height: 53.5px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.cabecalho-texto h2 {
-    font-size: 30px;
-    font-family: 'Hind', sans-serif;
-    letter-spacing: 0.4px;
-    line-height: 34px;
-}
-
-main {
-    width: 100%;
-    height: 339rem;
-    background-color: #ffffff;   
-    margin-top: 7.3rem;
-}
-*/
 
 * {
     margin:0;
@@ -185,10 +10,6 @@ html {
      
 }
 
-/*:target {
-    scroll-margin-top: 1em;
-}
-*/
 body  {
     width: 100%;
     height: 100vh;  
@@ -359,7 +180,7 @@ main {
 .cidade {
     width: 100%;
     height: 295.3rem;
-    background-color: #474747;
+  /*  background-color: #474747;*/
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -371,7 +192,7 @@ main {
 .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
     width: 100%;
     height: auto;
-    background-color: aqua;
+   /* background-color: aqua;*/
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -460,11 +281,7 @@ main {
 
 .cidade-foto2, .praca-leoes-foto2, .gomeira-foto2, .itaguare-foto2, .ibama-foto2, .ingazeiro-foto2 {
     width: 100%;
-    height: 15rem;
-    /*background-color: yellowgreen;*/
-    /*position: absolute; 
-    bottom: 0;
-    right: 0;    */
+    height: 15rem;   
     transition: all 0.3s;
 }
 
@@ -486,9 +303,7 @@ main {
     width: 100%;
     height: 15rem;
   /* background-color: yellowgreen;*/
-    position: relative; 
-  /*  top: 362px;    
-    left: 0; */ 
+    position: relative;  
     transition: all 0.3s; 
 }
 
@@ -543,11 +358,7 @@ main {
 
 .cidade-texto, .maria-fumaca-texto, .praca-leoes-texto, .gomeira-texto, .itaguare-texto, .ibama-texto, .ingazeiro-texto {
     width: 100%;
-    height: 33rem;
-    /*background-color: rebeccapurple;*/
-    /*position: absolute; 
-    right: 0;
-    padding: 20px;    */
+    height: 33rem;    
 }
 
 .maria-fumaca-texto {
@@ -633,9 +444,7 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    padding: 5px;
-    /*position: relative;
-    top: 60px;*/
+    padding: 5px;   
 }
 
 .rodape-localizacao, .rodape-email, .rodape-fones {
@@ -807,14 +616,13 @@ main {
 
     .cidade {       
         height: 311.9rem;
-        background-color: #474747;        
-        /*gap: 5rem;*/
+       /* background-color: #474747;  */           
         padding: 0 2rem;
     }
     
     .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {        
         height: auto;
-        background-color: aqua;
+       /* background-color: aqua;*/
         position: relative;        
         flex-direction: column;
         margin-top: 4.3rem;       
@@ -846,6 +654,10 @@ main {
         margin-top: -16px;            
     }
 
+    .maria-fumaca-video > video {        
+        height: 20rem;        
+    }
+
     .praca-leoes-foto2 {
         margin-top: 16px;
     }  
@@ -853,7 +665,7 @@ main {
     .cidade-texto, .maria-fumaca-texto, .praca-leoes-texto, .gomeira-texto, .itaguare-texto, .ibama-texto, .ingazeiro-texto {
         width: 70.1%;
         height: 26rem;
-        background-color: rebeccapurple;
+        /*background-color: rebeccapurple;*/
         margin-left: 13rem;
         padding: 15px;      
     }
@@ -883,4 +695,256 @@ main {
         color: #818181;
         font-size: 17px;     
     }    
+
+    @media (min-width: 992px) {
+
+        header, .cabecalho{
+            width: 100%;
+            height: 6.5rem;
+        } 
+    
+        .cabecalho a, .cabecalho i {           
+            font-size: 14px;            
+        }
+    
+        .cabecalho-inferior {
+            height: 4rem;          
+        }
+        
+        .cabecalho-superior {     
+            height: 2rem;               
+            justify-content: space-between;            
+            flex-direction: row;
+            padding: 0 6rem;  
+            margin: 0;   
+            margin-bottom: 5px;                    
+        }
+    
+        .cabecalho-superior a, .cabecalho-superior i {
+            margin-top: 6px;
+        }
+    
+        .telefones {
+            padding-bottom: 0;
+        }
+            
+        #zap-cabecalho {
+            font-size: 17px;
+        } 
+        
+        .logo {
+            width: 240px;
+            height: 20vh;                                 
+            margin-top: 3px;
+            position: absolute; 
+            top: 50%;   
+            left: 50%;
+            transform: translate(-50%, -50%);               
+        }        
+           
+        .menu-btn {           
+            display: none;   
+            overflow: hidden;         
+        }
+    
+        .navbar, .navbar > ul {
+            width: 100%;
+            height: 4rem;
+            padding-top: 0rem;
+            display: flex;  
+            justify-content:left;
+            align-items: center;
+            gap:40px;                       
+            padding: 0 2rem;           
+        }
+                  
+        .navbar > ul > li > a {
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;              
+            padding: 0px;    
+            font-size: 14px;          
+        }
+        
+        .navbar > ul > li > a:hover {
+            color: #ffffff;  
+            background-color: #b19879;
+        }
+        
+        .nav-item1 {
+            margin-left: 110px;
+        }
+        
+        .nav-item4 {
+            margin-left: 300px;            
+        }   
+        
+        .hero {
+            height: 100vh;
+        }
+    
+        .hero-texto {
+            width: 100%;
+            height: 15rem;
+             display: flex;
+            justify-content: center;
+            align-items: center;  
+            flex-direction: column;  
+           /* background-color: #2a2c36;*/
+        }
+        
+        .hero-texto > h1 {
+            font-size: 40px;        
+            line-height: 100px;        
+            padding-top: 30px;         
+        }
+        
+        .hero-texto > h2 {
+            font-size: 35px;         
+        }
+
+        .cidade {       
+            height: auto;
+          /*  background-color: #474747;  */            
+            padding: 0 6rem;
+        }
+        
+        .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {        
+            height: auto;
+            /*background-color: aqua;*/
+            position: relative;        
+            flex-direction: column;
+            margin-top: 5rem;       
+        }
+        
+        .cidade-foto1, .maria-fumaca-foto1, .praca-leoes-foto1, .gomeira-foto1, .itaguare-foto1, .ibama-foto1, .ingazeiro-foto1 {
+            width: 29.1%;
+            height: 34rem;
+          /*  background-color: blue; */
+           
+        }
+    
+        .cidade-foto2, .praca-leoes-foto2, .gomeira-foto2, .itaguare-foto2, .ibama-foto2, .ingazeiro-foto2 {
+            width: 71%;
+            height: 20rem;
+            margin-left: 20.8rem;
+            margin-top: -16px;        
+        }
+        
+        .gomeira-foto2, .ibama-foto2 {
+            margin-left: 0;
+            margin-right: 13rem;
+        }
+    
+        .maria-fumaca-video {
+            width: 71%;
+            height: 20rem;   
+            margin-top: -16px;            
+        }
+    
+        .praca-leoes-foto2 {
+            margin-top: 16px;
+        }  
+
+        .cidade-texto, .maria-fumaca-texto, .praca-leoes-texto, .gomeira-texto, .itaguare-texto, .ibama-texto, .ingazeiro-texto {
+            width: 71%;
+            height: 26rem;
+          /*  background-color: rebeccapurple;*/
+            margin-left: 20.8rem;
+            padding: 20px;      
+        }
+        
+        .maria-fumaca-texto, .gomeira-texto, .ibama-texto {
+            height: 25.4rem;
+            margin-right: 13rem;
+            margin-left: 0;
+        }
+        
+        .praca-leoes-texto {
+            height: 23rem;
+        }
+        
+        .gomeira-texto, .ingazeiro-texto, .itaguare-texto  {
+            height: 25rem;
+        }   
+               
+        .cidade-texto h5, .maria-fumaca-texto h5, .praca-leoes-texto h5, .gomeira-texto h5, .itaguare-texto h5, .ibama-texto h5, .ingazeiro-texto h5 {
+            font-size: 30px;       
+        }
+        
+        .cidade-texto p, .maria-fumaca-texto p, .praca-leoes-texto p, .gomeira-texto p, .itaguare-texto p, .ibama-texto p, .ingazeiro-texto p {            
+            font-size: 20px;     
+        } 
+        
+        .rodape {
+            width: 100%;
+            height: 18rem;    
+            justify-content: space-between;    
+            flex-direction: row;     
+            margin-top: 5rem;     
+            padding: 0;        
+        }
+    
+        .rodape-conteudo {
+            width: 100%;
+            height: 12rem;    
+            align-items: flex-start;
+            flex-direction: row;
+            gap:40px;
+            position: relative;  
+            top:0; 
+        }
+    
+        .rodape-logo {
+           width: 240px;
+           height: 20vh;    
+           top: 15px; 
+           left: 7rem;   
+        }
+    
+        .rodape-contato {
+           width: 28%;
+           height: 9rem;    
+           gap: 15px;    
+           margin-left: 19rem;    
+        }
+    
+        .rodape-idiomas {
+           width: 12%;
+           height: 9rem;    
+        }
+    
+        .idiomas {    
+           flex-direction: column;    
+           gap: 1px;
+        }
+    
+        .rodape-redes-sociais {
+           width: 12%;
+           height: 9rem;      
+        }
+    
+       .rodape-contato h5, .rodape-idiomas h5, .rodape-redes-sociais h5 {    
+           font-size: 18px;    
+       }
+    
+       .rodape-contato a, .rodape-idiomas p {
+           font-size: 15px;
+       }
+    
+       .rodape-idiomas p {
+           margin-top: 15px;
+       }
+    
+       .rodape-redes-sociais i {
+           font-size: 25px;
+           margin-top: 15px;        
+       }
+    
+       .rodape-copyrigth {       
+           height: 3rem;   
+           bottom: 0;       
+       }       
 }
