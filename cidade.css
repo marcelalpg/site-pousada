@@ -138,7 +138,7 @@ main {
     align-items: center; 
     flex-direction: column;   
     color: #ffffff;  
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/cidade/IMG-20220726-WA00148.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/cidade/20210116_1934177.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;     
@@ -827,7 +827,7 @@ main {
         }
     
         .cidade-foto2, .praca-leoes-foto2, .gomeira-foto2, .itaguare-foto2, .ibama-foto2, .ingazeiro-foto2 {
-            width: 71%;
+            width: 70.9%;
             height: 20rem;
             margin-left: 20.8rem;
             margin-top: -16px;        
@@ -839,7 +839,7 @@ main {
         }
     
         .maria-fumaca-video {
-            width: 71%;
+            width: 70.9%;
             height: 20rem;   
             margin-top: -16px;            
         }
