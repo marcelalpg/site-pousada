@@ -769,8 +769,8 @@ main {
     }    
     
     .festas-eventos-tipos {       
-     /*  background-color: #f18b8b;     */  
-        gap: 4rem;    
+      /* background-color: #f18b8b;     */
+        gap: 4.5rem;    
         margin-top: 3rem;
     }
 
@@ -828,13 +828,13 @@ main {
 
     .festas-eventos-orcamento {        
         height: 23rem;        
-        margin-top: 4rem;
+        margin-top: 4.6rem;
     }
     
     .orcamento-texto {       
-        height: 16rem;
-       /* background-color: rgb(68, 68, 16);      */
-        top: 56px;
+        height: 15rem;
+      /*  background-color: rgb(68, 68, 16);  */    
+        top: 48px;
         right: 2rem;       
     }
     
@@ -861,23 +861,23 @@ main {
     }
 
     .orcamento-foto1 {        
-        top: 38px;
+        top: 31px;
         left: 55px;       
     }
     
     .orcamento-foto2 {       
-        top: 126px;
+        top: 119px;
         left: 140px;        
     }
     
     .orcamento-foto3 {       
-        top: 230px;
+        top: 221px;
         left: 65px; 
         transform: rotate(355deg);      
     }
     
     .rodape {       
-       margin-top: 4rem;       
+       margin-top: 4.6rem;       
    }
 }  
 
