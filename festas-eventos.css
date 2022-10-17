@@ -992,7 +992,7 @@ main {
 
     .festas-eventos {       
         height: auto;
-        background-color: rgb(127, 214, 214);   
+      /*  background-color: rgb(127, 214, 214);   */
     }
     
     .festas-eventos-conteudo {      
@@ -1004,7 +1004,7 @@ main {
         height: 18rem;            
         font-size: 20px;        
         margin-top: 5rem; 
-      background-color: rgb(10, 65, 65);   
+     /* background-color: rgb(10, 65, 65);  */ 
     }
     
     .festas-eventos-texto h3 {
@@ -1013,7 +1013,7 @@ main {
     }    
     
     .festas-eventos-tipos {       
-      background-color: #f18b8b;     
+     /* background-color: #f18b8b;     */
         gap: 5rem;    
         margin-top: 5rem;
     }
@@ -1029,8 +1029,7 @@ main {
     .casamento-foto1, .aniversario-foto1, .outros-foto1, .carousel-inner, .carousel-item {
         width: 100%;
         height: 30rem;
-         position: relative;  
-      
+         position: relative;     
     }
 
     .casamento-texto, .aniversario-texto, .outros-texto {  
