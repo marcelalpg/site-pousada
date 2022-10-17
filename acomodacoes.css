@@ -676,12 +676,12 @@ main {
 
 .acomodacoes {
     height: 248.2rem;
-    margin-top: 4rem;    
+    margin-top: 4.5rem;    
     padding: 0 2rem;
 }
 
 .acomodacoes-texto {
-    height: 22.5rem;   
+    height: 19rem;   
     padding:0;     
     font-size: 17px;       
 }
@@ -693,7 +693,7 @@ main {
 
 .standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo {    
     position: relative;   
-    margin-top: 4rem; 
+    margin-top: 4.5rem; 
 }
 
 .standard-carousel, .semi-luxo-carousel, .chale-carousel, .sl-sacada-carousel, .luxo-carousel {
@@ -757,7 +757,7 @@ main {
 }
 
 .rodape {
-    margin-top: 4rem;
+    margin-top: 3.6rem;
 }
 
 }
