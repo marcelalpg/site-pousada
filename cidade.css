@@ -668,45 +668,6 @@ main {
     font-size: 14px;
 }
 
-/*.rodape-localizacao > i {
-    position: absolute;
-    top: 36px;
-    left: 52px;
-}
-.rodape-whatsapp, .rodape-whatsapp i {
-    position: absolute;
-    top: 70px;
-    left: -70px;
-}
-
-.rodape-whatsapp i {
-    top: -6px;
-    left: 162px;
-}
-
-.rodape-telefone, .rodape-telefone i {
-    position: absolute;
-    left: 99px;
-    top: 70px;
-}
-
-.rodape-telefone i {
-    top: -6px;
-    left: 170px;
-    font-size: 14px;
-}
-
-.rodape-email, .rodape-email i {
-    position: absolute;
-    top: 95px;
-    left: 5px;
-}
-
-.rodape-email i {
-    top: -6px;
-    left: 110px;
-}
-*/
 .rodape-idiomas {
     width: 100%;
     height: 3.4rem;
@@ -726,18 +687,6 @@ main {
     align-items: center;
     gap: 25px;
 }
-/*.rodape-idiomas > p, .ingles, .espanhol {
-    position: absolute;
-    top: 40px;       
-}
-
-.ingles {
-    left: 180px;
-}
-
-.espanhol {
-    left: 245px;
-}*/
 
 .rodape-localizacao i, .rodape-whatsapp i, .rodape-telefone i, .rodape-email i {
     color: #c3c3ac; 
@@ -816,148 +765,122 @@ main {
 
 /*p/ tablet*/
 @media (min-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+    
     .cabecalho a, .cabecalho i {
         text-decoration: none;
-        font-size: 14px; 
+        font-size: 13.5px; 
         color: #ffffff;   
     }
-
-    .logo {
-        width: 170px;
-        height: 17vh;     
-        background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
-        background-size: contain;
-        background-repeat: no-repeat; 
-        position: absolute; 
-        top: -16px;   
-        z-index: 200;
-        overflow: visible;    
+    
+    #zap-cabecalho {
+        font-size: 16px;
     }
-
+    
+    .cabecalho-superior {      
+        margin: 3px; 
+        margin-bottom: 25px;                    
+    }
+    
+    .telefones {
+        padding-bottom: 0;
+    }
+    
     .menu-btn > i {
-        font-size: 28px;        
-    }
-
-    .hero-texto > h1 {
-        font-size: 40px;            
-    }
-
-    .hero-texto > h2 {
-        font-size: 30px;       
+        font-size: 27px;
+        color: #2a2c36; 
     }
     
-    .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
-        flex-direction: column;       
+    .logo {
+        width: 190px;
+        height: 18vh; 
+        position: fixed;         
+        z-index: 101; 
+        top: 52px; 
+    } 
+    
+    .navbar {       
+        padding-top: 26.5rem;       
     }
 
+    .cidade {       
+        height: 311.9rem;
+        background-color: #474747;        
+        /*gap: 5rem;*/
+        padding: 0 2rem;
+    }
+    
+    .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {        
+        height: auto;
+        background-color: aqua;
+        position: relative;        
+        flex-direction: column;
+        margin-top: 4.3rem;       
+    }
+    
     .cidade-foto1, .maria-fumaca-foto1, .praca-leoes-foto1, .gomeira-foto1, .itaguare-foto1, .ibama-foto1, .ingazeiro-foto1 {
-        width: 34.5%;
-        height: 25rem;
-        display: flex; 
+        width: 29.9%;
+        height: 28rem;
+      /*  background-color: blue; */
+        position: absolute;        
+        display: flex;       
     }
-
-    /*.cidade-foto1 {
-        background-image: url(imagens/cidade/20201028_1058599.jpg);  
-        background-repeat: no-repeat;
-        background-size: cover;    
-    }
-    
-    .cidade-foto1:hover, .maria-fumaca-foto1:hover, .praca-leoes-foto1:hover, .gomeira-foto1:hover, .itaguare-foto1:hover, .ibama-foto1:hover, .ingazeiro-foto1:hover {
-       opacity: 0.8;
-       transition: .3s;
-       transform: scale(1.001);   
-       border: 5px solid #e1bd85;
-    }
-    
-    .maria-fumaca-foto1 {
-        background-image: url(imagens/cidade/20220507_1022555.jpg);  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        right: 0;    
-    }
-    
-    .praca-leoes-foto1 {
-        background-image: url(imagens/cidade/20201028_1045066.jpg);  
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .gomeira-foto1 {
-        background-image: url(imagens/cidade/acidade04.jpg);  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        right: 0;
-    }
-    
-    .itaguare-foto1 {
-        background-image: url(imagens/cidade/acidade166.jpg);  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: rigth center;
-    }
-    
-    .ibama-foto1 {
-        background-image: url(imagens/cidade/acidade05.jpg);  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right center;
-        right: 0;
-    }
-    
-    .ingazeiro-foto1 {
-        background-image: url(imagens/cidade/acidade12.jpg);  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }*/
 
     .cidade-foto2, .praca-leoes-foto2, .gomeira-foto2, .itaguare-foto2, .ibama-foto2, .ingazeiro-foto2 {
-        width: 65%;
-        height: 14rem;
-        /*background-color: yellowgreen;*/
-        position: absolute; 
-        bottom: 0;
-        right: 0;    
-        transition: all 0.3s;
+        width: 70.1%;
+        height: 15rem;
+        margin-left: 13rem;
+        margin-top: -16px;        
+    }
+    
+    .gomeira-foto2, .ibama-foto2 {
+        margin-left: 0;
+        margin-right: 13rem;
     }
 
     .maria-fumaca-video {
-        width: 80%;
-        height: 15rem;
-      /* background-color: yellowgreen;*/
-        position: relative; 
-      /*  top: 362px;    
-        left: 0; */ 
-        transition: all 0.3s; 
-    }
-    
-    .maria-fumaca-video:hover {
-       border: 3px solid #e1bd85;
-       opacity: 0.8;
-       transition: .3s;
-       transform: scale(0.999);
-    }
-    
-    .maria-fumaca-video > video {
-        position: absolute;
-        width: 80%;
-        height: 15rem;
-        object-fit: cover;
+        width: 70%;
+        height: 15rem;   
+        margin-top: -16px;            
     }
 
+    .praca-leoes-foto2 {
+        margin-top: 16px;
+    }  
+    
     .cidade-texto, .maria-fumaca-texto, .praca-leoes-texto, .gomeira-texto, .itaguare-texto, .ibama-texto, .ingazeiro-texto {
-        width: 65%;
-        height: 33rem;
+        width: 70.1%;
+        height: 26rem;
         background-color: rebeccapurple;
-        /*position: absolute; 
-        right: 0;
-        padding: 20px;    */
+        margin-left: 13rem;
+        padding: 15px;      
     }
-
-    .cidade-texto {
-        height: 35rem;
-       margin-left: 240px;
+    
+    .maria-fumaca-texto, .gomeira-texto, .ibama-texto {
+        height: 25.4rem;
+        margin-right: 13rem;
+        margin-left: 0;
     }
+    
+    .praca-leoes-texto {
+        height: 23rem;
+    }
+    
+    .gomeira-texto, .ingazeiro-texto, .itaguare-texto  {
+        height: 25rem;
+    }   
+           
+    .cidade-texto h5, .maria-fumaca-texto h5, .praca-leoes-texto h5, .gomeira-texto h5, .itaguare-texto h5, .ibama-texto h5, .ingazeiro-texto h5 {
+        font-size: 27px;       
+    }
+    
+    .cidade-texto p, .maria-fumaca-texto p, .praca-leoes-texto p, .gomeira-texto p, .itaguare-texto p, .ibama-texto p, .ingazeiro-texto p {
+        font-family: 'Barlow Condensed', sans-serif;
+        text-align: justify;
+        letter-spacing: 1px;
+        color: #818181;
+        font-size: 17px;     
+    }    
 }
