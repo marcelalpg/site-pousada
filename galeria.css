@@ -248,8 +248,8 @@ header, .cabecalho{
 }
 
 .logo {
-    width: 150px;
-    height: 16vh;     
+    width: 160px;
+    height: 17vh;     
     background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
     background-size: contain;
     background-repeat: no-repeat; 
@@ -369,6 +369,7 @@ main {
     margin-top: 5rem; 
   /*  padding: 0 40px;*/
   background-color: aqua;
+  overflow-y: hidden;
 }
 
 .blocoa, .blocob, .blococ, .blocod, .blocoe {
@@ -421,7 +422,7 @@ main {
 }
 
 .img2, .img3, .img11, .img12, .img22, .img23 {
-    width: /*24rem;*/8.75rem;
+    width: /*24rem;*/8.77rem;
     height: /*15rem;*/10rem;
     transition: all 0.2s;
 }
