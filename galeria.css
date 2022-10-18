@@ -421,7 +421,7 @@ main {
 }
 
 .img2, .img3, .img11, .img12, .img22, .img23 {
-    width: /*24rem;*/8.5rem;
+    width: /*24rem;*/8.75rem;
     height: /*15rem;*/10rem;
     transition: all 0.2s;
 }
@@ -444,7 +444,7 @@ main {
 }
 
 .img4, .img14, .img24 {   
-    width: /*38rem;*/13rem;
+    width: /*38rem;*/13.2rem;
     height: /*15rem;*/ 10rem;
     transition: all .2s;    
 }
@@ -461,7 +461,7 @@ main {
 }
 
 .img5, .img15, .img25 {    
-    width: /*28.3rem;*/ 11rem;
+    width: /*28.3rem;*/ 11.5rem;
     height: /*15rem;*/10rem;
     transition: all .2s;
 }
@@ -478,7 +478,7 @@ main {
 }
 
 .blocob-col1, .img6, .img7, .blocod-col1, .img16, .img17 {
-    width: /*24.6rem;*/7rem;
+    width: /*24.6rem;*/7.5rem;
     height: /*15rem;*/10rem;  
     display: flex;
     justify-content: flex-start;
@@ -506,11 +506,11 @@ main {
 }
 
 .blocob-col2 .img8, .blocod-col2 .img18 {
-    width: /*16rem;*/ 8rem;
+    width: /*16rem;*/ 8.5rem;
     height:/* 31rem;*/21rem;    
     position: absolute;
     top:0;
-    left: 8rem;  
+    left: 8.5rem;  
     transition: all .2s; 
 }
 
@@ -525,7 +525,7 @@ main {
     background-position: center center;
 }
 .blocob-col3, .img9, .img10, .blocod-col3, .img19, .img20 {
-    width:/* 24.6rem;*/7rem;
+    width:/* 24.6rem;*/7.5rem;
     height: /*15rem; */10rem;  
     position: absolute;
     top:0;
