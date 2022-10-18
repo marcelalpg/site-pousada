@@ -57,6 +57,10 @@ header, .cabecalho{
     background-color: #ffffff;
 }
 
+#zap-cabecalho {
+    font-size: 13.7px;
+}
+
 .telefones {
     padding-bottom: 11px;
 }
@@ -73,14 +77,17 @@ header, .cabecalho{
 }
 
 .logo {
-    width: 150px;
-    height: 16vh;     
+    width: 160px;
+    height: 17vh;     
     background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
     background-size: contain;
     background-repeat: no-repeat; 
-    position: absolute; 
-    top: -16px;   
-    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: fixed;
+    z-index: 101; 
 }
 
 .menu-btn {
@@ -594,7 +601,7 @@ main {
         height: 18vh; 
         position: fixed;         
         z-index: 101; 
-        top: 52px; 
+        top: 21px; 
     } 
     
     .navbar {       
@@ -605,7 +612,7 @@ main {
         height: auto;
        /* background-color: #474747;*/
         padding: 0 2rem;   
-        margin-top: 4.8rem;     
+        margin-top: 4.8rem;   
     }
     
     .reservas h3, .tabela-precos h3, .termos-conteudo h3 {
