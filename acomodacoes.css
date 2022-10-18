@@ -186,7 +186,7 @@ main {
 .acomodacoes {
     width: 100%;
     height: 261.8rem;
-  /* background-color: #d35106;*/
+/*  background-color: #d35106;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -219,7 +219,7 @@ main {
 .acomodacoes-tipo {
     width: 100%;
     height: auto;
-  /* background-color: blueviolet;*/
+  /*background-color: blueviolet;*/
     display: flex;
     justify-content: flex-start;
     align-items:flex-start;
@@ -230,7 +230,7 @@ main {
 .standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo{
     width: 100%;
     height: auto;
-  /* background-color: green;*/
+ /* background-color: green;*/
     display: flex;
     justify-content: flex-start;
     align-items: center; 
@@ -671,29 +671,33 @@ main {
 } 
 
 .navbar {       
-    padding-top: 30.7rem;       
+    padding-top: 29.8rem;       
 }
 
 .acomodacoes {
-    height: 248.2rem;
-    margin-top: 4.5rem;    
+    height: 249.2rem;
+    margin-top: 5rem;    
     padding: 0 2rem;
+  /*  background-color: #04110e;*/
 }
 
 .acomodacoes-texto {
-    height: 19rem;   
+    height: 18.5rem;   
     padding:0;     
-    font-size: 17px;       
+    font-size: 17px;   
+   /* background-color: #2a2c36;   */ 
 }
 
 .acomodacoes-texto h3 {
     font-size: 40px;  
-    margin-bottom: 20px;    
+    margin-bottom: 20px;   
+    margin-top: -10px; 
 }
 
 .standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo {    
     position: relative;   
-    margin-top: 4.5rem; 
+    margin-top: 5rem; 
+    /*background-color: aqua;*/
 }
 
 .standard-carousel, .semi-luxo-carousel, .chale-carousel, .sl-sacada-carousel, .luxo-carousel {
@@ -707,7 +711,8 @@ main {
 
 /*quarto1-standard, quarto2-semi luxo, quarto3-chale, quarto4-semiluxo sacada, quarto5-luxo*/
 .quarto1, .quarto2, .quarto3, .quarto4, .quarto5, .quarto1-descricao, .quarto2-descricao, .quarto3-descricao, .quarto4-descricao, .quarto5-descricao {
-    height: 19rem;        
+    height: 19rem;  
+   /* background-color: blue;     */ 
 }
 
 .quarto1, .quarto1-descricao {
@@ -757,7 +762,7 @@ main {
 }
 
 .rodape {
-    margin-top: 3.6rem;
+    margin-top: 5rem;
 }
 
 }
@@ -874,39 +879,35 @@ main {
     .acomodacoes {
         width: 100%;
         height: auto;
-      /*background-color: #d35106;    */ 
+     /* background-color: #d35106;    */
         margin-top: 5rem; 
+        padding: 0 6rem;
     }
     
     .acomodacoes-texto {       
-        height: auto;        
+        height: 19rem;        
         text-align: justify;        
         letter-spacing: 1px;    
-        padding: 0 4rem;   
-        font-size: 20px;    
+        padding: 0;   
+        font-size: 20px; 
+       /* background-color: #030c09;   */
     }   
 
     .acomodacoes-texto h3 {
         font-size: 42px;
-        margin-bottom: 20px;             
+        margin-bottom: 20px; 
+        margin-top: -10px;            
     }    
     
-    /*.acomodacoes-tipo {
-        height: 220rem;
-    }*/
-
     .standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo{        
         height: 32rem;            
         flex-direction: row; 
-        gap: 0;   
+        gap: 5rem;   
+     /*   background-color: #2a2c36;*/
         margin-top: 5rem;
-        padding: 0 4rem;              
+        padding: 0;              
     } 
-    
-    .standard {
-        margin-top: 3.7rem;
-    }
- 
+     
     .standard-carousel, .semi-luxo-carousel, .chale-carousel, .sl-sacada-carousel, .luxo-carousel {
         width: 80%;
         height: 32rem; 
@@ -934,7 +935,8 @@ main {
        height: 28rem;
        display: block;
        position: absolute;
-       right: 2rem;              
+       right: 2rem; 
+    /*   background-color: blue;   */          
    }
 
    .quarto2, .quarto2-descricao, .quarto4, .quarto4-descricao {
