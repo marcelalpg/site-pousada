@@ -746,38 +746,39 @@ main {
     .festas-eventos {
         width: 100%;
         height: 193.7rem;
-        /*background-color: rgb(127, 214, 214);*/       
+       /* background-color: rgb(127, 214, 214);   */
     }
     
     .festas-eventos-conteudo {      
         height:auto;
-       /* background-color: #7e6d4c; */       
+     /*  background-color: #7e6d4c;  */   
         gap: 0;
         padding: 0 2rem;
     }
 
     .festas-eventos-texto {       
-        height: auto;            
+        height: 21rem;            
         font-size: 17px;        
-        margin-top: 4rem;    
+        margin-top: 5rem; 
+       /* background-color: #6d441f;  */ 
     }
     
     .festas-eventos-texto h3 {
         font-size: 40px;        
-        margin-top: 0; 
+        margin-top: -10px; 
         margin-bottom: 20px;    
     }    
     
     .festas-eventos-tipos {       
-      /* background-color: #f18b8b;     */
-        gap: 4.5rem;    
-        margin-top: 3rem;
+    /*   background-color: #f18b8b;     */
+        gap: 5rem;    
+        margin-top: 5rem;
     }
 
     .festas-eventos-casamento, .festas-eventos-aniversario, .festas-eventos-outros {
         width: 100%;
         height: 43rem;
-      /*  background-color: #6d441f;  */      
+    /*   background-color: #6d441f;   */     
         gap: 0;
         position: relative;
     }    
@@ -827,15 +828,17 @@ main {
     }
 
     .festas-eventos-orcamento {        
-        height: 23rem;        
-        margin-top: 4.6rem;
+        height: 24rem;        
+        margin-top: 5rem;
     }
     
     .orcamento-texto {       
         height: 15rem;
-      /*  background-color: rgb(68, 68, 16);  */    
-        top: 48px;
-        right: 2rem;       
+      /* background-color: rgb(68, 68, 16);  */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 11.5rem;       
     }
     
     .orcamento-texto h5 {
@@ -856,8 +859,8 @@ main {
     } 
     
     .orcamento-foto1, .orcamento-foto2, .orcamento-foto3 {
-        width: 22%;
-        height: 7rem;      
+        width: 19%;
+        height: 6rem;      
     }
 
     .orcamento-foto1 {        
@@ -866,18 +869,18 @@ main {
     }
     
     .orcamento-foto2 {       
-        top: 119px;
-        left: 140px;        
+        top: 108px;
+        left: 150px;        
     }
     
     .orcamento-foto3 {       
-        top: 221px;
+        top: 190px;
         left: 65px; 
         transform: rotate(355deg);      
     }
     
     .rodape {       
-       margin-top: 4.6rem;       
+       margin-top: 5rem;       
    }
 }  
 
@@ -1069,9 +1072,8 @@ main {
     
     .orcamento-texto {   
         width: 41%;    
-        height: 19rem;       
-        top: 63px;
-        right: 6rem;       
+        height: 19rem; 
+        margin-left: 18.5rem;              
     }
     
     .orcamento-texto h5 {
