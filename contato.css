@@ -66,15 +66,17 @@ header, .cabecalho{
 }
 
 .logo {
-    width: 150px;
-    height: 16vh;     
+    width: 160px;
+    height: 17vh;     
     background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
     background-size: contain;
     background-repeat: no-repeat; 
-    position: absolute; 
-    top: -16px;   
-    z-index: 200;
-    overflow: visible;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 52px;
+    position: fixed;
+    z-index: 101;
 }
 
 .menu-btn {
