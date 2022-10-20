@@ -78,7 +78,7 @@ header, .cabecalho{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 51px;
     position: fixed;
     z-index: 101;
 }
@@ -260,7 +260,7 @@ main {
     width: 36%;
     height: 10rem;   
     position: absolute;
-    left: 111.5px;  
+    left: 110px;  
     background-color: aquamarine;
 }
 
@@ -350,7 +350,7 @@ main {
  }
 
  .img12 {
-    left: 145px;
+    left: 153.5px;
  }
 
  .img13 {
