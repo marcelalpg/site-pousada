@@ -236,7 +236,7 @@ header, .cabecalho{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);*/
-    margin-top: 20px;
+    margin-top: 12px;
    /*background-color: #2a2c36;  */
     display: flex;
     justify-content: center;
