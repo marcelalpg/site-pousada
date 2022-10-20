@@ -78,7 +78,7 @@ header, .cabecalho{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 52px;
+    margin-top: 50px;
     position: fixed;
     z-index: 101;
 }
@@ -229,6 +229,10 @@ main {
 
 .blocoa-l1 {
     margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:6px;
 }
 
 .blocoa-l1, .blococ-l1,.blocoe-l1 {
@@ -256,7 +260,7 @@ main {
     width: 36%;
     height: 10rem;   
     position: absolute;
-    left: 102.5px;    
+    left: 111.5px;  
     background-color: aquamarine;
 }
 
@@ -266,6 +270,7 @@ main {
     position: absolute;
     right: 0;
     background-color: beige;
+   
 }
 
 #imagem1, #imagem2, #imagem3, #imagem4, #imagem5, #imagem6, #imagem7, #imagem9, #imagem10, #imagem11, #imagem12, #imagem13, #imagem14, #imagem15, #imagem16, #imagem17, #imagem19, #imagem20, #imagem21, #imagem22, #imagem23, #imagem24, #imagem25 {
@@ -813,7 +818,7 @@ main {
 }
 .modal-img8, .modal-img18 {
     width: /*45rem;*/100%;
-    height:/* 45rem;*/auto;
+    height:/* 45rem;*/20rem;
     object-fit: cover; 
 }
 
