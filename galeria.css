@@ -78,12 +78,9 @@ header, .cabecalho{
     display: flex;
     justify-content: center;
     align-items: center;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 52px;
     position: fixed;
-    margin-top: -210px;
-    z-index: 101; 
+    z-index: 101;
 }
 
 .menu-btn {
@@ -259,7 +256,7 @@ main {
     width: 36%;
     height: 10rem;   
     position: absolute;
-    left: 127.8px;    
+    left: 102.5px;    
     background-color: aquamarine;
 }
 
@@ -348,7 +345,7 @@ main {
  }
 
  .img12 {
-    left: 181px;
+    left: 145px;
  }
 
  .img13 {
@@ -816,7 +813,7 @@ main {
 }
 .modal-img8, .modal-img18 {
     width: /*45rem;*/100%;
-    height:/* 45rem;*/100%;
+    height:/* 45rem;*/auto;
     object-fit: cover; 
 }
 
