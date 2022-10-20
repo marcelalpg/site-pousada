@@ -211,7 +211,7 @@ header, .cabecalho{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 190px;             
+    margin-top: 180px;             
 }
 
 .saibamais a {
@@ -236,7 +236,7 @@ header, .cabecalho{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);*/
-    margin-top: 34px;
+    margin-top: 20px;
    /*background-color: #2a2c36;  */
     display: flex;
     justify-content: center;
