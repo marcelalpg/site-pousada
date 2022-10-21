@@ -233,14 +233,6 @@ main {
     gap:6px;
 }
 
-.blocoa-l1, .blococ-l1,.blocoe-l1 {
-   /* background-color: brown;*/
-}
-
-.blocoa-l2, .blococ-l2, .blocoe-l2 {
-   /* background-color: chartreuse;*/
-}
-
 .blococ-l2 {
     flex-direction: row-reverse;
     position: relative;    
