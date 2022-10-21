@@ -953,7 +953,8 @@ main {
    }
 
    .quarto3, .quarto3-descricao {
-       top: 38.9rem;
+       top: 38.96rem;
+       margin-top: 1.5rem;
    }
 
    .quarto1-descricao-texto h5, .quarto2-descricao-texto h5, .quarto3-descricao-texto h5, .quarto4-descricao-texto h5, .quarto5-descricao-texto h5 {
