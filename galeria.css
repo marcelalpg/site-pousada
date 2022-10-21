@@ -203,7 +203,8 @@ main {
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    position: relative;  
+    position: relative; 
+    background-color: #ffffff;      
 }
 
 .blocob, .blocod {   
@@ -219,7 +220,7 @@ main {
     width: 100%;
     height: 10rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;     
     position: relative;
     margin-top: 6px;
@@ -230,7 +231,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap:6px;
+  /*  gap:6px;*/
 }
 
 .blococ-l2 {
@@ -678,6 +679,7 @@ main {
     .img8, .img18 {
         width: 26%;
         height: 24.7rem;
+        transition: all .5s;
         background-color: rgb(52, 235, 195);            
     }        
     
@@ -711,6 +713,8 @@ main {
         transition: all 0.2s;
         transform: scale(0.98);
     }
+
+    
 
     .modal-img8, .modal-img18 {
         width: 45rem;
@@ -830,66 +834,83 @@ main {
 
     .galeria {        
         height: 167.7rem;          
-        padding: 0 6rem;      
+        padding: 0 6rem;   
+       /* background-color: rgb(129, 126, 126);   */
     }
     
     .blocoa, .blocob, .blococ, .blocod, .blocoe {       
-        height: 33.4rem;             
+        height: 32.7rem;    
+       /* background-color: #04110e; */
+        margin-bottom: 11px;        
     }
     
-    .blocod {
-        margin-top: 11px;
+    .blocob {
+        height: 33.4rem;
     }
-    
+
+    .blocod {      
+     /*   background-color: blue;  */     
+        margin-top: 1px;
+        height: 33.4rem;
+    }    
+
+    .blocoe {
+        margin-bottom: 0;
+    }
+
     .blocoa-l1, .blocoa-l2, .blococ-l1, .blococ-l2, .blocoe-l1, .blocoe-l2 {      
-        height: 16rem;        
-        margin-top: 11px;
+        height: 16rem;  
+        margin-top: 0;            
     }
     
-    .blocoa-l1 {
-        margin-top: 0;       
+    .blocoa-l1, .blococ-l1, .blocoe-l1 {       
+        margin-bottom: 11px;      
     }   
     
     .img1, .img21 {
-        width: 26%;
+        width: 25.8%;
         height: 16rem;       
       /*  background-color: rgb(228, 114, 137);   */ 
     }
     
     .img2, .img12, .img22 {
-        width: 36.15%;
+        width: 36.10%;
         height: 16rem;         
         left: 308px;  
       /* background-color: aquamarine;*/
     }
     
     .img3, .img23 {
-        width: 36.15%;
+        width: 36.10%;
         height: 16rem;       
        /* background-color: beige;  */     
     }
         
     .img4, .img14, .img24 {
-        width: 59.2%;
+        width: 59%;
         height: 16rem;
         /*background-color: #7e6d4c;*/       
     }
     
     .img5, .img15, .img25 {
-        width: 39.8%;
+        width: 40%;
         height: 16rem;
      /*   background-color: #0f9e7d;*/      
     }
     
      .img6, .img9, .img16, .img19 {
         width: 36.6%;
-        height: 15.9rem;
+        height: 16.35rem;
+        position: absolute;
+        top:0
       /*  background-color: #565656;*/       
      }
     
      .img7, .img10, .img17, .img20 {
         width: 36.6%;
-        height: 15.9rem;       
+        height: 16.35rem; 
+        position: absolute; 
+        bottom: 0;     
        /* background-color: azure;*/
      }
     
@@ -906,21 +927,21 @@ main {
      }
     
      .img12 {
-        left: 425px;
+        left: 426.4px;
      }
     
      .img13 {
-        width: 26%;
+        width: 25.8%;
         height: 16rem;       
        /* background-color: rgb(228, 114, 137);*/
      }
     
     .img14 {
-        width: 39.8%;
+        width: 39.9%;
     }
 
     .img15 {
-        width: 59.2%;
+        width: 59%;
     }
 
      #imagem1, #imagem2, #imagem3, #imagem4, #imagem5, #imagem6, #imagem7, #imagem9, #imagem10, #imagem11, #imagem12, #imagem13, #imagem14, #imagem15, #imagem16, #imagem17, #imagem19, #imagem20, #imagem21, #imagem22, #imagem23, #imagem24, #imagem25 {        
@@ -928,7 +949,8 @@ main {
     }
     
     #imagem6, #imagem7, #imagem9, #imagem10, #imagem16, #imagem17, #imagem19, #imagem20 {
-        height: 16.77rem;
+        height: 16.35rem;
+        object-fit: cover;
     }
     
     #imagem8, #imagem18 {       
