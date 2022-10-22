@@ -766,7 +766,7 @@ main {
     }
 
     .festas-eventos-texto {       
-        height: 21rem;            
+        height: auto;            
         font-size: 17px;        
         margin-top: 5rem; 
        /* background-color: #6d441f;  */ 
@@ -781,7 +781,7 @@ main {
     .festas-eventos-tipos {       
     /*   background-color: #f18b8b;     */
         gap: 5rem;    
-        margin-top: 5rem;
+        margin-top: 4.5rem;
     }
 
     .festas-eventos-casamento, .festas-eventos-aniversario, .festas-eventos-outros {
@@ -792,6 +792,10 @@ main {
         position: relative;
     }    
 
+    .festas-eventos-outros {
+        height: 44rem;
+    }
+
     .casamento-foto1, .aniversario-foto1, .outros-foto1, .carousel-inner, .carousel-item {
         width: 100%;
         height: 24rem;
@@ -801,23 +805,23 @@ main {
 
     .casamento-texto, .aniversario-texto, .outros-texto {
         width: 57%;
-        height: 18rem;
+        height: auto;
         background-color: #ffffff;     
         font-size: 17px;   
         position: absolute;
         right: 1.5rem;
-        top: 22.5rem;
+        top: 21rem;
         padding: 0 15px;
     }
     
     .aniversario-texto {
-        height: 16rem; 
+      /*  height: 16rem; */
         left: 1.5rem;      
     }
     
-    .outros-texto {
+   /* .outros-texto {
         height: 19.5rem;
-    }
+    }*/
 
     .casamento-texto h5, .aniversario-texto h5, .outros-texto h5 {
         font-size: 27px;    
@@ -873,17 +877,17 @@ main {
     }
 
     .orcamento-foto1 {        
-        top: 31px;
+        top: 27px;
         left: 55px;       
     }
     
     .orcamento-foto2 {       
-        top: 108px;
+        top: 103px;
         left: 150px;        
     }
     
     .orcamento-foto3 {       
-        top: 190px;
+        top: 185px;
         left: 65px; 
         transform: rotate(355deg);      
     }
