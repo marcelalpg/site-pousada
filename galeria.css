@@ -712,9 +712,7 @@ main {
     .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover, .img7:hover, .img9:hover, .img10:hover, .img11:hover, .img12:hover, .img13:hover, .img14:hover, .img15:hover, .img16:hover, .img17:hover, .img19:hover, .img20:hover, .img21:hover, .img22:hover, .img23:hover, .img24:hover, .img25:hover {
         transition: all 0.2s;
         transform: scale(0.98);
-    }
-
-    
+    }  
 
     .modal-img8, .modal-img18 {
         width: 45rem;
@@ -823,13 +821,13 @@ main {
     }
     
     .hero-texto > h1 {
-        font-size: 40px;        
+        font-size: 50px;        
         line-height: 100px;        
         padding-top: 30px;         
     }
     
     .hero-texto > h2 {
-        font-size: 35px;         
+        font-size: 40px;         
     }
 
     .galeria {        

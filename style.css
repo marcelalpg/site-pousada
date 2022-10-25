@@ -501,11 +501,11 @@ header, .cabecalho{
         }    
         
         #slide1-texto > h1, #slide2-texto > h1, #slide3-texto > h1, #slide4-texto > h1, #slide5-texto > h1, #slide6-texto > h1, #slide7-texto > h1 {
-            font-size: 40px;           
+            font-size: 50px;           
         } 
         
         #slide1-texto > h2, #slide2-texto > h2, #slide3-texto > h2, #slide4-texto > h2, #slide5-texto > h2, #slide6-texto > h2, #slide7-texto > h2 {
-            font-size: 35px;        
+            font-size: 40px;        
         }
         
         #slide1-texto > p, #slide2-texto > p, #slide3-texto > p, #slide4-texto > p, #slide5-texto > p, #slide6-texto > p, #slide7-texto > p {

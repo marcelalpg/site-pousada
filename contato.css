@@ -824,13 +824,13 @@ main {
     }
     
     .hero-texto > h1 {
-        font-size: 40px;        
+        font-size: 50px;        
         line-height: 100px;        
         padding-top: 30px;         
     }
     
     .hero-texto > h2 {
-        font-size: 35px;         
+        font-size: 40px;         
     }
 
     .contato {        
