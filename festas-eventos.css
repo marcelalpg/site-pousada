@@ -749,7 +749,9 @@ main {
     } 
     
     .navbar {       
-        padding-top: 26.5rem;       
+        padding-top: 26.5rem;  
+       padding-left: 0; 
+       margin: 0;      
     }
 
     .festas-eventos {
@@ -1053,7 +1055,7 @@ main {
         height: 19rem;
         background-color: #ffffff;     
         font-size: 20px;            
-        top: 27.5rem;       
+        top: 26.5rem;       
     }
     
     .aniversario-texto {
