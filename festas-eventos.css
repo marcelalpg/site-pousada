@@ -84,7 +84,7 @@ header, .cabecalho{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 15px;
     position: fixed;
     z-index: 101;
 }
@@ -189,7 +189,7 @@ main {
 
 .festas-eventos {
     width: 100%;
-    height: 226rem;
+    height: 223.1rem;
     background-color: rgb(127, 214, 214);
     display: flex;
     justify-content: flex-start;
