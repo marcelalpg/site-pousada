@@ -112,6 +112,7 @@ header, .cabecalho{
 .navbar > ul {
     list-style: none;   
     padding-left: 0;
+    display: block;
 }
 
 .navbar > ul > li > a {
