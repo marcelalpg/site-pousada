@@ -601,7 +601,7 @@ main {
         height: 18vh; 
         position: fixed;         
         z-index: 101; 
-        top: 21px; 
+        top: 1px; 
     } 
     
     .navbar {       
