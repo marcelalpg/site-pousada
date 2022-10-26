@@ -173,6 +173,9 @@ header, .cabecalho{
     text-align: center;    
     text-shadow:1px  rgb(43, 43, 43);   
     margin-top: 5px; 
+    
+    animation: fadeInDown;
+    animation-duration: 1.5s;
 } 
 
 #slide1-texto > h2, #slide2-texto > h2, #slide3-texto > h2, #slide4-texto > h2, #slide5-texto > h2, #slide6-texto > h2, #slide7-texto > h2 {
@@ -183,7 +186,10 @@ header, .cabecalho{
    /* line-height: 34px;*/
     margin-top: 25px;    
     text-align: center;
-    text-shadow:1px solid rgb(43, 43, 43);    
+    text-shadow:1px solid rgb(43, 43, 43);  
+    
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
 }
 
 #slide1-texto > p, #slide2-texto > p, #slide3-texto > p, #slide4-texto > p, #slide5-texto > p, #slide6-texto > p, #slide7-texto > p {
@@ -196,6 +202,9 @@ header, .cabecalho{
     padding: 10px;
     text-shadow:1px solid rgb(43, 43, 43);   
     margin-top: 25px;  
+
+    animation: fadeInRight;
+    animation-duration: 1.8s;
 }
 
 .saibamais {
@@ -211,7 +220,8 @@ header, .cabecalho{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 180px;             
+    margin-top: 180px;
+    
 }
 
 .saibamais a {
