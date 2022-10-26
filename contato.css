@@ -95,8 +95,7 @@ header, .cabecalho{
 }
 
 .navbar {
-    width: 100%;
-    height: auto;
+    width: 100%;    
     padding-top: 26.2rem;
     display: none;  
     /*background-color: blueviolet; */  
@@ -182,7 +181,7 @@ main {
 
 .contato {
     width: 100%;
-    height: 132rem;
+    height: 130.2rem;
    /* background-color: #7e6d4c;*/
     display: flex;
     justify-content: flex-start;
@@ -206,7 +205,7 @@ main {
 
 .contato-formulario {
     width: 100%;
-    height: 32.6rem;
+    height: 32.2rem;
  /*  background-color: brown; */
     color: #818181;
     font-family: 'Barlow Condensed', sans-serif;
@@ -220,7 +219,8 @@ main {
     letter-spacing: 0;
     text-transform: uppercase;
     color: #2a2c36;  
-    margin-bottom: 25px;       
+    margin-bottom: 25px; 
+    margin-top: -7px;      
 }
 
 .form-control, .btn {
@@ -252,8 +252,8 @@ main {
 
 .contato-dados {
     width: 100%;
-    height: 23.7rem;
- /*  background-color: coral;*/
+    height: 22.3rem;
+  /*background-color: coral;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -264,7 +264,7 @@ main {
 .contato-informacoes {
     width: 100%;
     height: 10rem;
-  /* background-color: rgb(49, 94, 95);*/ 
+   /*background-color: rgb(49, 94, 95);*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -283,7 +283,7 @@ main {
 
 .contato-redes-sociais {
     width: 100%;
-    height: 6rem;
+    height: 5rem;
   /* background-color: red;*/
     display: flex;
     justify-content: flex-start;
@@ -377,7 +377,7 @@ main {
     background-color: #C6AD8C;
     border-radius: 50%;
     position: absolute;
-    left: 115px;
+    left: 124px;
     top: -20px;
     display: flex;
     justify-content: center;
@@ -613,23 +613,23 @@ main {
         height: 18vh; 
         position: fixed;         
         z-index: 101; 
-        top: 52px; 
+        top:1px; 
     } 
     
     .navbar {       
-        padding-top: 26.5rem;       
+        padding-top: 26.3rem;       
     }
 
     .contato {        
-        height: 114.2rem;
+        height: 117.3rem;
       /* background-color: #7e6d4c;   */  
-        margin-top: 4rem;       
+        margin-top: 5rem;       
     }
     
     .contato-conteudo {       
-        height: 63.1rem;
+        height: 64.2rem;
         padding: 0 6rem;
-     /* background-color: rgb(40, 114, 89);  */
+    /*  background-color: rgb(40, 114, 89);  */
         gap: 5rem;  
         display: flex;
         justify-content: flex-start;
@@ -638,7 +638,7 @@ main {
     }
     
     .contato-formulario {       
-        height: 32.7rem;
+        height: 32.9rem;
     /* background-color: brown;    */     
         font-size: 17px;         
     }
@@ -659,10 +659,11 @@ main {
     .contato-redes-sociais {
         margin-top: 3rem;
        /* background-color: aquamarine;*/
+       height: 6rem;
     }
 
     .redes-sociais-icones {       
-      /*  background-color: #2a2c36;    */
+       /* background-color: #2a2c36;   */
         gap: 80px;   
         margin-top: 20px;
     }
@@ -675,31 +676,36 @@ main {
         height: 20rem;        
         flex-direction: row;       
         padding: 0 2rem;
-        margin-top: 4rem;        
+        margin-top: 5rem; 
+        gap:20px;       
     }
     
     .contato-formas-email, .contato-formas-whatsapp, .contato-formas-site {
-        width: 32%;
-        height: 14rem;
+        width: 35%;
+        height: 15rem;
         background-color: #ffffff;       
         padding: 15px;          
     }   
     
-    .email-texto h5{        
-        margin-top: 40px;
+    .email-texto h5, .whatsapp-texto h5, .site-texto h5{        
+        font-size: 18px;
     }
-    
+   
     .email-texto p, .whatsapp-texto p, .site-texto p {        
-        font-size: 17px;        
+        font-size: 16px;        
     }
     
     .email-circulo, .whatsapp-circulo, .site-circulo {
         width: 3rem;
         height: 3rem;        
-        left: 103px;
+        left: 84px;
         top: -25px;       
     }
     
+    .email-circulo {
+        left: 90px;
+    }
+
     .email-circulo i, .whatsapp-circulo i, .site-circulo i {
         font-size: 24px;        
     } 
@@ -711,7 +717,7 @@ main {
     .contato-mapa {
         width: 100%;
         height: 18.7rem;
-        margin-top: 4rem;
+        margin-top: 5rem;
        /* background-color: crimson;  */
     }
     
@@ -720,7 +726,7 @@ main {
     }
 
     .rodape {
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
 }
 
@@ -826,7 +832,7 @@ main {
     .hero-texto > h1 {
         font-size: 50px;        
         line-height: 100px;        
-        padding-top: 30px;         
+        padding-top: 30px;           
     }
     
     .hero-texto > h2 {
@@ -834,7 +840,7 @@ main {
     }
 
     .contato {        
-        height: 100.4rem;
+        height: 100.2rem;
      /* background-color: #7e6d4c;   */ 
         margin-top: 4rem; 
         display: flex;
@@ -845,9 +851,9 @@ main {
     }
     
     .contato-conteudo {       
-        height: 33rem;
+        height: 32.9rem;
         padding: 0 6rem;
-   /* background-color: rgb(40, 114, 89);  */
+       /* background-color: rgb(40, 114, 89);  */
         gap: 3rem;        
         align-items: flex-start;
         flex-direction: row;           
@@ -856,7 +862,7 @@ main {
     .contato-formulario { 
         width: 74.3%;      
         height: 32.9rem;
-   /* background-color: brown;   */
+      /*  background-color: brown;  */
         font-size: 17px;         
     }
 
@@ -867,9 +873,9 @@ main {
     }  
 
     .contato-dados {
-        width: 41%;
+        width: 41.7%;
         height: 32.9rem;
-       /*background-color: coral;    */
+       /*background-color: coral;   */
         gap: 2rem;         
     }
 
@@ -881,7 +887,7 @@ main {
     }
     
     .contato-redes-sociais {
-        margin-top: 6.5rem;
+        margin-top: 6.3rem;
       /*background-color: aquamarine;*/
        height: 8rem;
     }
@@ -908,7 +914,11 @@ main {
     
     .email-texto h5, .whatsapp-texto h5, .site-texto h5{        
         margin-top: 15px;
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .whatsapp-texto h5 {
+        margin-top: -10px;
     }
     
     .email-texto p, .whatsapp-texto p, .site-texto p {        
@@ -916,9 +926,9 @@ main {
     }
     
     .email-circulo, .whatsapp-circulo, .site-circulo {
-        width: 3.5rem;
-        height: 3.5rem;        
-        left: 150px;
+        width: 3.3rem;
+        height: 3.3rem;        
+        left: 156px;
         top: -27px;       
     }
     
