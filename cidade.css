@@ -98,9 +98,8 @@ header, .cabecalho{
 }
 
 .navbar {
-    width: 100%;
-    height: auto;
-    padding-top: 26.2rem;
+    width: 100%;    
+    padding-top: 26.3rem;
     display: none;  
     /*background-color: blueviolet; */  
 }
