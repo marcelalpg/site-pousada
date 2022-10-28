@@ -81,12 +81,9 @@ header, .cabecalho{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 52px;
+    margin-top: 51px;
     position: fixed;
     z-index: 101;
-    /*position: absolute; 
-    top: -16px;   
-    z-index: 99;*/
 }
 
 .menu-btn {
@@ -107,24 +104,21 @@ header, .cabecalho{
 .navbar {
     width: 100%;
     height: auto;
-   padding-top: 30.6rem;
-    display: none; 
-    z-index: 100; 
-    
-   /* background-color: blueviolet;*/
+    padding-top: 26.2rem;
+    display: none;  
+    /*background-color: blueviolet; */  
 }
 
 .navbar > ul {
     list-style: none;   
     padding-left: 0;
-    height: 26rem;
 }
 
 .navbar > ul > li > a {
     display: block;
-    width: 100%;       
+    width: 100%;    
     background-color: #ffffff;
-    padding: 19px;    
+    padding: 15px;
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
@@ -136,7 +130,7 @@ header, .cabecalho{
 
 .navbar > ul > li > a:hover {
     color: #ffffff;  
-    background-color: #caae8c;
+    background-color: #b19879;
 }
 
 .container-fluid {
@@ -159,8 +153,7 @@ header, .cabecalho{
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    margin-bottom: 20px;
-   /* background-color: black;*/
+    margin-bottom: 20px;   
 }
 
 #slide1-texto > h1, #slide2-texto > h1, #slide3-texto > h1, #slide4-texto > h1, #slide5-texto > h1, #slide6-texto > h1, #slide7-texto > h1 {
@@ -220,8 +213,7 @@ header, .cabecalho{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 180px;
-    
+    margin-top: 180px;    
 }
 
 .saibamais a {
@@ -241,13 +233,8 @@ header, .cabecalho{
 
 .redes-sociais {
     width: 100%;
-    height: 2rem;
-    /*position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);*/
-    margin-top: 12px;
-   /*background-color: #2a2c36;  */
+    height: 2rem;    
+    margin-top: 12px;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,8 +297,7 @@ header, .cabecalho{
     background-position: center center ;
 }
 
-#slide2 {
-    /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/home/20200327_12033922.jpg);*/
+#slide2 {    
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(20, 20, 20, 0.3)), url(imagens/acomodacoes/WhatsApp\ Image\ 2022-06-16\ at\ 11.43.2022.jpeg); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -319,8 +305,7 @@ header, .cabecalho{
 }
 
 #slide3 {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/festas-eventos/I\ M\ \(48\ de\ 5412\).jpg);
-  /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/home/20211012_1807477.jpg);*/
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/festas-eventos/I\ M\ \(48\ de\ 5412\).jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -328,7 +313,6 @@ header, .cabecalho{
 
 #slide4 {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/galeria/WhatsApp\ Image\ 2022-06-16\ at\ 11.41.244.jpeg);
-   /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/20201010_1923111.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -336,7 +320,6 @@ header, .cabecalho{
 
 #slide5 {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(20, 20, 20, 0.4)), url(imagens/reservas/WhatsApp\ Image\ 2022-07-03\ at\ 15.11.000.jpeg);
-    /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/20201010_1923111.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
@@ -344,7 +327,6 @@ header, .cabecalho{
 
 #slide6 {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(20, 20, 20, 0.3)), url(imagens/cidade/IMG-20220726-WA00148.jpg);
-    /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.3)), url(imagens/home/20201010_1923111.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

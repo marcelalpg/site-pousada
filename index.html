@@ -20,37 +20,37 @@
 <body>
     <header>
         <div class="cabecalho">
-          <div class="cabecalho-superior"> 
-            <div class="localizacao">
-              <i class="fa-solid fa-location-dot"></i>
-              <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
-            </div>               
-            <div class="telefones">
-              <i id="zap-cabecalho" class="fa-brands fa-whatsapp" ></i>
-              <a href="#">&nbsp;(35)99963-4214 | </a>
-              <i id="tel" class="fa-solid fa-phone"></i>
-              <a href="#">&nbsp;(35)3371-1110</a>
-            </div>       
-          </div>
-  
-           <div class="cabecalho-inferior">
-              <div class="logo"></div>
-              <div class="menu-btn">
-                <i id="icone-menu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
-              </div>   
-              <nav class="navbar" id="itens">
-                <ul class="nav-list">
-                    <li class="nav-item1"><a href="index.html" class="nav-link" id="home">Home</a></li>
-                    <li class="nav-item2"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
-                    <li class="nav-item3"><a href="festas-eventos.html" class="nav-link">Festa & Eventos</a></li>
-                    <li class="nav-item4"><a href="galeria.html" class="nav-link">Galeria</a></li>
-                    <li class="nav-item5"><a href="reservas.html" class="nav-link">Reservas</a></li>
-                    <li class="nav-item6"><a href="cidade.html" class="nav-link">A Cidade</a></li>
-                    <li class="nav-item7"><a href="contato.html"class="nav-link">Contato</a></li>
-                </ul>
-              </nav>     
-           </div>
-        </div>        
+            <div class="cabecalho-superior"> 
+              <div class="localizacao">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
+              </div>               
+              <div class="telefones">
+                <i id="zap-cabecalho" class="fa-brands fa-whatsapp"></i>
+                <a href="#">&nbsp;(35)99963-4214 | </a>
+                <i id="tel" class="fa-solid fa-phone"></i>
+                <a href="#">&nbsp;(35)3371-1110</a>
+              </div>       
+            </div>
+      
+             <div class="cabecalho-inferior">
+                <div class="logo"></div>
+                <div class="menu-btn">
+                  <i id="icone-menu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+                </div>   
+                <nav class="navbar" id="itens">
+                  <ul class="nav-list">
+                      <li class="nav-item1"><a href="index.html" class="nav-link">Home</a></li>
+                      <li class="nav-item2"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
+                      <li class="nav-item3"><a href="festas-eventos.html" class="nav-link">Festa & Eventos</a></li>
+                      <li class="nav-item4"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                      <li class="nav-item5"><a href="reservas.html" class="nav-link">Reservas</a></li>
+                      <li class="nav-item6"><a href="cidade.html" class="nav-link">A Cidade</a></li>
+                      <li class="nav-item7"><a href="contato.html"class="nav-link">Contato</a></li>
+                  </ul>
+                </nav>     
+             </div>
+          </div>        
     </header>   
     <main>        
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -474,13 +474,14 @@
     </footer> 
     -->
     <script>
-        function clickMenu() {
-            if (itens.style.display == "block") {
-                itens.style.display = "none"
-            }else {
-                itens.style.display = "block"
-            }
+       function clickMenu() {
+        if (itens.style.display == "block") {
+            itens.style.display = "none"
+        }else {
+            itens.style.display = "block"
         }
+    }
+        
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
