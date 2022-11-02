@@ -880,9 +880,9 @@ main {
     .img2, .img12, .img22 {
         width: 36.10%;
         height: 16rem;         
-        left: 308px;  
+        left: 310px;  
       /* background-color: aquamarine;*/
-    }
+    }    
     
     .img3, .img23 {
         width: 36.10%;
@@ -931,7 +931,7 @@ main {
      }
     
      .img12 {
-        left: 426.4px;
+        left: 429.5px;
      }
     
      .img13 {
