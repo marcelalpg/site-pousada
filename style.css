@@ -182,7 +182,8 @@ header, .cabecalho{
     text-shadow:1px solid rgb(43, 43, 43);  
     
     animation: fadeInLeft;
-    animation-duration: 1.5s;
+    animation-duration: 2.8s;
+    animation-delay: .2s;
 }
 
 #slide1-texto > p, #slide2-texto > p, #slide3-texto > p, #slide4-texto > p, #slide5-texto > p, #slide6-texto > p, #slide7-texto > p {
@@ -197,7 +198,8 @@ header, .cabecalho{
     margin-top: 25px;  
 
     animation: fadeInRight;
-    animation-duration: 1.8s;
+   animation-delay: .2s;
+    animation-duration: 2.8s;
 }
 
 .saibamais {
@@ -493,21 +495,22 @@ header, .cabecalho{
         }    
         
         #slide1-texto > h1, #slide2-texto > h1, #slide3-texto > h1, #slide4-texto > h1, #slide5-texto > h1, #slide6-texto > h1, #slide7-texto > h1 {
-            font-size: 50px;           
+            font-size: 60px;           
         } 
         
         #slide1-texto > h2, #slide2-texto > h2, #slide3-texto > h2, #slide4-texto > h2, #slide5-texto > h2, #slide6-texto > h2, #slide7-texto > h2 {
-            font-size: 40px;        
+            font-size: 45px;        
         }
         
         #slide1-texto > p, #slide2-texto > p, #slide3-texto > p, #slide4-texto > p, #slide5-texto > p, #slide6-texto > p, #slide7-texto > p {
-            font-size: 20px;         
+            font-size: 22px;         
                       
         }
         
         .saibamais {
             width: 7.3rem;
-            height: 2.6rem;                   
+            height: 2.6rem;  
+            margin-top: 112px;                 
         }   
 
         .saibamais a {            
