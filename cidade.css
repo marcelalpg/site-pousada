@@ -825,11 +825,11 @@ main {
         }
         
         .cidade-foto1, .maria-fumaca-foto1, .praca-leoes-foto1, .gomeira-foto1, .itaguare-foto1, .ibama-foto1, .ingazeiro-foto1 {
-            width: 29.1%;
+            width: 28.8%;
             height: 34rem;
-          /*  background-color: blue; */
-           
+          /*  background-color: blue; */           
         }
+        
     
         .cidade-foto2, .praca-leoes-foto2, .gomeira-foto2, .itaguare-foto2, .ibama-foto2, .ingazeiro-foto2 {
             width: 70.9%;
@@ -839,12 +839,13 @@ main {
         }
         
         .gomeira-foto2, .ibama-foto2 {
+            width: 71.2%;
             margin-left: 0;
             margin-right: 13rem;
         }
     
         .maria-fumaca-video {
-            width: 70.9%;
+            width: 71.2%;
             height: 20rem;   
             margin-top: -16px;            
         }
