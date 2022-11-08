@@ -62,58 +62,83 @@ header, .cabecalho{
     padding-bottom: 11px;
 }
 
-.cabecalho-inferior {
-    width: 100%;
-    height: 3rem;
-    background-color: #ffffff;
-    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
-    display: flex;   
-    justify-content: center;
-    align-items: center; 
-    position: relative;  
-}
-
-.logo {
-    width: 160px;
-    height: 17vh;     
-    background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
-    background-size: contain;
-    background-repeat: no-repeat; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 52px;
-    position: fixed;
-    z-index: 101;
-}
-
-.menu-btn {
-    width: 100%;
-    height: 2rem;
-   /* background-color: #05fc1d;*/
-    position: absolute;
-    display: block;
-    padding-left: 30px;
-    padding-top: 4px;   
-}
-
-#icone-menu {
-    font-size: 25px;
-    color: #2a2c36; 
-    display: block;
-}
-
 .navbar {
     width: 100%;
+    height: 3.1rem;
+    background-color: #f04a4a;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
+    display: flex;        
+}
+.contariner-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+   
+}
+.navbar-brand {
+    width: 160px;
+    height: 17vh;     
+   background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-top: 52px;
+    position: fixed; 
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    z-index: 103;
+}
+
+.navbar-toggler {
+    font-size: 18px;
+    position: relative; 
+    border-radius: 0;   
+    border: none;
+}
+
+.navbar-toggler:focus {
+    border-color: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.collapse > ul {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    --bs-gutter-x:0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: auto;
+    visibility: visible;
+    padding-top: 9px;
+}
+
+.collapse > ul > li > a {
+    font-family: 'Hind', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2a2c36;  
+    padding: 22px;      
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.collapse > ul > li > a:hover {
+    color: #ffffff;  
+    background-color: #b19879;
+}
+/*.navbar {
+    width: 100%;    
     padding-top: 26.3rem;
     display: none;  
-    /*background-color: blueviolet; */
+    /*background-color: blueviolet; 
 }
 
 .navbar > ul {
     list-style: none;   
     padding-left: 0;
-    display: block;
 }
 
 .navbar > ul > li > a {
@@ -122,19 +147,18 @@ header, .cabecalho{
     background-color: #ffffff;
     padding: 15px;
     text-decoration: none;
-    text-align:center;
+    text-align: center;
     font-family: 'Hind', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     cursor: pointer;
-    color: #2a2c36;        
+    color: #2a2c36;    
 }
 
 .navbar > ul > li > a:hover {
     color: #ffffff;  
     background-color: #b19879;
-}
-
+}*/
 main {
     width: 100%;
     height: auto;
@@ -826,18 +850,33 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);               
     }        
-       
+     
+    /*.menu {
+        list-style: none;
+        display: flex;
+        gap: 0.5rem;
+        background-color: #2a2c36;
+    }
+    
+    .menu a{
+        display: block;
+    }
+    
+    .label-menu, .checkbox {
+        display: none;
+    }
+
     .menu-btn {           
         display: none;   
         overflow: hidden;         
     }
-
+*/
     .navbar, .navbar > ul {
         width: 100%;
         height: 4rem;
         padding-top: 0rem;
         display: flex;  
-        justify-content:left;
+        justify-content:center;
         align-items: center;
         gap:40px;                       
         padding: 0 2rem;           
@@ -865,7 +904,7 @@ main {
     .nav-item4 {
         margin-left: 300px;            
     }   
-    
+    */
     .hero {
         height: 100vh;
     }
