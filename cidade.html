@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/54c79639a5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="cidade.css">
+    <script defer src="cidade.js"></script>
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;500;600&family=Gilda+Display&family=Hind:wght@500&family=Montserrat:wght@100;500;800;900&display=swap');
     </style>
@@ -30,11 +31,15 @@
     
            <div class="cabecalho-inferior">
               <div class="logo"></div>
-              <div class="menu-btn">
+             <!-- <div class="menu-btn">
                 <i id="icone-menu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
-              </div>   
+              </div>  -->
               <nav class="navbar" id="itens">
-                <ul class="nav-list">
+                <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="nav-list" aria-expanded="false">
+                  <!--  <i id="hamburguer" class="fa-solid fa-bars"></i> -->
+                    <span id="hamburger"></span>
+                </button>
+                <ul class="nav-list active" id="nav-list" role="nav-list">
                     <li class="nav-item1"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item2"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
                     <li class="nav-item3"><a href="festas-eventos.html" class="nav-link">Festa & Eventos</a></li>
