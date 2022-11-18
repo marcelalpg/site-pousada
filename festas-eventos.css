@@ -89,43 +89,91 @@ header, .cabecalho{
     z-index: 101;
 }
 
-.menu-btn {
-    width: 100%;
-    height: 2rem;
-   /* background-color: #05fc1d;*/
-    position: absolute;
-    display: block;
-    padding-left: 30px;
-    padding-top: 4px;   
-}
-
-.menu-btn > i {
-    font-size: 25px;
-    color: #2a2c36; 
-}
-
 .navbar {
+    width: 100%;      
+   padding-top: 26.3rem;
+    display: block;  
+    /*background-color: blueviolet; */  
+}
+
+.nav-list {
+    display: block;   
     width: 100%;
-    padding-top: 26.2rem;
-    display: none;    
+    list-style: none;
+    position: absolute;
+    top:16.1rem;
+    left: 0;
+    padding-left: 0;    
+    height: 0;
+    background-color: #ffffff; 
+    transition: 0.5s;  
+    visibility: hidden; 
+    overflow-y: hidden;
+    margin-top: 5px; 
+    border-top: 1px solid #cecdcd;    
 }
 
-.navbar > ul {
-    list-style: none; 
-    padding-left: 0;  
-}
-
-.navbar > ul > li > a {
+.btn-menu {
+    width: 15%;
+    height: 3rem;   
+   /*gap: 0.5rem;*/
+   cursor: pointer;
+   position: relative;
+   top: -12.9rem; 
+   background:none;
+   border: none;
+   font: inherit;
+}  
+   
+ #hamburger {
+    width: 20px;
     display: block;
-    width: 100%;    
-    background-color: #ffffff;
-    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    border-top: 2px solid;
+    color: #2a2c36;    
+}
+
+#hamburger::before,
+#hamburger::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px; 
+    background: currentColor;
+    position: relative;
+    transition: .3s;   
+}
+
+.navbar.active .nav-list {    
+    height: 100vh;
+    visibility: visible;   
+}
+
+.navbar.active #hamburger {
+    border-top-color: transparent;
+}
+
+.navbar.active #hamburger::before {
+    transform: rotate(135deg);
+}
+
+.navbar.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+.nav-list a {
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     cursor: pointer;
+    padding: 22px;
     color: #2a2c36;
 }
 
@@ -388,14 +436,6 @@ main {
     font-size: 16px;   
     margin-top: 1rem;
 }
-/*
-.aniversario-texto {
-    height: 17rem;
-}
-
-.outros-texto {
-    height: 21rem;
-}*/
 
 .casamento-texto h5, .aniversario-texto h5, .outros-texto h5 {
     font-size: 25px;
@@ -473,15 +513,11 @@ main {
      display: flex;
      justify-content: center;
      align-items: center;
-     gap: 2px;
-    /* position: relative;
-     text-align: center;*/
+     gap: 2px;  
  }    
 
 .orcamento-texto-whatsapp, .orcamento-texto-tel, .orcamento-texto-email {
-    margin-top: -15px;
-    /*position: absolute;
-    top: -20px;*/
+    margin-top: -15px;   
 }
 
 .orcamento-texto-email > i {
@@ -581,9 +617,7 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    padding: 5px;
-    /*position: relative;
-    top: 60px;*/
+    padding: 5px;    
 }
 
 .rodape-localizacao, .rodape-email, .rodape-fones {
@@ -672,7 +706,7 @@ main {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.2px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: normal;
     line-height: 24px;
     text-transform: uppercase;
     color: #c3c3ac;
@@ -735,25 +769,35 @@ main {
         padding-bottom: 0;
     }
     
-    .menu-btn > i {
-        font-size: 27px;
-        color: #2a2c36; 
-    }
-    
     .logo {
         width: 190px;
         height: 18vh; 
         position: fixed;         
         z-index: 101; 
-        top: 1px;  
-    } 
-    
-    .navbar {       
-        padding-top: 26.5rem;  
-       padding-left: 0; 
-       margin: 0;      
+        top: 1px; 
+    }     
+         
+     #hamburger {
+        width: 24px;
+          
     }
-
+    
+    #hamburger::before,
+    #hamburger::after {        
+        width: 24px;       
+    }       
+       
+    .nav-list a {
+        text-decoration: none;
+       text-align: center;
+        font-family: 'Hind', sans-serif;
+        font-size: 13.5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 22px;
+        color: #2a2c36;
+    }
+    
     .festas-eventos {
         width: 100%;
         height: 193.7rem;
@@ -819,11 +863,7 @@ main {
     .aniversario-texto {
       /*  height: 16rem; */
         left: 1.5rem;      
-    }
-    
-   /* .outros-texto {
-        height: 19.5rem;
-    }*/
+    }  
 
     .casamento-texto h5, .aniversario-texto h5, .outros-texto h5 {
         font-size: 27px;    
@@ -945,44 +985,72 @@ main {
         transform: translate(-50%, -50%);               
     }        
        
-    .menu-btn {           
-        display: none;   
-        overflow: hidden;         
+    .navbar {
+        width: 100%;      
+       padding-top: 26.3rem;
+        display: flex;  
+        height: 4rem;
+        /*background-color: blueviolet; */  
+    }
+    
+    .nav-list{
+        display: flex;  
+        justify-content: space-between; 
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 4rem;
+        list-style: none;
+        position: absolute;
+        top:49%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:0 2rem;             
+        height: 4rem;           
+        visibility: visible; 
+        overflow-y: visible;            
+        border-top: none;    
+    }
+    
+    .btn-menu {
+        display: none;           
+    }  
+       
+     #hamburger {          
+        display: none;            
+    }
+                   
+    .nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5, .nav-item6, .nav-item7 {
+        position: absolute;            
     }
 
-    .navbar, .navbar > ul {
-        width: 100%;
-        height: 4rem;
-        padding-top: 0rem;
-        display: flex;  
-        justify-content:left;
-        align-items: center;
-        gap:40px;                       
-        padding: 0 2rem;           
-    }
-              
-    .navbar > ul > li > a {
-        width: 100%;
-        height: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;              
-        padding: 0px;    
-        font-size: 14px;          
-    }
-    
-    .navbar > ul > li > a:hover {
-        color: #ffffff;  
-        background-color: #b19879;
-    }
-    
     .nav-item1 {
-        margin-left: 110px;
+        left: 6.3rem;
     }
-    
+
+    .nav-item2 {            
+        left: 11.8rem;
+    }
+
+    .nav-item3 {
+        left: 21.4rem;
+    }
+
     .nav-item4 {
-        margin-left: 300px;            
-    }   
+        left: 51.2rem;
+    }
+
+    .nav-item5 {
+        right: 18.6rem;
+    }
+
+    .nav-item6 {
+        right: 12.2rem;
+    }
+
+    .nav-item7 {
+        right: 5.7rem;
+    }
     
     .hero {
         height: 100vh;
