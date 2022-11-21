@@ -5,25 +5,19 @@
 }
 
 html {
-    scroll-behavior: smooth;     
-     
+    scroll-behavior: smooth;    
 }
 
-/*:target {
-    scroll-margin-top: 1em;
-}
-*/
 body  {
     width: 100%;
     height: 100vh;  
-    background-color: #ffffff;  
-   /* overflow-x: hidden;  */  
-}    
+    background-color: #ffffff;      
+}   
 
 header, .cabecalho{
     width: 100%;
     height: 8rem;
-    /* background-color: aqua;*/
+    /*background-color: rgb(17, 100, 100);*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -62,6 +56,17 @@ header, .cabecalho{
     padding-bottom: 11px;
 }
 
+.cabecalho-inferior {
+    width: 100%;
+    height: 3rem;
+    background-color: #ffffff;
+    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    position: relative;  
+}
+
 .logo {
     width: 160px;
     height: 17vh;     
@@ -75,129 +80,101 @@ header, .cabecalho{
     position: fixed;
     z-index: 101;
 }
+
 .navbar {
-    width: 100%;
-    height: 3.1rem;
-    background-color: #f04a4a;
-    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
-    display: flex;        
+    width: 100%;      
+   padding-top: 26.3rem;
+    display: block;  
+    /*background-color: blueviolet; */  
 }
-.contariner-fluid {
-    padding-left: 0;
-    padding-right: 0;
+
+.nav-list {
+    display: block;   
     width: 100%;
+    list-style: none;
+    position: absolute;
+    top:16.1rem;
+    left: 0;
+    padding-left: 0;    
+    height: 0;
+    background-color: #ffffff; 
+    transition: 0.5s;  
+    visibility: hidden; 
+    overflow-y: hidden;
+    margin-top: 5px; 
+    border-top: 1px solid #cecdcd;    
+}
+
+.btn-menu {
+    width: 15%;
+    height: 3rem;   
+   /*gap: 0.5rem;*/
+   cursor: pointer;
+   position: relative;
+   top: -12.9rem; 
+   background:none;
+   border: none;
+   font: inherit;
+}  
    
-}
-.navbar-brand {
-    width: 160px;
-    height: 17vh;     
-   background-image: url(imagens/LOGO\ POUSADA-fundobranco.png);
-    background-size: contain;
-    background-repeat: no-repeat; 
-    margin-top: 52px;
-    position: fixed; 
-    top: 10%;
+ #hamburger {
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  
-    z-index: 103;
+    transform: translate(-50%, -50%);    
+    border-top: 2px solid;
+    color: #2a2c36;    
 }
 
-.navbar-toggler {
-    font-size: 18px;
+#hamburger::before,
+#hamburger::after {
+    content: "";
     display: block;
-    position: relative; 
-    border-radius: 0;   
-    border: none;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px; 
+    background: currentColor;
+    position: relative;
+    transition: .3s;   
 }
 
-.navbar-toggler:focus {
-    border-color: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-#navbarNav {
-    width: 100%;
+.navbar.active .nav-list {    
     height: 100vh;
-    background-color: #ffffff;
-    /*transition: 0.3s;*/
+    visibility: visible;   
 }
 
-.navbar-nav > li > a{
-    display: block;
-    height: auto;
-    padding: 25px;
-    font-family: 'Hind', sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    cursor: pointer;     
-   background-color: #ffffff;
-   text-align: center;
+.navbar.active #hamburger {
+    border-top-color: transparent;
 }
 
-.collapse > ul > li > a:hover {
-    color: #ffffff;  
-    background-color: #b19879;
-}
-/*
-.collapse > ul {
-    width: 100%;
-    height: 100vh;
-    display: block;
-    background-color: #ffffff;
-    --bs-gutter-x:0;
-    padding-left: 0;
-    padding-right: 0;
-    overflow-x: auto;
-    visibility: visible;
-    padding-top: 9px;
+.navbar.active #hamburger::before {
+    transform: rotate(135deg);
 }
 
-.collapse > ul > li > a {
-    font-family: 'Hind', sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: #2a2c36;  
-    padding: 22px;      
-    background-color: #ffffff;
-    text-align: center;
+.navbar.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
 }
 
-.collapse > ul > li > a:hover {
-    color: #ffffff;  
-    background-color: #b19879;
-}
-/*.navbar {
-    width: 100%;    
-    padding-top: 26.3rem;
-    display: none;  
-    /*background-color: blueviolet; 
-}
-
-.navbar > ul {
-    list-style: none;   
-    padding-left: 0;
-}
-
-.navbar > ul > li > a {
-    display: block;
-    width: 100%;    
-    background-color: #ffffff;
-    padding: 15px;
+.nav-list a {
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     cursor: pointer;
-    color: #2a2c36;    
+    padding: 22px;
+    color: #2a2c36;
 }
 
 .navbar > ul > li > a:hover {
     color: #ffffff;  
     background-color: #b19879;
-}*/
+}
+
+
 main {
     width: 100%;
     height: auto;
@@ -238,6 +215,9 @@ main {
     text-align: center;    
     text-shadow:1px  rgb(43, 43, 43); 
     padding-top: 100px;     
+
+    animation: fadeInDown;
+    animation-duration: 1.5s;
 }
 
 .hero-texto > h2 {
@@ -249,12 +229,16 @@ main {
     margin-top: 20px;    
     text-align: center;
     text-shadow:1px solid rgb(43, 43, 43);    
+
+    animation: fadeInLeft;
+    animation-duration: 2.8s;
+    animation-delay: .2s;
 }
 
 .acomodacoes {
     width: 100%;
     height: 261.8rem;
-/*  background-color: #d35106;*/
+ /*background-color: #d35106;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -311,7 +295,7 @@ main {
 .standard-carousel, .semi-luxo-carousel, .chale-carousel, .sl-sacada-carousel, .luxo-carousel {
     width: 100%;
     height: 20rem;
-   /* background-color: blue;*/  
+   /* background-color: blue;*/    
 }
 
 .carousel-control-next-standard, .carousel-control-next-chale, .carousel-control-next-luxo, .carousel-control-prev-semi-luxo, .carousel-control-prev-sl-sacada {
@@ -445,7 +429,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;  
-    flex-direction: column;     
+    flex-direction: column;   
 }
 
 .quarto1, .quarto1-descricao {
@@ -726,21 +710,33 @@ main {
     padding-bottom: 0;
 }
 
-.menu-btn > i {
-    font-size: 27px;
-    color: #2a2c36; 
-}
-
 .logo {
     width: 190px;
     height: 18vh; 
     position: fixed;         
     z-index: 101; 
     top: 1px; 
-} 
+}     
+     
+ #hamburger {
+    width: 24px;
+      
+}
 
-.navbar {       
-    padding-top: 29.8rem;       
+#hamburger::before,
+#hamburger::after {        
+    width: 24px;       
+}       
+   
+.nav-list a {
+    text-decoration: none;
+   text-align: right;
+    font-family: 'Hind', sans-serif;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 22px;
+    color: #2a2c36;
 }
 
 .acomodacoes {
@@ -766,7 +762,7 @@ main {
 .standard, .semi-luxo, .chale, .semi-luxo-sacada, .luxo {    
     position: relative;   
     margin-top: 5rem; 
-    /*background-color: aqua;*/
+   /* background-color: aqua;*/
 }
 
 .standard {
@@ -856,7 +852,8 @@ main {
     }
 
     .cabecalho-inferior {
-        height: 4rem;          
+        height: 4rem;   
+        box-shadow: 4px 1px 4px rgb(145, 143, 143);        
     }
     
     .cabecalho-superior {     
@@ -889,61 +886,74 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);               
     }        
-     
-    /*.menu {
+              
+    .navbar {
+        width: 100%;      
+       padding-top: 26.3rem;
+        display: flex;  
+        height: 4rem;
+        /*background-color: blueviolet; */  
+    }
+    
+    .nav-list{
+        display: flex;  
+        justify-content: space-between; 
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 4rem;
         list-style: none;
-        display: flex;
-        gap: 0.5rem;
-        background-color: #2a2c36;
+        position: absolute;
+        top:49%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding:0 2rem;             
+        height: 4rem;           
+        visibility: visible; 
+        overflow-y: visible;            
+        border-top: none;    
     }
     
-    .menu a{
-        display: block;
+    .btn-menu {
+        display: none;           
+    }  
+       
+     #hamburger {          
+        display: none;            
     }
-    
-    .label-menu, .checkbox {
-        display: none;
+                   
+    .nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5, .nav-item6, .nav-item7 {
+        position: absolute;            
     }
 
-    .menu-btn {           
-        display: none;   
-        overflow: hidden;         
-    }
-*/
-    .navbar, .navbar > ul {
-        width: 100%;
-        height: 4rem;
-        padding-top: 0rem;
-        display: flex;  
-        justify-content:center;
-        align-items: center;
-        gap:40px;                       
-        padding: 0 2rem;           
-    }
-              
-    .navbar > ul > li > a {
-        width: 100%;
-        height: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;              
-        padding: 0px;    
-        font-size: 14px;          
-    }
-    
-    .navbar > ul > li > a:hover {
-        color: #ffffff;  
-        background-color: #b19879;
-    }
-    
     .nav-item1 {
-        margin-left: 110px;
+        left: 5.8rem;
+    }
+
+    .nav-item2 {            
+        left: 11.3rem;
+    }
+
+    .nav-item3 {
+        left: 20.6rem;
+    }
+
+    .nav-item4 {
+        left: 52.3rem;
+    }
+
+    .nav-item5 {
+        right: 18.4rem;
+    }
+
+    .nav-item6 {
+        right: 11.8rem;
+    }
+
+    .nav-item7 {
+        right: 5rem;
     }
     
-    .nav-item4 {
-        margin-left: 300px;            
-    }   
-    */
     .hero {
         height: 100vh;
     }
@@ -961,8 +971,7 @@ main {
     .hero-texto > h1 {
         font-size: 50px;        
         line-height: 100px;        
-        padding-top: 30px;
-             
+        padding-top: 30px;             
     }
     
     .hero-texto > h2 {
@@ -1003,24 +1012,26 @@ main {
     } 
      
     .standard-carousel, .semi-luxo-carousel, .chale-carousel, .sl-sacada-carousel, .luxo-carousel {
-        width: 80%;
+        width: 83%;
         height: 32rem; 
         position: absolute;       
     }
 
    .semi-luxo-carousel, .sl-sacada-carousel {
-    left: 24.6rem;
+    left: 22.2rem;
    }
    
    .carousel-indicators {
+    width: 83%;
     position: absolute; 
     color: #ffffff;
-    left: -12.9rem;
+    left: -8.9rem;
+    /*background-color: red;*/
    }
 
     #quarto1-slide1, #quarto1-slide2, #quarto1-slide3, #quarto1-slide4, #quarto1-slide5, #quarto2-slide1, #quarto2-slide2, #quarto2-slide3,#quarto2-slide4,#quarto2-slide5, #quarto3-slide1,#quarto3-slide2, #quarto3-slide3,#quarto3-slide4, #quarto3-slide5, #quarto3-slide6, #quarto4-slide1,#quarto4-slide2, #quarto4-slide3,#quarto4-slide4, #quarto4-slide5,#quarto5-slide1,#quarto5-slide2, #quarto5-slide3,#quarto5-slide4, #quarto5-slide5, #quarto5-slide6 {
        height: 32rem;
-       width: 80%;    
+       width: 83%;    
    }
 
 /*quarto1-standard, quarto2-semi luxo, quarto3-chale, quarto4-semiluxo sacada, quarto5-luxo*/
@@ -1029,12 +1040,12 @@ main {
        height: 28rem;
        display: block;
        position: absolute;
-       right: 2rem; 
+       right: 0rem; 
     /*   background-color: blue;   */          
    }
 
    .quarto2, .quarto2-descricao, .quarto4, .quarto4-descricao {
-       left: 2rem;    
+       left: 0rem;    
    }
 
    .quarto3, .quarto4 {

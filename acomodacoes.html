@@ -7,6 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/54c79639a5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="acomodacoes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="cidade.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Gilda+Display&family=Hind:wght@500&family=Montserrat:wght@100;500;800;900&display=swap');
     </style>
@@ -15,55 +19,38 @@
 <body>
     <header>
         <div class="cabecalho">
-          <div class="cabecalho-superior"> 
-            <div class="localizacao">
-              <i class="fa-solid fa-location-dot"></i>
-              <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
-            </div>               
-            <div class="telefones">
-              <i id="zap-cabecalho" class="fa-brands fa-whatsapp"></i>
-              <a href="#" >&nbsp;(35)99963-4214 | </a>
-              <i id="tel" class="fa-solid fa-phone"></i>
-              <a href="#">&nbsp;(35)3371-1110</a>
-            </div>       
-          </div>
-
-            <nav class="navbar navbar-expand-lg bg-white">
-                <div class="container-fluid px-0">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <div class="cabecalho-superior"> 
+              <div class="localizacao">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="contato.html">&nbsp; Estrada de Pinheirinhos, 1515. Passa Quatro/MG</a>            
+              </div>               
+              <div class="telefones">
+                <i id="zap-cabecalho" class="fa-brands fa-whatsapp"></i>
+                <a href="#">&nbsp;(35)99963-4214 | </a>
+                <i id="tel" class="fa-solid fa-phone"></i>
+                <a href="#">&nbsp;(35)3371-1110</a>
+              </div>       
+            </div>
+      
+             <div class="cabecalho-inferior">
+                <div class="logo"></div>            
+                <nav class="navbar" id="itens">
+                  <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="nav-list" aria-expanded="false">
+                      <span id="hamburger"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active"  aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:#2a2c36">Acomodações</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:#2a2c36">Festas & Eventos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:#2a2c36">Galeria</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:#2a2c36">Reservas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:#2a2c36">A Cidade</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:#2a2c36">Contato</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-                             
-    </header>   
-   
+                  <ul class="nav-list active" id="nav-list" role="nav-list">
+                      <li class="nav-item1"><a href="index.html" class="nav-link">Home</a></li>
+                      <li class="nav-item2"><a href="acomodacoes.html" class="nav-link">Acomodações</a></li>
+                      <li class="nav-item3"><a href="festas-eventos.html" class="nav-link">Festas & Eventos</a></li>              
+                      <li class="nav-item4"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                      <li class="nav-item5"><a href="reservas.html" class="nav-link">Reservas</a></li>
+                      <li class="nav-item6"><a href="cidade.html" class="nav-link">A Cidade</a></li>
+                      <li class="nav-item7"><a href="contato.html"class="nav-link">Contato</a></li>
+                  </ul>
+                </nav>     
+             </div>
+          </div>                              
+    </header>  
     <main>
         <div class="hero">
             <div class="hero-texto">
@@ -72,7 +59,7 @@
             </div>
         </div>
         <section class="acomodacoes">
-           <div class="acomodacoes-texto">
+           <div class="acomodacoes-texto" data-aos="fade-up" data-aos-duration="1500">
                <h3>Acomodações</h3>
                 <p>Os apartamentos são amplos, podendo acomodar de 4 a 5 pessoas confortavelmente.</p>
                 <p>A Pousada Tia Ana tem preços diferenciados, conforme o número de pessoas por apartamento. Consulte-nos.</p>
@@ -84,10 +71,10 @@
            </div>
             <div class="acomodacoes-tipo">
                 <div class="standard">
-                    <div class="standard-carousel">                     
+                    <div class="standard-carousel" data-aos="fade-right" data-aos-duration="1500">                     
                         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" style="color:#ffffff"  data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="3" aria-label="Slide 4"></button>
@@ -102,7 +89,7 @@
                             </div>
                         </div>                
                     </div>                   
-                    <div class="quarto1">                                   
+                    <div class="quarto1" data-aos="fade-left" data-aos-duration="1500">                                   
                         <div class="quarto1-descricao">
                             <div class="quarto1-descricao-texto">
                                 <h5>Standard's</h5>
@@ -127,7 +114,7 @@
                 </div>                
 
                 <div class="semi-luxo">
-                    <div class="semi-luxo-carousel">
+                    <div class="semi-luxo-carousel" data-aos="fade-left" data-aos-duration="1500">
                         <div id="carouselExampleControlsNoTouching2" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -145,7 +132,7 @@
                             </div>                           
                         </div>                
                     </div>                   
-                    <div class="quarto2">                                 
+                    <div class="quarto2" data-aos="fade-right" data-aos-duration="1500">                                 
                         <div class="quarto2-descricao">
                            <div class="quarto2-descricao-texto">
                                 <h5>Semi-luxo</h5>
@@ -171,7 +158,7 @@
                 </div>
 
                 <div class="chale">
-                    <div class="chale-carousel">
+                    <div class="chale-carousel" data-aos="fade-right" data-aos-duration="1500">
                         <div id="carouselExampleControlsNoTouching3" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                             <div class="carousel-inner">
                                 <div class="carousel-indicators">
@@ -192,8 +179,8 @@
                             </div>                
                         </div> 
                     </div>               
-                    <div class="quarto3">                          
-                        <div class="quarto3-descricao">
+                    <div class="quarto3" data-aos="fade-left" data-aos-duration="1500">                          
+                        <div class="quarto3-descricao"  data-aos="fade-left" data-aos-duration="1500">
                             <div class="quarto3-descricao-texto">
                                 <h5>Chalé com garagem</h5>
                                 <p>Apartamento com ante-sala, banheiro privativo com aquecimento solar, secador de cabelo, ventilador de teto, aparelho de chá (cortesia) e garagem privativa.</p>
@@ -218,7 +205,7 @@
                 </div>
 
                 <div class="semi-luxo-sacada">
-                    <div class="sl-sacada-carousel">
+                    <div class="sl-sacada-carousel" data-aos="fade-left" data-aos-duration="1500">
                         <div id="carouselExampleControlsNoTouching4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -236,7 +223,7 @@
                             </div>                               
                         </div>                
                     </div>                
-                    <div class="quarto4">                                    
+                    <div class="quarto4" data-aos="fade-right" data-aos-duration="1500">                                    
                         <div class="quarto4-descricao">
                             <div class="quarto4-descricao-texto">
                                 <h5>Semi-luxo com sacada</h5>
@@ -262,7 +249,7 @@
                 </div>
                 
                 <div class="luxo">
-                    <div class="luxo-carousel">                    
+                    <div class="luxo-carousel" data-aos="fade-right" data-aos-duration="1500">                    
                         <div id="carouselExampleControlsNoTouching5" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleControlsNoTouching5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -282,7 +269,7 @@
                             </div>                               
                         </div>                
                     </div>                
-                    <div class="quarto5">                                   
+                    <div class="quarto5" data-aos="fade-left" data-aos-duration="1500">                                   
                         <div class="quarto5-descricao">
                             <div class="quarto5-descricao-texto">
                                 <h5>Luxo com sacada</h5>
@@ -354,6 +341,10 @@
             <h6>&copy;Copyrigth 2022 by MarcelaLPGay</h6>
         </div>
     </footer>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>
 </html>
