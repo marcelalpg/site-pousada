@@ -83,17 +83,6 @@ header, .cabecalho{
     z-index: 101;
 }
 
-/*.menu-btn {
-    width: 100%;
-    height: 2rem;
-    background-color: #05fc1d;
-    position: absolute;
-    display: block;
-    padding-left: 30px;
-    padding-top: 4px;   
-}*/
-
-
 .navbar {
     width: 100%;      
    padding-top: 26.3rem;
@@ -173,7 +162,7 @@ header, .cabecalho{
 
 .nav-list a {
     text-decoration: none;
-   text-align: right;
+    text-align: center;
     font-family: 'Hind', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
@@ -420,26 +409,10 @@ main {
    /* background-color: #04110e;*/
 }
 
-/*.maria-fumaca-texto {
-    height: 30.9rem;
-}*/
-
 .praca-leoes-texto {
     height: 11rem;
 }
-/*
-.gomeira-texto, .ingazeiro-texto {
-    height: 14rem;
-}
 
-.itaguare-texto {
-    height: 21rem;
-}
-
-.ibama-texto {
-    height: 28.4rem;
-}
-*/
 .cidade-texto h5, .maria-fumaca-texto h5, .praca-leoes-texto h5, .gomeira-texto h5, .itaguare-texto h5, .ibama-texto h5, .ingazeiro-texto h5 {
     font-size: 25px;
     font-weight: bold;
@@ -656,11 +629,6 @@ main {
         padding-bottom: 0;
     }
     
-    /*.menu-btn > i {
-        font-size: 27px;
-        color: #2a2c36; 
-    }*/
-    
     .logo {
         width: 190px;
         height: 18vh; 
@@ -670,8 +638,7 @@ main {
     }     
          
      #hamburger {
-        width: 24px;
-          
+        width: 24px;          
     }
     
     #hamburger::before,
@@ -681,7 +648,7 @@ main {
        
     .nav-list a {
         text-decoration: none;
-       text-align: right;
+       text-align: center;
         font-family: 'Hind', sans-serif;
         font-size: 13.5px;
         text-transform: uppercase;
@@ -863,31 +830,31 @@ main {
         }
 
         .nav-item1 {
-            left: 6.3rem;
+            left: 5.8rem;
         }
-
+    
         .nav-item2 {            
-            left: 11.8rem;
+            left: 11.3rem;
         }
-
+    
         .nav-item3 {
-            left: 21.4rem;
+            left: 20.6rem;
         }
-
+    
         .nav-item4 {
-            left: 51.2rem;
+            left: 52.3rem;
         }
-
+    
         .nav-item5 {
-            right: 18.6rem;
+            right: 17.9rem;
         }
-
+    
         .nav-item6 {
-            right: 12.2rem;
+            right: 11.4rem;
         }
-
+    
         .nav-item7 {
-            right: 5.7rem;
+            right: 4.6rem;
         }
         
         .hero {
@@ -936,7 +903,7 @@ main {
         }
         
         .cidade-foto1, .praca-leoes-foto1, .itaguare-foto1, .ingazeiro-foto1 {
-            width: 29.5%;
+            width: 29.3%;
         }
     
         .cidade-foto2, .praca-leoes-foto2, .gomeira-foto2, .itaguare-foto2, .ibama-foto2, .ingazeiro-foto2 {
