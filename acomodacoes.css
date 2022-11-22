@@ -214,10 +214,7 @@ main {
     text-transform: uppercase;
     text-align: center;    
     text-shadow:1px  rgb(43, 43, 43); 
-    padding-top: 100px;     
-
-    animation: fadeInDown;
-    animation-duration: 1.5s;
+    padding-top: 100px;    
 }
 
 .hero-texto > h2 {
@@ -229,10 +226,6 @@ main {
     margin-top: 20px;    
     text-align: center;
     text-shadow:1px solid rgb(43, 43, 43);    
-
-    animation: fadeInLeft;
-    animation-duration: 2.8s;
-    animation-delay: .2s;
 }
 
 .acomodacoes {
@@ -943,15 +936,15 @@ main {
     }
 
     .nav-item5 {
-        right: 18.4rem;
+        right: 17.9rem;
     }
 
     .nav-item6 {
-        right: 11.8rem;
+        right: 11.4rem;
     }
 
     .nav-item7 {
-        right: 5rem;
+        right: 4.6rem;
     }
     
     .hero {
