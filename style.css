@@ -8,10 +8,6 @@ html {
     scroll-behavior: smooth;    
 }
 
-:target {
-    scroll-margin-top: 1em;
-}
-
 body, main, .carousel, .carousel-inner, .carousel-item  {
     width: 100%;
     height: 100vh;  
@@ -86,52 +82,99 @@ header, .cabecalho{
     z-index: 101;
 }
 
-.menu-btn {
-    width: 100%;
-    height: 2rem;
-   /* background-color: #05fc1d;*/
-    position: absolute;
-    display: block;
-    padding-left: 30px;
-    padding-top: 4px;   
-}
-
-.menu-btn > i {
-    font-size: 25px;
-    color: #2a2c36; 
-}
-
 .navbar {
-    width: 100%;
-    height: auto;
-    padding-top: 26.2rem;
-    display: none;  
+    width: 100%;      
+   padding-top: 26.3rem;
+    display: block;  
     /*background-color: blueviolet; */  
 }
 
-.navbar > ul {
-    list-style: none;   
-    padding-left: 0;
+.nav-list {
+    display: block;   
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    top:16.1rem;
+    left: 0;
+    padding-left: 0;    
+    height: 0;
+    background-color: #ffffff; 
+    transition: 0.5s;  
+    visibility: hidden; 
+    overflow-y: hidden;
+    margin-top: 5px; 
+    border-top: 1px solid #cecdcd;    
 }
 
-.navbar > ul > li > a {
+.btn-menu {
+    width: 15%;
+    height: 3rem;   
+   /*gap: 0.5rem;*/
+   cursor: pointer;
+   position: relative;
+   top: -12.9rem; 
+   background:none;
+   border: none;
+   font: inherit;
+}  
+   
+ #hamburger {
+    width: 20px;
     display: block;
-    width: 100%;    
-    background-color: #ffffff;
-    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    border-top: 2px solid;
+    color: #2a2c36;    
+}
+
+#hamburger::before,
+#hamburger::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px; 
+    background: currentColor;
+    position: relative;
+    transition: .3s;   
+}
+
+.navbar.active .nav-list {    
+    height: 100vh;
+    visibility: visible;   
+}
+
+.navbar.active #hamburger {
+    border-top-color: transparent;
+}
+
+.navbar.active #hamburger::before {
+    transform: rotate(135deg);
+}
+
+.navbar.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+.nav-list a {
     text-decoration: none;
     text-align: center;
     font-family: 'Hind', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     cursor: pointer;
-    color: #2a2c36;    
+    padding: 22px;
+    color: #2a2c36;
 }
 
 .navbar > ul > li > a:hover {
     color: #ffffff;  
     background-color: #b19879;
 }
+
 
 .container-fluid {
     width: 90%;
@@ -168,7 +211,7 @@ header, .cabecalho{
     margin-top: 5px; 
     
     animation: fadeInDown;
-    animation-duration: 1.5s;
+    animation-duration: 2.8s;
 } 
 
 #slide1-texto > h2, #slide2-texto > h2, #slide3-texto > h2, #slide4-texto > h2, #slide5-texto > h2, #slide6-texto > h2, #slide7-texto > h2 {
@@ -181,7 +224,7 @@ header, .cabecalho{
     text-align: center;
     text-shadow:1px solid rgb(43, 43, 43);  
     
-    animation: fadeInLeft;
+    animation: fadeInTopLeft;
     animation-duration: 2.8s;
     animation-delay: .2s;
 }
@@ -197,7 +240,7 @@ header, .cabecalho{
     text-shadow:1px solid rgb(43, 43, 43);   
     margin-top: 25px;  
 
-    animation: fadeInRight;
+    animation: fadeInBottomRight;
    animation-delay: .2s;
     animation-duration: 2.8s;
 }
@@ -215,7 +258,9 @@ header, .cabecalho{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 180px;    
+    margin-top: 180px;  
+    
+   
 }
 
 .saibamais a {
@@ -366,23 +411,33 @@ header, .cabecalho{
         padding-bottom: 0;
     }
     
-    .menu-btn > i {
-        font-size: 27px;
-        color: #2a2c36; 
-    }
-
     .logo {
         width: 190px;
         height: 18vh; 
         position: fixed;         
         z-index: 101; 
-        top: 21px; 
-    } 
-    
-    .navbar {       
-        padding-top: 30.7rem;       
+        top: 1px; 
+    }     
+         
+     #hamburger {
+        width: 24px;          
     }
-
+    
+    #hamburger::before,
+    #hamburger::after {        
+        width: 24px;       
+    }       
+       
+    .nav-list a {
+        text-decoration: none;
+       text-align: center;
+        font-family: 'Hind', sans-serif;
+        font-size: 13.5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 22px;
+        color: #2a2c36;
+    }
     #slide1-texto, #slide2-texto, #slide3-texto, #slide4-texto, #slide5-texto, #slide6-texto, #slide7-texto {
         height: 20rem;       
     }
@@ -455,44 +510,72 @@ header, .cabecalho{
             transform: translate(-50%, -50%);               
         }        
            
-        .menu-btn {           
-            display: none;   
-            overflow: hidden;         
-        }
-
-        .navbar, .navbar > ul {
-            width: 100%;
-            height: 4rem;
-            padding-top: 0rem;
+        .navbar {
+            width: 100%;      
+           padding-top: 26.3rem;
             display: flex;  
-            justify-content:left;
-            align-items: center;
-            gap:40px;                       
-            padding: 0 2rem;           
-        }
-                  
-        .navbar > ul > li > a {
-            width: 100%;
             height: 4rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;              
-            padding: 0px;    
-            font-size: 14px;          
+            /*background-color: blueviolet; */  
         }
         
-        .navbar > ul > li > a:hover {
-            color: #ffffff;  
-            background-color: #b19879;
+        .nav-list{
+            display: flex;  
+            justify-content: space-between; 
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            height: 4rem;
+            list-style: none;
+            position: absolute;
+            top:49%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding:0 2rem;             
+            height: 4rem;           
+            visibility: visible; 
+            overflow-y: visible;            
+            border-top: none;    
+        }
+        
+        .btn-menu {
+            display: none;           
+        }  
+           
+         #hamburger {          
+            display: none;            
+        }
+                       
+        .nav-item1, .nav-item2, .nav-item3, .nav-item4, .nav-item5, .nav-item6, .nav-item7 {
+            position: absolute;            
         }
 
         .nav-item1 {
-            margin-left: 110px;
+            left: 6.3rem;
         }
-        
+
+        .nav-item2 {            
+            left: 11.8rem;
+        }
+
+        .nav-item3 {
+            left: 21.4rem;
+        }
+
         .nav-item4 {
-            margin-left: 300px;            
-        }    
+            left: 53rem;
+        }
+
+        .nav-item5 {
+            right: 18.6rem;
+        }
+
+        .nav-item6 {
+            right: 12.2rem;
+        }
+
+        .nav-item7 {
+            right: 5.7rem;
+        }
         
         #slide1-texto > h1, #slide2-texto > h1, #slide3-texto > h1, #slide4-texto > h1, #slide5-texto > h1, #slide6-texto > h1, #slide7-texto > h1 {
             font-size: 50px;           
