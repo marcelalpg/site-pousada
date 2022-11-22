@@ -68,7 +68,7 @@ header, .cabecalho{
     width: 100%;
     height: 3rem;
     background-color: #ffffff;
-    box-shadow: 3px 0px 2px rgb(145, 143, 143); 
+    box-shadow: 4px 1px 4px rgb(145, 143, 143); 
     display: flex;   
     justify-content: center;
     align-items: center; 
@@ -1025,33 +1025,32 @@ main {
     }
 
     .nav-item1 {
-        left: 6.3rem;
+        left: 5.8rem;
     }
 
     .nav-item2 {            
-        left: 11.8rem;
+        left: 11.3rem;
     }
 
     .nav-item3 {
-        left: 21.4rem;
+        left: 20.6rem;
     }
 
     .nav-item4 {
-        left: 51.2rem;
+        left: 52.3rem;
     }
 
     .nav-item5 {
-        right: 18.6rem;
+        right: 17.9rem;
     }
 
     .nav-item6 {
-        right: 12.2rem;
+        right: 11.4rem;
     }
 
     .nav-item7 {
-        right: 5.7rem;
+        right: 4.6rem;
     }
-    
     .hero {
         height: 100vh;
     }
