@@ -65,6 +65,7 @@ header, .cabecalho{
     justify-content: center;
     align-items: center; 
     position: relative;  
+   
 }
 
 .logo {
@@ -84,7 +85,9 @@ header, .cabecalho{
 .navbar {
     width: 100%;      
    padding-top: 26.3rem;
-    display: block;  
+    display: block; 
+    
+   
     /*background-color: blueviolet; */  
 }
 
