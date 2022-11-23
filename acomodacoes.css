@@ -145,7 +145,8 @@ header, .cabecalho{
 
 .navbar.active .nav-list {    
     height: 100vh;
-    visibility: visible;   
+    visibility: visible;  
+    overflow-y: auto; 
 }
 
 .navbar.active #hamburger {
