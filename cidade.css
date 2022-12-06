@@ -7,7 +7,8 @@
 
 html {
     scroll-behavior: smooth;     
-     
+    margin: auto;   
+    overflow-x: hidden;     
 }
 
 body  {
@@ -179,7 +180,8 @@ header, .cabecalho{
 main {
     width: 100%;
     height: auto;
-    margin: auto;
+    margin: auto;     
+    overflow-x: hidden;
 }
 
 .hero {
