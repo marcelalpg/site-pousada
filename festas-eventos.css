@@ -5,7 +5,8 @@
 }
 
 html {
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;  
+   
 }
 
 :target {
@@ -15,7 +16,9 @@ html {
 body  {
     width: 100%;
     height: 100vh;  
-    background-color: #ffffff;      
+    background-color: #ffffff;   
+    margin: auto;   
+    overflow-x: hidden;
 }   
 
 header, .cabecalho{
@@ -150,7 +153,8 @@ header, .cabecalho{
 
 .navbar.active .nav-list {    
     height: 100vh;
-    visibility: visible;   
+    visibility: visible; 
+    overflow-y: auto;  
 }
 
 .navbar.active #hamburger {
@@ -327,6 +331,7 @@ main {
    /* background-color: yellowgreen;*/
 }
 
+  
 #slide1-casamento {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(20, 20, 20, 0.3)), url(imagens/festas-eventos/CASAMENTO\ PUSADA\ 01\ \(36555\).jpg);
     background-repeat: no-repeat;
@@ -571,6 +576,7 @@ main {
      background-position: center center;
  }
  
+  
  .rodape {
     width: 100%;
     height: 23rem;
