@@ -244,33 +244,34 @@ main {
 .sobre-reserva {
     width: 100%;
     height: 18vh;
-    /*background-color: #a3693f;*/
+    background-color: #a3693f;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;   
-    padding: 10px 40px;
+    padding: 10px 20px;
 }
 
 .sobre-reserva > p {
     font-size: 18px;
-    margin-left: 40px;
+    margin-left: 15px;
+   
 }
 
 .sobre-reserva > h5 {
-    font-size: 21px;
+    font-size: 19.4px;
     color: #6a5134;
-    letter-spacing: 2px;
-    margin-left: 40px; 
+    letter-spacing: 1.7px;
+    margin-left: 15px;    
 }
 
 .sobre-reserva > i {
-    font-size: 36px;
+    font-size: 34px;
     transform: rotate(20deg);
     position: absolute;
     top: 44px;
-    left: 40px;
+    left: 0px;
     color: #C6AD8C; 
 }
 
@@ -284,6 +285,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    visibility: visible;
 }
 
 .sobre-img1 {
@@ -292,7 +294,7 @@ main {
     background-image: url(imagens/sobre/20201030_135749.jpg);
     background-size: cover;
     background-position: top center;
-    overflow: visible;
+    visibility: visible;
    /* display: flex;
     justify-content: flex-start;*/
 }
@@ -306,6 +308,7 @@ main {
    /* display: flex;
     justify-content: flex-start;*/
     margin-top: 60px;
+    visibility: visible;
 }
 
 .video-pousada, .video-pousada-entrada {
