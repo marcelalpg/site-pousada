@@ -6,15 +6,16 @@
 }
 
 html {
-    scroll-behavior: smooth;     
-    margin: auto;   
-    overflow-x: hidden;     
+    scroll-behavior: smooth;
+    margin: auto;         
 }
 
 body  {
     width: 100%;
     height: 100vh;  
-    background-color: #ffffff;      
+    background-color: #ffffff;  
+    margin: auto;   
+    overflow-x: hidden;    
 }    
 
 header, .cabecalho{
@@ -205,6 +206,7 @@ main {
     flex-direction: column;
     /*gap: 5rem;*/
     padding: 0 40px;
+    overflow-x: hidden;
 }
 
 .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
