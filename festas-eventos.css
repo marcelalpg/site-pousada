@@ -18,7 +18,7 @@ body  {
     height: 100vh;  
     background-color: #ffffff;   
     margin: auto;
-    overflow-x: hidden    
+   /* overflow-x: hidden    */
 }   
 
 header, .cabecalho{
@@ -149,6 +149,7 @@ main {
     width: 100%;
     height: auto;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -206,7 +207,7 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    overflow-x: hidden;
+   /* overflow-x: hidden;*/
 }
 
 .festas-eventos-conteudo {
