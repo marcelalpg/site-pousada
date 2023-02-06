@@ -7,15 +7,15 @@
 
 html {
     scroll-behavior: smooth;
-    margin: auto;         
+    /*margin: auto;   */      
 }
 
 body  {
     width: 100%;
     height: 100vh;  
     background-color: #ffffff;  
-    margin: auto;   
-    overflow-x: hidden;    
+  /*  margin: auto;   
+    overflow-x: hidden;*/    
 }    
 
 header, .cabecalho{
@@ -145,7 +145,8 @@ header, .cabecalho{
 main {
     width: 100%;
     height: auto;
-    margin: auto;     
+    margin: auto;    
+    overflow-x: hidden; 
 }
 
 .hero {
@@ -206,7 +207,7 @@ main {
     flex-direction: column;
     /*gap: 5rem;*/
     padding: 0 40px;
-    overflow-x: hidden;
+   /* overflow-x: hidden;*/
 }
 
 .cidade-conteudo, .maria-fumaca, .praca-leoes, .gomeira, .itaguare, .ibama, .ingazeiro {
